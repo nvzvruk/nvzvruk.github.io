@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-image: url("/img/header-fifth-bg.jpg");
+  background-image: url("../img/header-fifth-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;

@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   padding: 7vh 10%;
-  background: url(/img/header-8-bg.png) center, #262626;
+  background: url(../img/header-8-bg.png) center, #262626;
   background-size: cover;
   text-align: center;
   box-sizing: border-box; }
@@ -143,16 +143,16 @@ h1 {
 .header__info__icon--pencil {
   width: 24px;
   height: 24px;
-  background: url(/img/pencil-icon.png) no-repeat; }
+  background: url(../img/pencil-icon.png) no-repeat; }
 
 .header__info__icon--brush {
   width: 24px;
   height: 22px;
-  background: url(/img/brush-icon.png) no-repeat; }
+  background: url(../img/brush-icon.png) no-repeat; }
 
 .header__info__icon--keyboard {
   width: 28px;
   height: 20px;
-  background: url(/img/keyboard-icon.png) no-repeat; }
+  background: url(../img/keyboard-icon.png) no-repeat; }
 
 /*# sourceMappingURL=header-eighth.css.map */

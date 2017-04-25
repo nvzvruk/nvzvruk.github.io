@@ -2,7 +2,7 @@
   height: 100vh;
   padding: 7vh 10% 7vh 17%;
   box-sizing: border-box;
-  background: url("/img/header-7-bg.png") no-repeat center top #262626;
+  background: url("../img/header-7-bg.png") no-repeat center top #262626;
   background-size: cover; }
 
 .header__menu {
