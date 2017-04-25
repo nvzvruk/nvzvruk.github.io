@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="j-Wood.css">
+</head>
+
+<body>
+
+    <section id="header" class="header">
+        <div class="head head_header">
+            <nav>
+                <a href="#header">home</a>
+                <a href="#about-me">about me</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contacts">contact</a>
+            </nav>
+        </div>
+        <div class="logo">
+            <img src="img/Logo.png" alt="">
+        </div>
+        <h1>JWOOD<span>PHOTOGRAPHY</span></h1>
+        <div class="scroll scroll_header">
+            <span>scroll down to see more</span><br>
+            <a href="#about-me"><img src="img/double_arrow.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+        <div class="head head_about-me">
+            <nav>
+                <a href="#header">home</a>
+                <a href="#about-me">about me</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contacts">contact</a>
+            </nav>
+        </div>
+        <div class="about-me__container">
+            <div class="about-me__photo"></div>
+            <div class="about-me__info">
+                <h2>ABOUT ME</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt ut labore et dolore magna <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <span class="about-me__name">Jason Wood</span>
+            </div>
+        </div>
+        <div class="scroll scroll_about-me">
+            <span>keep scrolling.There is still more to come</span><br>
+            <a href="#portfolio"><img src="img/double_arrow2.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="head head_portfolio">
+            <nav>
+                <a href="#header">home</a>
+                <a href="#about-me">about me</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contacts">contact</a>
+            </nav>
+        </div>
+        <h2>PORTFOLIO</h2>
+        <div class="portfolio__photos">
+            <img src="img/portfolio-imgs/01.jpg" alt="">
+            <img src="img/portfolio-imgs/02.jpg" alt="">
+            <img src="img/portfolio-imgs/03.jpg" alt="">
+            <img src="img/portfolio-imgs/04.jpg" alt="">
+            <img src="img/portfolio-imgs/05.jpg" alt="">
+            <img src="img/portfolio-imgs/06.jpg" alt="">
+            <img src="img/portfolio-imgs/07.jpg" alt="">
+            <img src="img/portfolio-imgs/08.jpg" alt="">
+            <img src="img/portfolio-imgs/09.jpg" alt="">
+            <img src="img/portfolio-imgs/10.jpg" alt="">
+        </div>
+        <div class="scroll scroll_portfolio">
+            <span>DO YOU WANT TO SEE IT WITH YOUR OWN EYES? SCROLL!</span><br>
+            <a href="#contacts"><img src="img/double_arrow.svg" alt=""></a>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="head head_contacts">
+            <nav>
+                <a href="#header">home</a>
+                <a href="#about-me">about me</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contacts">contact</a>
+            </nav>
+        </div>
+        <div class="contacts__info">
+            <span>MAIL:</span>
+            <a href="mailto: jason@wood.com">JASON@WOOD.COM</a>
+            <span>PHONE:</span>
+            <a href="tel: +44212432444"> +44 212 432 444</a>
+            <span>SOCIAL MEDIA:</span>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/socials/Facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/socials/Twitter.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/socials/Instagram.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="contacts__footer">
+            <span>DESIGNED BY PAWEL SZYMANKIEWICH</span>
+        </div>
+    </section>
+    <script src="jQuerry/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a[href^="#"]').click(function() {
+                var elementClick = $(this).attr("href");
+                var destination = $(elementClick).offset().top;
+                $('html, body').animate({
+                    scrollTop: destination
+                }, 400);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

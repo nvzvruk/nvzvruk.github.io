@@ -1,0 +1,623 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'), url('fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Bold';
+    src: url('fonts/nexa_bold/Nexa_Free_Bold-webfont.woff2') format('woff2'), url('fonts/nexa_bold/Nexa_Free_Bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa_Light';
+    src: url('fonts/nexa_light/Nexa_Free_Light-webfont.woff2') format('woff2'), url('fonts/nexa_light/Nexa_Free_Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'felt_tip_womanregular';
+    src: url('fonts/felt_tip_woman/felt_tip_woman-webfont.woff2') format('woff2'), url('fonts/felt_tip_woman/felt_tip_woman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----------Style--------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    color: #f1f1f1;
+    height: 100vh;
+    position: relative;
+}
+
+.head {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    text-transform: uppercase;
+    margin: 0 3.5%;
+}
+
+.head a {
+    font-family: "Nexa_Light";
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 3rem;
+    line-height: 10vh;
+    margin: 2.3%;
+    transition: 0.5s;
+}
+
+.head a:hover {
+    color: #4a2226;
+}
+
+.scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    text-align: center;
+}
+
+.scroll span {
+    font-family: "Nexa_Light";
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.scroll img {
+    width: 1.5%;
+    margin-top: 1.9vh;
+    cursor: pointer;
+}
+
+
+/*------------Header-----------------*/
+
+.header {
+    background: url("img/header-background.jpg") no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 3%;
+    text-align: center;
+    width: 24%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Nexa_Bold";
+    font-weight: 300;
+    font-size: 7rem;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+
+h1 span {
+    font-family: "Nexa_Light";
+    font-weight: 300;
+}
+
+.scroll_header {
+    bottom: 5%;
+}
+
+
+/*-----------------ABOUT ME--------------------------*/
+
+.head_about-me {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.about-me a {
+    color: #d6d6d6;
+}
+
+.about-me__container {
+    display: flex;
+    flex-direction: row;
+    margin: 6.9vh 8.5vw;
+    height: 64.8vh;
+}
+
+.about-me__photo {
+    background-image: url("img/Jason%20Wood.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+    height: 64.8vh;
+    float: left;
+}
+
+.about-me__info {
+    height: inherit;
+    width: 48%;
+    margin-left: 4%;
+}
+
+.about-me__info h2 {
+    font-family: "Nexa_Light";
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 4.2vh;
+    margin-top: 12.85%;
+    margin-bottom: 6.5vh;
+    text-transform: uppercase;
+    color: #202020;
+}
+
+.about-me__info p {
+    font-family: "open_sansregular";
+    color: #202020;
+    font-weight: 300;
+    font-size: 3.4rem;
+    line-height: 4.5rem;
+    margin-bottom: 3vh;
+}
+
+.about-me__name {
+    font-family: "felt_tip_womanregular";
+    color: black;
+    font-size: 5rem;
+}
+
+.scroll_about-me {
+    color: #bebebe;
+}
+
+
+/*-----------------PORTFOLIO--------------------------*/
+
+.portfolio {
+    background: url("img/portfolio-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.portfolio__photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 8%;
+}
+
+.portfolio h2 {
+    font-family: "Nexa_Light";
+    font-weight: 300;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    line-height: 4.2vh;
+}
+
+.portfolio__photos img {
+    padding: 1%;
+    height: 18%;
+    width: 18%;
+}
+
+.scroll_portfolio {
+    bottom: 5%;
+    margin-top: 7.4%;
+    color: #bebebe;
+}
+
+
+/*-----------CONTACTS-------------*/
+
+.contacts {
+    height: 100vh;
+    position: relative;
+}
+
+.head_contacts {
+    border-bottom: 1px solid #bebebe;
+}
+
+.head_contacts a {
+    color: #bebebe;
+}
+
+.contacts__info {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.contacts__info span {
+    display: block;
+    font-family: "Nexa_Bold";
+    font-size: 3.5rem;
+    color: #202020;
+    margin-bottom: 2%;
+    margin-top: 3.15%;
+}
+
+.contacts__info a {
+    font-family: "Nexa_Light";
+    font-size: 6rem;
+    letter-spacing: .5rem;
+    color: #202020;
+    text-decoration: none;
+}
+
+.contacts__info ul {
+    padding: 0;
+    text-align: center;
+}
+
+.contacts__info li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 .6%;
+    height: 100%;
+}
+
+.contacts__info img {
+    width: 5vh;
+}
+
+.contacts__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-family: "Nexa_Light";
+    font-size: 3rem;
+    line-height: 10vh;
+    color: #cecece;
+    text-align: center;
+    border-top: 1px solid #bebebe;
+    margin: 0 3.5%;
+}
+
+
+/*---------------Responsive-------------*/
+
+@media screen and (max-width: 2560px) and (min-width: 1921px) {
+    .head a {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+        letter-spacing: .5rem;
+    }
+    .scroll span {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 3rem;
+    }
+    .about-me__info p {
+        font-size: 2rem;
+    }
+    .about-me__name {
+        font-size: 3.5rem;
+    }
+    .portfolio h2 {
+        font-size: 4.3rem;
+    }
+    .contacts__info span {
+        font-size: 2.7rem;
+    }
+    .contacts__info a {
+        font-size: 4rem;
+    }
+    .contacts__footer {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1681px) {
+    .head a {
+        font-size: 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+        letter-spacing: .5rem;
+    }
+    .scroll span {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 2.5rem;
+    }
+    .about-me__info p {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .about-me__name {
+        font-size: 3rem;
+    }
+    .portfolio h2 {
+        font-size: 3.8rem;
+    }
+    .contacts__info span {
+        font-size: 2rem;
+    }
+    .contacts__info a {
+        font-size: 3rem;
+    }
+    .contacts__footer {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1680px) and (min-width: 1401px) {
+    .head a {
+        font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 2.7rem;
+        letter-spacing: .5rem;
+    }
+    .scroll span {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 2.5rem;
+    }
+    .about-me__info p {
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+    }
+    .about-me__name {
+        font-size: 3rem;
+    }
+    .portfolio h2 {
+        font-size: 3.3rem;
+    }
+    .contacts__info span {
+        font-size: 2rem;
+    }
+    .contacts__info a {
+        font-size: 3rem;
+    }
+    .contacts__footer {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1281px) {
+    .head a {
+        font-size: 1.2rem;
+    }
+    .logo img {
+        width: 90%;
+        height: 90%;
+    }
+    h1 {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+    .scroll span {
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 2rem;
+    }
+    .about-me__info p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .about-me__name {
+        font-size: 2rem;
+    }
+    .portfolio h2 {
+        font-size: 2.5rem;
+    }
+    .portfolio__photos img {
+        height: 16%;
+        width: 16%;
+    }
+    .contacts__info span {
+        font-size: 1.8rem;
+    }
+    .contacts__info a {
+        font-size: 2rem;
+    }
+    .contacts__footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    .head a {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+    .scroll span {
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 2rem;
+    }
+    .about-me__info p {
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    .about-me__name {
+        font-size: 2rem;
+    }
+    .portfolio h2 {
+        font-size: 2.7rem;
+    }
+    .contacts__info span {
+        font-size: 1.7rem;
+    }
+    .contacts__info a {
+        font-size: 2.7rem;
+    }
+    .contacts__footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    .head a {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+    .scroll span {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 1.5rem;
+    }
+    .about-me__info p {
+        font-size: .7rem;
+        line-height: 1.5rem;
+    }
+    .about-me__name {
+        font-size: 1.8rem;
+    }
+    .portfolio h2 {
+        font-size: 2.3rem;
+    }
+    .contacts__info span {
+        font-size: 1.4rem;
+    }
+    .contacts__info a {
+        font-size: 2.4rem;
+    }
+    .contacts__footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px) {
+    .head a {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+        letter-spacing: .3rem;
+    }
+    .scroll span {
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: 1.5rem;
+    }
+    .about-me__info p {
+        font-size: .7rem;
+        line-height: 1.5rem;
+    }
+    .about-me__name {
+        font-size: 1.8rem;
+    }
+    .portfolio h2 {
+        font-size: 2.3rem;
+    }
+    .contacts__info span {
+        font-size: 1.1rem;
+    }
+    .contacts__info a {
+        font-size: 2rem;
+        letter-spacing: .3rem;
+    }
+    .contacts__footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px) {
+    .head a {
+        font-size: .7rem;
+    }
+    
+    .logo {
+        margin-top: 20vh;
+        min-width: 40%;
+    }
+    
+    h1 {
+        font-size: 1rem;
+        letter-spacing: .3rem;
+    }
+    .scroll span {
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .about-me__info h2 {
+        font-size: .8rem;
+    }
+    .about-me__info p {
+        font-size: .6rem;
+        line-height: .7rem;
+    }
+    .about-me__name {
+        font-size: 1rem;
+    }
+    .portfolio h2 {
+        margin-top: 5vh;
+        font-size: 1.3rem;
+    }
+    
+    .portfolio__photos {
+        margin-top: 5vh;
+    }
+    
+    .portfolio__photos img {
+        height: 25%;
+        width: 25%;
+    }
+    
+    .contacts__info span {
+        margin-top: 10vh;
+        font-size: .8rem;
+    }
+    .contacts__info a {
+        font-size: 1rem;
+        letter-spacing: .2rem;
+    }
+    .contacts__footer {
+        font-size: .6rem;
+    }
+}
+
+
+/*-------------------------------------*/
