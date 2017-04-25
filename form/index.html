@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="jQuery/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+   <section class="login">
+      <img src="img/Close.png" alt="" class="close">
+       <div class="login-head">
+           <h1>Log in to the Site</h1>
+       </div>
+       <div class="login-cont">
+           <div class="socials">
+               <button class="fb-btn">Login with Facebook</button>
+               <button class="g-btn">Login with Google+</button>
+           </div>
+           <div class="login-form">
+               <form action="#">
+                   <label><b>Login</b></label><br>
+                   <input type="text" name="username"><br>
+                   <label><b>Password</b></label><br>
+                   <input type="password" name="pass"><br>
+                   <input type="checkbox" checked="checked"> Remember me <br>
+                   <button type="submit">Login</button>
+                   <a href="#">Need help loggining in?</a>
+               </form>
+           </div>
+       </div>
+       <div class="login-footer">
+           <h3>Don't have an account yet? <a href="#">Sign in</a></h3>
+       </div>
+   </section>
+    
+   <script>
+       $(document).ready(function(){
+           $('.close').click(function(){
+               $('.login').css('display','none');
+           });
+       });
+   </script> 
+</body>
+</html>

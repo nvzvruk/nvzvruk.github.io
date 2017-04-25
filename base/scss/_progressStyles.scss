@@ -1,0 +1,22 @@
+.progress {
+    width: 300px;
+    height: 36px;
+    background-color: #dee2e7;
+    float: left;
+    padding: 3px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 18px;
+}
+
+.progress__fill {
+    width: 64%;
+    height: 100%;
+    background-color: #24aa98;
+    padding-right: 10px;
+    border-radius: 15px;
+    text-align: right;
+    line-height: 30px;
+    font-family: sans-serif;
+    color: #FFF;
+}

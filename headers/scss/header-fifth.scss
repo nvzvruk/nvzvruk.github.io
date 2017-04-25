@@ -1,0 +1,104 @@
+@import 'mixins';
+@import 'variables';    
+.header{
+    position: relative;
+    background-image: url('/img/header-fifth-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 12vh 17%;
+    .header__chevron {
+        position: absolute;
+        top: 50%;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        color: #FFF;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 2px;
+            height: 2px;
+            background-color: currentColor;
+        }
+    }
+    .chevron__left {
+        left: 40px;
+        &:after {
+            left: calc(50% - 4px);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, 5px 5px 0 0 currentColor, 6px 6px 0 0 currentColor;
+        }
+    }
+    .chevron__right {
+        right: 40px;
+        &:after {
+            left: calc(50% + 4px);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            box-shadow: -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor;
+        }
+    }
+    .header__controls {
+        position: absolute;
+        left: 50%;
+        bottom: 46px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        .is-active {
+            background-color: #fff;
+        }
+    }
+    .header__controls__item {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    .header__menu {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFF;
+        text-decoration: none;
+        &:not(:first-child) {
+            margin-left: 60px;
+        }
+    }
+    .header__title {
+        margin-top: 9vh;
+        font-size: 50px;
+        line-height: 64px; 
+        color: #fff;
+    }
+    .header__paragraph {
+        margin: 6vh 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #fff;
+    }
+    button {
+        @include button;
+        background-color: $button-third-color;
+        padding: 24px 55px;
+    }
+}
+
+

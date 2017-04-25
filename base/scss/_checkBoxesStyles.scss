@@ -1,0 +1,59 @@
+.checkboxes {
+    margin-right: 50px;
+    float: left;
+}
+
+.c-box {
+    position: relative;
+    margin-bottom: 20px;
+    color: #FFF;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.c-box:after {
+    width: 14px;
+    height: 14px;
+    background-color: #dee2e7;
+    content: '';
+    position: absolute;
+    border-radius: 5px;
+    visibility: visible;
+}
+
+.c-box ~ label {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.c-box:disabled ~ label {
+    color: #dee2e7;
+}
+
+.c-box:checked:before {
+    display: block;
+}
+
+.c-box:checked:after {
+    background-color: #24aa98;
+}
+
+.c-box:before {
+    width: 2px;
+    height: 2px;
+    background-color: currentColor;
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    z-index: 1;
+    display: none;
+    visibility: visible;
+    box-shadow: 1px -1px 0 0 currentColor,
+     2px -2px 0 0 currentColor,
+     3px -3px 0 0 currentColor,
+     4px -4px 0 0 currentColor,
+     -1px -1px 0 0 currentColor,
+     -2px -2px 0 0 currentColor;
+}
+

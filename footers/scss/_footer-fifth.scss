@@ -1,0 +1,107 @@
+.footer-fifth {
+    display: block;
+    text-align: center;
+}
+
+.footer-fifth__top-part {
+    background-color: #24aa98;
+    width: 100%;
+    form {
+        color: #fff;
+        div {
+            display: inline-block;
+            height: 48px;
+            width: 320px;
+            position: relative;
+            margin-top: 37px;
+            margin-bottom: 35px;
+            margin-left: 16px;
+            border-radius: 5px;
+            [type="email"] {
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                padding-left: 48px;
+                border: none;
+                border-radius: 5px;
+            }
+            img {
+                position: absolute;
+                top: 17px;
+                left: 16px;
+            }
+        }
+        [type="submit"] {
+            background-color: #d9c26c;
+            padding: 17px 54px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-left: 20px;
+            color: #fff;
+        }
+    }
+}
+
+.footer-fifth__bottom-part {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 80px 120px;
+    background-color: #f2f5f8;
+    box-sizing: border-box;
+    justify-content: space-around;
+    img {
+        display: inline-block;
+        max-height: 66px;
+    }
+}
+
+.footer-fifth__services {
+    display: inline-block;
+    span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #434242;
+    }
+    a {
+        margin-top: 15px;
+        display: block;
+        color: #b4bbc2;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.footer-fifth__map {
+    width: 300px;
+    height: 193px;
+    background-image: url('/img/footer-fifth-icons/Pin%20Icon.png');
+    background-size: cover;
+}
+
+.footer-fifth__copyrights {
+    text-align: left;
+    &>* {
+        display: block;
+    }
+    span {
+        font-weight: bold;
+        color: #434242;
+    }
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+    li {
+        color: #b4bbc2;
+        font-weight: bold;
+    }
+    li:not(:first-child) {
+        margin-top: 10px;
+    }
+}

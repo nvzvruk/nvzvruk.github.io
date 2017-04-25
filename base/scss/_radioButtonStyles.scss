@@ -1,0 +1,47 @@
+.radiobuttons {
+    margin-right: 50px;
+    float: left;
+}
+
+.r-btn {
+    position: relative;
+    margin-bottom: 20px;
+    visibility: hidden;
+    cursor: pointer;
+    &:before {
+        width: 10px;
+        height: 10px;
+        background-color: #65abd0;
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        z-index: 1;
+        display: none;
+        border-radius: 50%;
+        visibility: visible;
+    }
+    &:after {
+        width: 14px;
+        height: 14px;
+        background-color: #dee2e7;
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        visibility: visible;
+    }
+}
+
+.r-btn:checked:before {
+    display: block;
+}
+
+.r-btn ~ label {
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.r-btn:disabled ~ label {
+    color: #dee2e7;
+}

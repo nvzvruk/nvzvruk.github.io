@@ -1,0 +1,175 @@
+body {
+    font-family: Arial;
+    background-color: #e8e8e8;
+}
+
+.login {
+    margin: 0 auto;
+    width: 840px;
+    border: 1px solid #d9d9d9;
+    border-top: 2px solid #e62b1e;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .25);
+}
+
+.close {
+    float: right;
+    max-height: 15px;
+    max-width: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.login-head {
+    background-color: #fff;
+    color: #333333;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.login-cont {
+    background-color:#f3f3f3;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 50px;
+}
+
+.socials {
+    width: 360px;
+    border-right: 1px solid #d9d9d9;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.fb-btn {
+    background: url('img/fb.png') no-repeat center left 12px, #3e5b96;
+}
+
+.fb-btn:hover {
+    background-color: #385388;
+    cursor: pointer;
+}
+
+.g-btn {
+    margin-top: 20px;
+    background: url('img/g+.png') no-repeat center left 12px, #dd5342;    
+}
+
+.g-btn:hover {
+    background-color: #cd4c3c;
+    cursor: pointer;
+}
+
+.login-form {
+    width: 360px;  
+}
+
+form {
+    margin-left: 60px;
+}
+
+form a {
+    font-size: 14px;
+    color: #252525;
+    margin-left: 40px;
+}
+
+input[name="username"], input[name="pass"] {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+input[name="username"] {
+    margin-bottom: 25px;
+}
+
+input[type="checkbox"]{
+    margin-top: 25px;
+
+}
+
+button[type="submit"]{
+    width: 100px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+button[type="submit"]:hover{
+    background-color: #666666;
+    cursor: pointer;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+
+.login-footer {
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.login-footer h3 {
+    margin:  30px auto;;
+}
+
+h3 a {
+    color: #afafaf;
+}
+
+/*-------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .login {
+        margin: 0 auto;
+        width: 480px;
+    }
+    
+    .login-cont {
+        flex-direction: column-reverse; 
+        padding: 25px 90px;
+        width: 300px;
+    }
+    
+    .login-form {
+        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 25px;
+        margin: 0 auto;
+        width: 300px; 
+    }
+    
+    form {
+        margin-left: 0;
+    }
+    
+    .socials {
+        border-right: 0;
+        
+    }
+    
+    .fb-btn {
+        margin-top: 25px;
+    }
+
+}

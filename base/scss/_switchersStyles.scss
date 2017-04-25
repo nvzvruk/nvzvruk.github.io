@@ -1,0 +1,107 @@
+.switchers__part:first-child {
+    margin-right: 30px;
+}
+
+.switchers__part {
+    display: inline-block;
+    vertical-align: middle;
+}
+.switcher-outline {
+    display: none;
+}
+
+.switcher-outline ~ label {
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 36px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    border: 2px solid #c6ccd2;
+    color: #c6ccd2;
+    cursor: pointer;
+    &:before {
+        width: 28px;
+        height: 28px;
+        background-color: currentColor;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: 0.2s;
+    }
+        &:after {
+        content: 'Off';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-family:  sans-serif;
+        font-size: 14px;
+        transform: translateY(-50%);
+        transition: 0.2s;
+    }
+}
+
+.switcher-outline:checked + label {
+    border-color: #24aa98;
+    color: #24aa98;
+    &:before {
+        left: 38px;
+    }
+    &:after {
+        content: 'On';
+        right: 38px;
+    }
+}
+
+.switcher-filled {
+    display: none;
+}
+
+.switcher-filled:checked + label {
+    background-color: #24aa98;
+    &:before {
+        left: 40px;
+    }
+    &:after {
+        content: 'On';
+        right: 40px;
+    }
+}
+
+.switcher-filled ~ label {
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 36px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    background-color: #c6ccd2;
+    color: #fff;
+    cursor: pointer;
+    &:before {
+        width: 28px;
+        height: 28px;
+        background-color: currentColor;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: 0.2s;
+    }
+        &:after {
+        content: 'Off';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-family: 'cabinsemibold', sans-serif;
+        font-size: 14px;
+        transform: translateY(-50%);
+        transition: 0.2s;
+    }
+}

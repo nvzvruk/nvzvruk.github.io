@@ -1,0 +1,76 @@
+.notifications {
+    margin-top: 50px;
+    float: left;
+    font-family: sans-serif;
+}
+
+.notification {
+    position: relative;
+    margin-bottom: 24px;
+    padding: 14px 60px 14px 20px;
+    line-height: 24px;
+    color: #FFF;
+    border-radius: 6px;
+}
+
+.notification__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    color: #FFF;
+    cursor: pointer;
+    &:after {
+        width: 2px;
+        height: 2px;
+        background-color: currentColor;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 1px -1px 0 0 currentColor,
+        2px -2px 0 0 currentColor,
+        3px -3px 0 0 currentColor,
+        4px -4px 0 0 currentColor,
+        1px 1px 0 0 currentColor,
+        2px 2px 0 0 currentColor,
+        3px 3px 0 0 currentColor,
+        4px 4px 0 0 currentColor,
+        -1px -1px 0 0 currentColor,
+        -2px -2px 0 0 currentColor,
+        -3px -3px 0 0 currentColor,
+        -4px -4px 0 0 currentColor,
+        -1px 1px 0 0 currentColor,
+        -2px 2px 0 0 currentColor,
+        -3px 3px 0 0 currentColor,
+        -4px 4px 0 0 currentColor;
+    }
+}
+
+.notification_one {
+    background-color: #24aa98;
+}
+
+.notification_two {
+    background-color: #d9c26c;
+}
+
+.notification_three {
+    background-color: #db7560;
+}
+
+.notification__btn {
+    margin: 12px 0;
+    padding: 6px 37px;
+    background-color: #e79f91;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 6px;
+}

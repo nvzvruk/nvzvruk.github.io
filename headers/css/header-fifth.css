@@ -1,0 +1,89 @@
+.header {
+  position: relative;
+  background-image: url("/img/header-fifth-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 12vh 17%; }
+  .header .header__chevron {
+    position: absolute;
+    top: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #FFF;
+    transform: translateY(-50%);
+    cursor: pointer; }
+    .header .header__chevron:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 2px;
+      height: 2px;
+      background-color: currentColor; }
+  .header .chevron__left {
+    left: 40px; }
+    .header .chevron__left:after {
+      left: calc(50% - 4px);
+      transform: translate(-50%, -50%);
+      box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, 5px 5px 0 0 currentColor, 6px 6px 0 0 currentColor; }
+  .header .chevron__right {
+    right: 40px; }
+    .header .chevron__right:after {
+      left: calc(50% + 4px);
+      transform: translate(-50%, -50%);
+      box-shadow: -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor; }
+  .header .header__controls {
+    position: absolute;
+    left: 50%;
+    bottom: 46px;
+    transform: translateX(-50%); }
+    .header .header__controls .is-active {
+      background-color: #fff; }
+  .header .header__controls__item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #fff; }
+  .header .header__menu {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center; }
+  .header a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none; }
+    .header a:not(:first-child) {
+      margin-left: 60px; }
+  .header .header__title {
+    margin-top: 9vh;
+    font-size: 50px;
+    line-height: 64px;
+    color: #fff; }
+  .header .header__paragraph {
+    margin: 6vh 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff; }
+  .header button {
+    display: block;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 999rem;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d9c26c;
+    padding: 24px 55px; }
+
+/*# sourceMappingURL=header-fifth.css.map */

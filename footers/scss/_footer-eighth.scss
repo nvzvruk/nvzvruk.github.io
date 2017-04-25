@@ -1,0 +1,30 @@
+.footer-eighth {
+    display: block;
+    background-color: #383737;
+    padding: 30px 120px;
+}
+
+.footer-eighth__menu {
+    display: inline-block;
+    a {
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}
+
+.footer-eighth__copyright-and-socials {
+    display: inline-block;
+    float: right;
+    span {
+        color: #838282;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    a {
+        margin-left: 30px;
+    }
+}
