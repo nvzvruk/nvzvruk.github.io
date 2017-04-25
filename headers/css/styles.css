@@ -24,28 +24,28 @@
     .container .header-link:hover {
       transform: translateY(-10px); }
   .container .header-first-link {
-    background: url("/img/header-icons/header-1-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-1-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-second-link {
-    background: url("/img/header-icons/header-2-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-2-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-third-link {
-    background: url("/img/header-icons/header-3-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-3-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-fourth-link {
-    background: url("/img/header-icons/header-4-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-4-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-fifth-link {
-    background: url("/img/header-icons/header-5-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-5-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-sixth-link {
-    background: url("/img/header-icons/header-6-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-6-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-seventh-link {
-    background: url("/img/header-icons/header-7-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-7-icon.jpg") no-repeat;
     background-size: cover; }
   .container .header-eighth-link {
-    background: url("/img/header-icons/header-8-icon.jpg") no-repeat;
+    background: url("../img/header-icons/header-8-icon.jpg") no-repeat;
     background-size: cover; }
 
 /*# sourceMappingURL=styles.css.map */
