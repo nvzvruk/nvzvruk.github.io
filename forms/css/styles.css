@@ -286,4 +286,199 @@
     color: #fff;
     margin-top: 2px; }
 
+.wrapper_contact-form {
+  margin-top: 20px;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.contact-form {
+  background-color: #f2f5f8;
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 42px; }
+  .contact-form .form__input {
+    margin-top: 10px; }
+  .contact-form .form__input-field {
+    padding: 0 16px; }
+  .contact-form label {
+    color: #b4bbc2; }
+
+.contact-form_lg {
+  width: 60%;
+  position: relative; }
+
+.contact-form__title {
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase; }
+
+.form-line {
+  margin-top: 24px; }
+  .form-line > .form-line__item {
+    width: 46%;
+    display: inline-block; }
+    .form-line > .form-line__item:nth-child(2) {
+      margin-left: 40px; }
+
+.form-contact__select-wrapper {
+  position: relative; }
+  .form-contact__select-wrapper:after {
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    right: 20px;
+    position: absolute;
+    content: '';
+    transform: translateY(calc(-50% + 3px));
+    box-shadow: 1px -1px 0 0 #fff, 2px -2px 0 0 #fff, 3px -3px 0 0 #fff, 4px -4px 0 0 #fff, -1px -1px 0 0 #fff, -2px -2px 0 0 #fff, -3px -3px 0 0 #fff, -4px -4px 0 0 #fff; }
+
+.form__select-menu {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer; }
+
+.form__select-budget {
+  background-color: #65abd0; }
+
+.form-line__textarea {
+  display: block;
+  width: 95%; }
+  .form-line__textarea > textarea {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #383737;
+    width: 100%;
+    height: 144px;
+    padding: 10px 14px;
+    border: 2px solid #c6ccd2;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    outline: none;
+    overflow: hidden; }
+
+.form-line_bottom {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  .form-line_bottom .checkbox {
+    margin-top: -24px; }
+  .form-line_bottom [type="submit"] {
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    width: 140px;
+    background-color: #24aa98; }
+
+.contact-form_sm {
+  position: relative;
+  width: 26%; }
+  .contact-form_sm [type="submit"] {
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 23px;
+    float: right;
+    max-width: 140px;
+    background-color: #24aa98; }
+
+.contact-form_sm__item {
+  margin-top: 24px; }
+  .contact-form_sm__item textarea {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #383737;
+    width: 88%;
+    min-height: 144px;
+    padding: 10px 14px;
+    border: 2px solid #c6ccd2;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    outline: none; }
+
+.shipping-form {
+  padding: 20px; }
+
+.shipping-form__content {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.shipping-form {
+  width: 100%; }
+
+.shipping-form__content-item {
+  width: 30%; }
+
+.form__label {
+  font-size: 16px;
+  line-height: 24px;
+  color: #b4bbc2; }
+
+.select-menu {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer; }
+
+.select-menu__warning {
+  background-color: #dad; }
+
 /*# sourceMappingURL=styles.css.map */

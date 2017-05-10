@@ -1,0 +1,338 @@
+/*--------VARIABLES----------*/
+
+$red-color: #eb3c00;
+$black-color: #282828;
+$desktop-size: 1150px;
+$laptop-size: 960px;
+$tablet-size: 876px;
+$mobileL-size: 650px;
+$mobile-size: 500px;
+$mobileS-size: 320px;
+
+/*--------FONTS----------*/
+
+@import '../assets/scss/icons/iconfont__varible';
+@import '../assets/scss/icons/iconfont__icon';
+@import url('https://fonts.googleapis.com/css?family=Oswald|PT+Serif');
+
+/*----------------------------------*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.header {
+    &__top-content,
+    &__bottom-content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    &__top-content {
+        padding: 30px 148px;
+    }
+    &__title {
+        &>h1 {
+            display: inline-block;
+            font-size: 48px;
+            font-family: "Oswald";
+            color: $red-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+        &>span {
+            display: inline-block;
+            font-size: 18px;
+            font-family: "PT Serif";
+            color: rgba(40, 40, 40, 0.502);
+            font-style: italic;
+            line-height: 1.2;
+            text-transform: lowercase;
+        }
+    }
+    &__login-link {
+        font-size: 13px;
+        font-family: "PT Serif";
+        color: $black-color;
+        font-style: italic;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    &__contact-link {
+        font-size: 13px;
+        font-family: "PT Serif";
+        font-style: italic;
+        text-transform: uppercase;
+        line-height: 1.2;
+        background-color: $red-color;
+        padding: 18px 56px;
+        margin-left: 32px;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+            background-color: #b43205;
+        }
+    }
+    &__bottom-content {
+        padding-left: 148px;
+        padding-right: 148px;
+        background-color: $black-color;
+        nav {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        a {
+            font-size: 18px;
+            font-family: "Oswald";
+            color: #fff;
+            text-transform: uppercase;
+            padding: 20px 16px;
+            transition: 0.3s;
+            box-sizing: border-box;
+            &:hover {
+                background-color: $red-color;
+            }
+        }
+    }
+    &__input-wrapper {
+        height: 42px;
+        width: 268px;
+        position: relative;
+        input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            padding-left: 12px;
+            box-sizing: border-box;
+            font-family: "Oswald";
+            &:focus + div {
+                color: $red-color;
+            }
+        }
+        .icon--search {
+            position: absolute;
+            right: 12px;
+            transform: translateY(-175%);
+            font-weight: bold;
+            color: #81858c;
+        }
+    }
+}
+
+.icon--key {
+    color: $red-color;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.article {
+    padding: 50px 148px;
+    &__content {
+        width: 75%;
+    }
+    &__title {
+        font-size: 48px;
+        font-family: "Oswald";
+        font-weight: 500;
+        color: $black-color;
+        line-height: 1.25;
+    }
+    &__text {
+        font-size: 24px;
+        font-family: "PT Serif";
+        color: $black-color;
+        line-height: 1.5;
+        margin-top: 58px;
+    }
+    ul {
+        margin-top: 58px;
+        font-size: 18px;
+        font-family: "PT Serif";
+        color: $black-color;
+        line-height: 1.5;
+        text-align: left;
+        span {
+            font-weight: bold;
+        }
+        li {
+            &:first-child {
+                margin-top: 20px;
+            }
+            &:not(:first-child) {
+                margin-top: 12px;
+            }
+            margin-left: 15px;
+        }
+    }
+}
+
+.news-block {
+    padding: 20px 148px;
+    padding-bottom: 180px;
+    &__title {
+        font-size: 14px;
+        font-family: "Oswald";
+        color: $red-color;
+        text-transform: uppercase;
+        line-height: 1.929;
+    }
+    &__items {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-top: 22px;
+        width: 172px;
+    }
+    &__text {
+        font-size: 18px;
+        font-family: "Oswald";
+        color: $black-color;
+        line-height: 1.111;
+    }
+    &__image {
+        height: 114px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__image-1 {
+        background-image: url('../assets/img/news1.jpg');
+    }
+    &__image-2 {
+        background-image: url('../assets/img/news2.jpg');
+    }
+    &__image-3 {
+        background-image: url('../assets/img/news3.jpg');
+    }
+    &__image-4 {
+        background-image: url('../assets/img/news4.jpg');
+    }
+    &__image-5 {
+        background-image: url('../assets/img/news5.jpg');
+    }
+    &__image-6 {
+        background-image: url('../assets/img/news6.jpg');
+    }
+}
+
+.link-to-top {
+    position: absolute;
+    right: 26px;
+    bottom: 56px;
+}
+
+.btn-menu {
+    display: none;
+    background-color: #fff;
+    opacity: .8;
+    width: 30px;
+    height: 3px;
+    box-shadow: 0 15px #fff, 0 -15px #fff;
+    position: relative;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: $red-color;
+        width: 50px;
+        opacity: 1;
+        transition: .3s;
+        box-shadow: 0 15px $red-color, 0 -15px $red-color;
+    }
+    &::before {
+        content: '';
+        width: 30px;
+        height: 72px;
+        position: absolute;
+        bottom: -700%;
+    }
+    &:hover::before,
+    &:focus::before {
+        right: 0;
+    }
+}
+
+@media (max-width: $desktop-size) {
+    .header__top-content,
+    .header__bottom-content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .article, .news-block {
+        padding: 30px 100px;
+    }
+    .news-block {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: $tablet-size) {
+    .header__top-content,
+    .header__bottom-content {
+        padding: 10px 50px;
+    }
+    .article, .news-block {
+        padding: 20px 50px;
+    }
+    .news-block {
+        padding-bottom: 80px;
+    }
+    .link-to-top {
+        bottom: 10px;
+    }
+    .header__title {
+        h1 {
+            display: block;
+        }
+        span {
+            display: block;
+        }
+    }
+    .article__content {
+        width: 100%;
+    }
+    .header__navigation {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+    }
+}
+
+@media (max-width: $mobileL-size){
+    .header__contact-link {
+        padding: 3px 10px;
+    }
+}
+@media (max-width: $mobile-size){
+    .header__top-content,
+    .header__bottom-content,
+    .article {
+        padding: 5px 10px;
+    }
+    .header__contact-link {
+        display: none;
+    }
+}
