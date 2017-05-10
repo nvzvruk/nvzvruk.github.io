@@ -19,6 +19,7 @@
         box-shadow: 0 0 1px transparent;
         transition-duration: 0.3s;
         transition-property: transform;
+        background-color: cadetblue;
         &:hover {
             transform: translateY(-10px);
         }
