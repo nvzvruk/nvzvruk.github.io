@@ -1,0 +1,32 @@
+.footer-third {
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 80px 120px;
+}
+.footer-third__item {
+    display: inline-block;
+    vertical-align: top;
+    &:last-child {
+        margin-top: -8px;
+        & > * {
+            display: block;
+        }
+        span {
+            margin-top: 20px;
+        }
+    }
+    span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #434242;
+    }
+    a {
+        margin-top: 20px;
+        display: block;
+        color: #b4bbc2;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+}
