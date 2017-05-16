@@ -1,0 +1,43 @@
+.footer-fourth {
+  box-sizing: border-box;
+  padding: 80px 120px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .footer-fourth img {
+    max-height: 66px; }
+
+.footer-fourth__item {
+  display: inline-block; }
+  .footer-fourth__item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #383737; }
+  .footer-fourth__item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b4bbc2;
+    line-height: 1.375; }
+  .footer-fourth__item a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #b4bbc2;
+    text-decoration: none; }
+
+.footer-fourth__info {
+  width: 300px; }
+
+.footer-fourth__our-app .buy-button {
+  display: block;
+  padding: 18px 40px;
+  border-radius: 5px;
+  background-color: #24aa98;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 18px;
+  margin-bottom: 17px; }
+
+.footer-fourth__our-app .learn-more-button {
+  text-decoration: none;
+  color: #65abd0; }
+
+/*# sourceMappingURL=footer-fourth.css.map */

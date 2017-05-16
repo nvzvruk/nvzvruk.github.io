@@ -1,0 +1,102 @@
+.footer-seventh {
+  background-size: cover; }
+
+.footer-seventh__content {
+  margin: 84px 120px; }
+  .footer-seventh__content img {
+    margin-top: -2px; }
+  .footer-seventh__content div {
+    vertical-align: top;
+    display: inline-block; }
+    .footer-seventh__content div > * {
+      display: block; }
+    .footer-seventh__content div:not(:first-child), .footer-seventh__content div:not(:last-child) {
+      margin-left: 90px; }
+    .footer-seventh__content div span {
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+    .footer-seventh__content div a {
+      margin-top: 20px;
+      color: #a09f9f;
+      font-weight: bold;
+      text-decoration: none; }
+
+.footer-seventh__man a:nth-last-child(2) {
+  position: relative; }
+  .footer-seventh__man a:nth-last-child(2):after {
+    content: 'NEW';
+    position: absolute;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+    top: -50%;
+    color: #383737;
+    background-color: #d9c26c; }
+
+.footer-seventh__follow span {
+  margin-bottom: 0; }
+
+.footer-seventh__follow a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .footer-seventh__follow a:not(:first-of-type) {
+    margin-left: 12px; }
+
+.footer-seventh__follow .footer-seventh__fb-link {
+  background-color: #3162a2; }
+
+.footer-seventh__follow .footer-seventh__twitter-link {
+  background-color: #2eb1eb; }
+
+.footer-seventh__follow .footer-seventh__dribbble-link {
+  background-color: #f552b6; }
+
+.footer-seventh__follow .footer-seventh__vimeo-link {
+  background-color: #3498b9; }
+
+.footer-seventh__follow .footer-seventh__google-link {
+  background-color: #f25c58; }
+
+.footer-seventh__subscribe span {
+  margin-top: 50px; }
+
+.footer-seventh__subscribe p {
+  color: #9d9e9f;
+  font-weight: bold; }
+
+.footer-seventh__subscribe [type="email"] {
+  padding: 10px 14px;
+  min-width: 202px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box; }
+
+.footer-seventh__subscribe [type="submit"] {
+  margin-left: 10px;
+  background-color: #24aa98;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+  border: none;
+  border-radius: 5px; }
+
+.footer-seventh__menu {
+  margin-top: 45px; }
+
+.footer-seventh__copyright {
+  text-align: right;
+  margin-top: 108px;
+  margin-right: -50px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #9d9d9e; }
+
+/*# sourceMappingURL=footer-seventh.css.map */

@@ -1,0 +1,105 @@
+@import '../../../settings/normalize';
+@import '../../../settings/settings';
+@import '../../../components/buttons';
+body {
+    font-family: $font-stack;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: $black-color;
+}
+
+.header {
+    height: 100vh;
+    padding: 7vh 10%;
+    background-color: #262626;
+    text-align: center;
+    &__menu {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__dropdown {
+        display: none;
+        color: #fff;
+        @media (max-width: $mobile-size ) {
+                    display: inline-block;
+                }
+        
+    }
+    &__navigation {
+        &-link {
+            @include text-setting(16px,
+            24px, #fff);
+            font-weight: 400;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:not(:first-child) {
+                margin-left: 40px;
+                @media (max-width: $mobileL-size) {
+                    margin-left: 15px;
+                }
+                @media (max-width: $mobileS-size) {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: $mobile-size) {
+            display: none;
+        }
+    }
+    &__logo {
+        @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+        background-size: cover;
+    }
+    &__bg-photo {
+        height: 48vh;
+        max-height: 400px;
+        text-align: center;
+        &__img {
+            height: 100%;
+            width: auto;
+        }
+        @media (max-height: $mobile-size) {
+            height: 35vh;
+            margin-top: 0;
+        }
+        @media (max-width: $mobileL-size) {
+            height: 30vh;
+            margin-top: 5vh;
+        }
+        @media (max-width: $mobile-size) {
+            height: 25vh;
+            margin-top: 0;
+        }
+    }
+    &__title {
+        @include text-setting(26px, 36px, #fff);
+        width: 70%;
+		margin: 5vh auto;
+		font-weight: 400;
+		@media (max-width: $mobileL-size) {
+			width: 100%;
+		}
+		@media (max-height: $mobile-size) {
+			width: 100%;
+			font-size: 16px;
+			line-height: 22px;
+		}
+		@media (max-width: $mobile-size) {
+			margin: 3vh auto;
+			font-size: 20px;
+			line-height: 28px;
+		}
+		@media (max-width: $mobileS-size) {
+			font-size: 18px;
+			line-height: 24px;
+		}
+    }
+}
+

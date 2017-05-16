@@ -1,0 +1,163 @@
+@import '../../../settings/normalize';
+@import '../../../settings/settings';
+@import '../../../components/buttons';
+@import '../../../components/inputs';
+@import '../../../components/css-icons';
+body {
+    font-family: $font-stack;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: $black-color;
+}
+
+.header {
+    height: 100vh;
+    padding: 8vh 10%;
+    background-color: #f2f5f8;
+    box-sizing: border-box;
+    text-align: center;
+    &__menu {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__login-menu_link {
+        @include text-setting(16px, 24px);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    &__dropdown-menu {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        span {
+            margin-left: 2vw;
+            @media (max-width:$laptop-size) {
+                margin-left: 3vw;
+            }
+            @media (max-width:$tablet-size) {
+                display: none;
+            }
+        }
+    }
+    &__logo {
+        @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+        margin: 12vh auto 10vh;
+        background-size: cover;
+        @media (max-height: $mobile-size) {
+            margin-top: 5vh;
+        }
+    }
+    &__search-links {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        &>a {
+            color: $green-color;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__bottom-text {
+        @include text-setting(14px,
+        20px,
+        $grey-color);
+        margin-top: 32vh;
+        font-weight: 400;
+        @media (max-width: $mobile-size) {
+            margin-top: 20vh;
+        }
+        @media (max-height: $mobile-size) {
+            margin-top: 10vh;
+            line-height: 18px;
+        }
+        @media (max-width: $mobileS-size) {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+}
+
+.search-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto 5vh;
+    &__label {
+        @include text-setting(16px,
+        36px,
+        $grey-color);
+        margin-right: 16px;
+    }
+    &__elements {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        .input__icon-search {
+            top: 47%;
+            left: 3.5%;
+            @media(max-width:$laptop-size) {
+                left: 5%;
+            }  
+            @media(min-width:$mobileS-size) and (max-width:$mobile-size) {
+                left: 8%;
+            }
+        }
+    }
+    &__input {
+        padding-left: 35px;
+        &:valid {
+            width: calc(100% - 58px);
+        }
+        &:valid+.search-form__btn {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            background-color: $green-color;
+            cursor: pointer;
+        }
+    }
+    &__btn {
+        @include pos('topRight',
+        0,
+        0);
+        @include block-create(48px,
+        48px,
+        $border-color);
+        border: none;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        outline: none;
+        .icon_search {
+            border-color: #fff;
+            &:before {
+                background-color: #fff;
+            }
+        }
+    }
+    @media (max-width: $tablet-size) {
+        width: 80%;
+    }
+    @media (max-width: $mobile-size) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/templates/base/base-styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="btn btn_info btn_lg btn_info btn-space">Load more</button>
+            <button class="btn btn_lg btn_rounded btn_info btn-space">Sign in</button>
+            <button class="btn btn_lg btn_round btn_info btn-space">Sign up</button>
+            <button class="btn btn_lg btn_round btn_secondary btn-space">Log out</button>
+            <button class="btn_square btn_square-lg btn_circle btn_chevron btn_chevron-right btn_info btn-space"></button><br>
+            <button class="btn btn_info btn-space">Learn more</button>
+            <button class="btn btn_rounded btn_info btn-space">By now</button>
+            <button class="btn btn_round btn_info btn-space">Order more</button>
+            <button class="btn btn_round btn_secondary btn-space">Install</button>
+            <button class="btn_square btn_rounded btn_hamburger btn_info btn-space"></button>
+            <button class="btn_square btn_circle btn_chevron btn_chevron-left btn_info btn-space"></button>
+            <button class="btn btn_rounded btn_arrow btn_info  btn-space"><span class="btn_arrow__text">Next</span></button> <br>
+            <button class="btn btn_sm btn_info btn-space">Start</button>
+            <button class="btn btn_sm btn_rounded btn_info btn-space">Download</button>
+            <button class="btn btn_sm btn_round btn_info btn-space">Share</button>
+            <button class="btn btn_sm btn_round btn_secondary btn-space">Free Trial</button>
+            <button class="btn_square btn_square-sm btn_rounded btn_hamburger btn_info btn-space"></button>
+            <button class="btn_square btn_square-sm btn_circle btn_chevron btn_chevron-right btn_info btn-space"></button>
+            <div class="btn_group btn_rounded btn_info btn-space">
+                <button class="btn_group__elem btn_square btn_square-sm btn_chevron btn_chevron-left btn_info"></button>
+                <button class="btn_group__elem btn_square btn_square-sm btn_chevron btn_chevron-right btn_info"></button>
+            </div>
+            <button class="btn btn_sm btn_rounded btn_arrow btn_arrow__sm btn_info btn-space"><span class="btn_arrow__text">Forward</span></button>
+        </div>
+        <div class="split-buttons">
+            <div class="split-btn split-btn_group">
+                <div class="split-btn__elem split-btn_group__left">
+                    <span class="split-btn__elem__line"></span>
+                </div>
+                <div class="split-btn__elem split-btn_group__central">
+                    <span class="split-btn__elem__line"></span>
+                </div>
+                <div class="split-btn__elem split-btn_group__right">
+                    <span class="split-btn__elem__line"></span>
+                </div>
+            </div>
+            <div class="split-btn split-btn_input">
+                <input type="text" value="Hey there!" class="split-btn_input__field input-field">
+                <button class="split-btn__simple-btn btn btn_success">Send</button>
+            </div>
+            <div class="split-btn split-btn_dropdown_input">
+                <input type="text" class="input-field split-btn_dropdown_input__field" placeholder="Message">
+                <div class="btn btn_success split-btn__open-btn">
+                    <select name="choose" class="split-btn__select">
+						<option value="seller">To seller</option>
+						<option value="shop">To shop</option>
+					</select>
+                </div>
+                <button class="split-btn__simple-btn btn btn_success">Send</button>
+            </div>
+            <div class="split-btn split-btn--dropdown">
+                <button class="btn btn_rounded btn_success split-btn_dropdown__simple">Ok</button>
+            </div>
+        </div>
+        <div class="inputs">
+            <div class="field">
+                <input type="text" class="input-field" placeholder="E-mail">
+            </div>
+            <div class="field is-active">
+                <input type="text" class="input-field" value="hello">
+            </div>
+            <div class="field">
+                <input type="text" class="input-field input-field_round input-field_ic input-field_search" placeholder="Search" required>
+                <span class="icon_search"></span>
+                <span class="icon_close-circle"></span>
+            </div>
+            <div class="field is-active">
+                <input type="text" class="input-field input-field_round input-field_ic input-field_search" placeholder="Search" value="UI Kit">
+                <span class="icon_search"></span>
+                <span class="icon_close-circle"></span>
+            </div>
+            <div class="field is-filled">
+                <span class="icon_checked"></span>
+                <input type="text" class="input-field input-field_ic_right" value="hello@creativeda.sh">
+            </div>
+            <div class="field is-error">
+                <span class="icon_close "></span>
+                <input type="text" class="input-field input-field_ic_right" value="hellocreativeda.sh">
+            </div>
+            <div class="field">
+                <input type="text" class="input-field input-field_combo" placeholder="Search" required>
+                <button class="btn_square field-search-btn"><span class="icon_search"></span></button>
+            </div>
+            <div class="field is-combo">
+                <input type="text" class="input-field" value="Flat">
+                <button class="btn_square field-search-btn"><span class="icon_search"></span></button>
+            </div>
+        </div>
+        <div class="text-areas">
+            <textarea class="text-area" placeholder="Write your comment here..."></textarea>
+            <textarea class="text-area is-active" placeholder="Great stuff"></textarea>
+        </div>
+        <div class="middle-part middle-part_1">
+            <div class="dropdown">
+                <div class="dropdown__btn js-dropdown__btn">Select country
+                    <ul class="dropdown__menu js-menu-list__link">
+                        <li class="dropdown__menu-elem"><a href="javascript:void(0)" class="dropdown__link">USA</a></li>
+                        <li class="dropdown__menu-elem"><a href="javascript:void(0)" class="dropdown__link">Canada</a></li>
+                        <li class="dropdown__menu-elem"><a href="javascript:void(0)" class="dropdown__link">Germany</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="radiobuttons">
+                <input type="radio" id="r-btn1" class="r-btn" name="state"><label for="r-btn1"><span class="r-btn__charger"></span>Radiobutton Off</label><br>
+                <input type="radio" id="r-btn2" class="r-btn" name="state" checked=""><label for="r-btn2"><span class="r-btn__charger"></span> Radiobutton On</label><br>
+                <input type="radio" id="btn3" class="r-btn" disabled><label for="btn3"><span class="r-btn__charger"></span> Radiobutton Disabled</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="box1" class="check-box__main"><label for="box1" class="check-box__label"><span class="check-box__changer"></span>Checkbox Off</label><br>
+                <input type="checkbox" id="box2" class="check-box__main" checked=""><label for="box2" class="check-box__label"><span class="check-box__changer"></span>Checkbox On</label><br>
+                <input type="checkbox" id="box3" class="check-box__main" disabled=""><label for="box3" class="check-box__label"><span class="check-box__changer"></span>Checkbox Disabled</label>
+            </div>
+            <div class="switchers">
+                <div class="switchers__outline switchers__part">
+                    <input type="radio" id="sw-out-1" name="option" class="switcher-outline"><label for="sw-out-1"></label>
+                    <input type="radio" id="sw-out-2" name="option" class="switcher-outline" checked=""><label for="sw-out-2"></label>
+                </div>
+                <div class="switchers__filled switchers__part">
+                    <input type="checkbox" id="sw-filled-1" name="option1" class="switcher-filled"> <label for="sw-filled-1"></label>
+                    <input type="checkbox" id="sw-filled-2" name="option1" class="switcher-filled" checked=""><label for="sw-filled-2"></label>
+                </div>
+            </div>
+        </div>
+        <div class="middle-part middle-part_2">
+            <div class="slider">
+                <input type="range">
+            </div>
+            <div class="progress-wrap">
+                <div class="progress-bar">
+                    <div class="progress-bar__indicator">64%</div>
+                </div>
+            </div>
+            <div class="tooltips">
+                <div class="tooltips__item tooltips__item_top">Top tooltip</div>
+                <div class="tooltips__item tooltips__item_left">Left tooltip</div>
+                <div class="tooltips__item tooltips__item_right">Right tooltip</div>
+                <div class="tooltips__item tooltips__item_bottom">Bottom tooltip</div>
+            </div>
+        </div>
+        <div class="middle-part middle-part-3">
+            <div class="menu-list">
+                <span class="menu-list__title">Categories</span>
+                <ul class="menu-list__part menu-list__part_categories">
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link">Art Direction</a></li>
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link">Branding</a></li>
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link is-active">Graphic Design</a></li>
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link">Illustration</a></li>
+                </ul>
+                <span class="menu-list__title">Popular</span>
+                <ul class="menu-list__part">
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link">Motion Graphic</a></li>
+                    <li><a href="javascript:void(0)" class="menu-list__link js-menu-list__link">UI/UX</a></li>
+                </ul>
+            </div>
+            <div class="steps-paginations">
+            <div class="steps-block">
+                <div class="steps steps__type_first">
+                    <div class="steps__type_first-item is-current">1</div>
+                    <div class="steps__type_first-item">2</div>
+                    <div class="steps__type_first-item">3</div>
+                </div>
+                <div class="steps steps__type_second">
+                    <div class="steps__type_second-item">1</div>
+                    <div class="steps__type_second-item is-current">2</div>
+                    <div class="steps__type_second-item">3</div>
+                </div>
+            </div>
+            <div class="paginations">
+                <div class="pagination pagination_first js-pagination-second">
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_back">Back</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first">1</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first is-active">2</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first">3</a>
+                    <span class="pagination__link pagination__link_number js-pagination-first">...</span>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first">12</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first is-previous">13</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-first">14</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_next">Next</a>
+                </div>
+                <div class="pagination pagination_second">
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_back">Back</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second">1</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second">2</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second is-active">3</a>
+                    <span class="pagination__link pagination__link_number js-pagination-second">...</span>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second">12</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second">13</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_number js-pagination-second">14</a>
+                    <a href="javascript:void(0)" class="pagination__link pagination__link_next">Next</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="table-block">
+            <table class="table singer-table">
+                <tbody>
+                    <tr class="singer-table__row">
+                        <th class="table__cell table__cell_title singer-table__cell">#</th>
+                        <th class="table__cell table__cell_title singer-table__cell">Artist</th>
+                        <th class="table__cell table__cell_title singer-table__cell">Album</th>
+                        <th class="table__cell table__cell_title singer-table__cell">Song</th>
+                        <th class="table__cell table__cell_title singer-table__cell">Select</th>
+                    </tr>
+                    <tr class="singer-table__row checked">
+                        <td class="table__cell singer-table__cell singer-table__cell_number">1</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Kasabian</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Velociraptor!</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Re-wired</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_select">
+                        <input type="checkbox" id="song1" class="c-box js-c-box" checked="">
+                            <label for="song1" class="c-box__label"></label></td>
+                    </tr>
+                    <tr class="singer-table__row">
+                        <td class="table__cell singer-table__cell singer-table__cell_number">2</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Suuns</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Images Du Futur</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Up Past The Nursery</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_select">
+                        <input type="checkbox" id="song2" class="c-box js-c-box">
+                            <label for="song2" class="c-box__label"></label></td>
+                    </tr>
+                    <tr class="singer-table__row">
+                        <td class="table__cell singer-table__cell singer-table__cell_number">3</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">RHCP</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Californication</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Around the World</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_select">
+                        <input type="checkbox" id="song3" class="c-box js-c-box">
+                            <label for="song3" class="c-box__label"></label></td>
+                    </tr>
+                    <tr class="singer-table__row checked">
+                        <td class="table__cell singer-table__cell singer-table__cell_number">4</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Woodkid</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">The Golden Age</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Iron</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_select">
+                        <input type="checkbox" id="song4" class="c-box js-c-box" checked="">
+                            <label for="song4" class="c-box__label"></label></td>
+                    </tr>
+                    <tr class="singer-table__row">
+                        <td class="table__cell singer-table__cell singer-table__cell_number">5</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Hugo</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">Old Tyme Religion</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_main-info">99 problems</td>
+                        <td class="table__cell singer-table__cell singer-table__cell_select">
+                        <input type="checkbox" id="song5" class="c-box js-c-box">
+                            <label for="song5" class="c-box__label"></label></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="notifications">
+            <div class="notification notification_success">
+                <span class="icon_close notification__close js-ic_close"></span>
+                <span class="notification__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</span>
+            </div>
+            <div class="notification notification_warning">
+                <span class="icon_close notification__close js-ic_close"></span>
+                <span class="notification__text">Poor Alice! It was as much as she could do, lying down on one side, to look through into the garden with one eye; but to get through was more hopeless than ever: she sat down and began to cry again.t</span>
+            </div>
+            <div class="notification notification_danger">
+                <span class="icon_close notification__close js-ic_close"></span>
+                <span class="notification__text">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</span><br>
+                <button class="btn btn_rounded notification__btn">Submit</button>
+            </div>
+        </div>
+        <div class="popovers">
+            <div class="popover popover_light">
+                <span class="icon_close popover__close js-ic_close"></span>
+                <p class="popover__title">Popover header</p>
+                <p class="popover__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                <button class="btn btn_rounded btn_success popover__btn popover__btn_positive">Cool</button>
+                <button class="btn btn_rounded btn_info popover__btn popover__btn_negative">Not sure</button>
+            </div>
+            <div class="popover popover_dark">
+                <span class="icon_close popover__close js-ic_close"></span>
+                <p class="popover__title">Popover header</p>
+                <p class="popover__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</p>
+                <button class="btn btn_rounded btn_secondary popover__btn popover__btn_positive">Cool</button>
+                <button class="btn btn_rounded btn_secondary popover__btn popover__btn_negative">Not sure</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/base-scripts.js"></script>
+</body>
+
+</html>

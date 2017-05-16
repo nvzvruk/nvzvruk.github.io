@@ -1,0 +1,51 @@
+.container {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0; }
+  .container .header-link {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.3s;
+    transition-property: transform; }
+    .container .header-link:hover {
+      transform: translateY(-10px); }
+  .container .header-first-link {
+    background: url("../../../templates/headers/img/header-1-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-second-link {
+    background: url("../../../templates/headers/img/header-2-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-third-link {
+    background: url("../../../templates/headers/img/header-3-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-fourth-link {
+    background: url("../../../templates/headers/img/header-4-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-fifth-link {
+    background: url("../../../templates/headers/img/header-5-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-sixth-link {
+    background: url("../../../templates/headers/img/header-6-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-seventh-link {
+    background: url("../../../templates/headers/img/header-7-icon.jpg") no-repeat;
+    background-size: cover; }
+  .container .header-eighth-link {
+    background: url("../../../templates/headers/img/header-8-icon.jpg") no-repeat;
+    background-size: cover; }
+
+/*# sourceMappingURL=styles.css.map */

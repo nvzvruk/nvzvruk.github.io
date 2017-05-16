@@ -1,0 +1,35 @@
+.notification {
+	@extend %border-radius;
+	position: relative;
+	margin-bottom: 24px;
+	padding: 14px 60px 14px 20px;
+	font-family: $font-stack;
+	color: #FFF;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	&_success {
+		background-color: $green-color;
+	}
+	&_warning {
+		background-color: $orange-color;
+	}
+	&_danger {
+		background-color: $red-color;
+	}
+	&__text {
+		margin: 0;
+	}
+	&__close {
+		top: 20px;
+		right: 20px;
+	}
+	&__btn {
+		margin: 12px 0;
+        padding: 4px 10px;
+		background-color: #e79f91;
+		&:hover {
+			color: $red-color;
+		}
+	}
+}

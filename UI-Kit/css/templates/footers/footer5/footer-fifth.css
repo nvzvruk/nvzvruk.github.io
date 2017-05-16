@@ -1,0 +1,90 @@
+.footer-fifth {
+  display: block;
+  text-align: center; }
+
+.footer-fifth__top-part {
+  background-color: #24aa98;
+  width: 100%; }
+  .footer-fifth__top-part form {
+    color: #fff; }
+    .footer-fifth__top-part form div {
+      display: inline-block;
+      height: 48px;
+      width: 320px;
+      position: relative;
+      margin-top: 37px;
+      margin-bottom: 35px;
+      margin-left: 16px;
+      border-radius: 5px; }
+      .footer-fifth__top-part form div [type="email"] {
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 48px;
+        border: none;
+        border-radius: 5px; }
+      .footer-fifth__top-part form div img {
+        position: absolute;
+        top: 17px;
+        left: 16px; }
+    .footer-fifth__top-part form [type="submit"] {
+      background-color: #d9c26c;
+      padding: 17px 54px;
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-left: 20px;
+      color: #fff; }
+
+.footer-fifth__bottom-part {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 120px;
+  background-color: #f2f5f8;
+  box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .footer-fifth__bottom-part img {
+    display: inline-block;
+    max-height: 66px; }
+
+.footer-fifth__services {
+  display: inline-block; }
+  .footer-fifth__services span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434242; }
+  .footer-fifth__services a {
+    margin-top: 15px;
+    display: block;
+    color: #b4bbc2;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; }
+
+.footer-fifth__map {
+  width: 300px;
+  height: 193px;
+  background-size: cover; }
+
+.footer-fifth__copyrights {
+  text-align: left; }
+  .footer-fifth__copyrights > * {
+    display: block; }
+  .footer-fifth__copyrights span {
+    font-weight: bold;
+    color: #434242; }
+  .footer-fifth__copyrights ul {
+    padding: 0;
+    list-style-type: none; }
+  .footer-fifth__copyrights li {
+    color: #b4bbc2;
+    font-weight: bold; }
+  .footer-fifth__copyrights li:not(:first-child) {
+    margin-top: 10px; }
+
+/*# sourceMappingURL=footer-fifth.css.map */

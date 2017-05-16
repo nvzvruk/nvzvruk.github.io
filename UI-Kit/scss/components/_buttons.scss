@@ -1,0 +1,193 @@
+.btn {
+    @include text-setting(16px, 24px, #fff);
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 140px;
+    padding: 10px;
+    border: 2px solid transparent;
+    text-align: center;
+    font-family: $font-stack;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        text-decoration: none;
+    }
+    &_sm {
+        min-width: 120px;
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    &_lg {
+        min-width: 190px;
+        padding: 16px;
+        font-size: 18px;
+    }
+    &_round {
+        border-radius: 999em;
+    }
+    &_rounded {
+        @extend %border-radius;
+    }
+    &_circle {
+        border-radius: 50%;
+    }
+    &_chevron {
+        position: relative;
+        width: 48px;
+        height: 48px;
+        color: #FFF;
+        border: 2px solid #fff;
+        &:after {
+            @include block-create(2px, 2px, currentColor);
+            content: "";
+            transform: translate(-50%, -50%);
+        }
+        &-left {
+            &:after {
+                @include pos('topLeft', 50%, calc(50% - 4px));
+                box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, 5px 5px 0 0 currentColor, 6px 6px 0 0 currentColor;
+            }
+        }
+        &-right {
+            &:after {
+                @include pos('topLeft', 50%, calc(50% + 4px));
+                box-shadow: -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor;
+            }
+        }
+        &-down {
+            &:after {
+                @include pos('topLeft', calc(50% + 4px), 50%);
+                box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor;
+            }
+        }
+    }
+    &_secondary {
+        background-color: transparent;
+        border-color: $blue-color;
+        color: $blue-color;
+        transition: 0.3s;
+        &:hover {
+            border-color: #4F87A4;
+            color: #4F87A4;
+        }
+    }
+    &_square {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        border: 2px solid transparent;
+        color: #FFF;
+        width: 48px;
+        height: 48px;
+        transition: 0.3s;
+        outline: none;
+        cursor: pointer;
+        &-sm {
+            width: 36px;
+            height: 36px;
+        }
+        &-lg {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &_arrow {
+        position: relative;
+        min-width: 75px;
+        padding-left: 15px;
+        &:after {
+            @include block-create(30px, 30px, inherit);
+            @include pos('topRight', 50%, -1px);
+            content: '';
+            border-top-right-radius: 6px;
+            transform: translate(50%, -50%) rotate(45deg);
+        }
+        &__text {
+            position: relative;
+            z-index: 1;
+        }
+        &__sm {
+            min-width: 90px;
+            &:after {
+                width: 25px;
+                height: 25px;
+                right: 1px;
+            }
+        }
+    }
+    &_hamburger {
+        position: relative;
+        &:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            content: '';
+            height: 2px;
+            width: 20px;
+            background-color: currentColor;
+            box-shadow: 0 6px 0 0 currentColor,
+                0 -6px 0 0 currentColor   
+        }  
+    }
+    &_group {
+        display: inline-block;
+		vertical-align: middle;
+        &__elem {
+            display: block;
+			float: left;
+			border: solid rgba(0,0,0,0.1);
+			border-width: 0 1px 0 1px;
+			background-clip: border-box;
+			&:first-child {
+				border-left: none;
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+			}
+			&:last-child {
+				border-right: none;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+        }
+    }
+    &_full {
+        width: 100%;
+    }
+    &_success {
+        background-color: $green-color;
+        &:hover {
+            background-color: #258578;
+        }
+    }
+    &_danger {
+        background-color: $red-color;
+        &:hover {
+            background-color: #B15E4D;
+        }
+    }
+    &_warning {
+        background-color: $orange-color;
+        &:hover {
+            background-color: #A99755;
+        }
+    }
+    &_info {
+        background-color: $blue-color;
+        &:hover {
+            background-color: #4F87A4;
+        }
+    }
+    &_primary {
+        background-color: $dark-blue-color;
+        &:hover {
+            background-color: #274873;
+        }
+    }
+}

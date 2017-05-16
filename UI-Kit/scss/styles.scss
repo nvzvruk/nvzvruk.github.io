@@ -1,0 +1,75 @@
+@import 'settings/settings';
+@import 'components/buttons';
+
+body {
+    font-family: $font-stack;
+}
+.container {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.title {
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+    text-shadow: 1px 1px 2px $black-color;
+}
+
+.template-link {
+    @extend %border-radius;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    span {
+        @include text-setting(30px, 20px, #fff);
+        display: block;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        visibility: hidden;
+    }
+    &:hover {
+		box-shadow: 0 0 7px 3px $black-color;
+    }
+    &:hover > span {
+        visibility: visible;
+    }
+    &_base {
+        background-color: blue;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &_headers {
+        background-color: orangered;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &_footers {
+        background-color: firebrick;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }    
+    &_forms {
+        background-color: fuchsia;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &_navigations {
+        background-color: blueviolet;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

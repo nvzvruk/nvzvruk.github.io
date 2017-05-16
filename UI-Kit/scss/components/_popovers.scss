@@ -1,0 +1,59 @@
+.popover {
+	position: relative;
+	@extend %border-radius;
+	width: 49%;
+	padding: 25px;
+	float: left;
+	border: 2px solid #4c4b4b;
+	font-family: $font-stack;
+	font-weight: 600;
+	color: $black-color;
+	letter-spacing: 0.02em;
+	&:first-child {
+		margin-right: 2%;
+	}
+	&__title {
+		margin: 0;
+		font-size: 24px;
+	}
+	&__text {
+		margin: 15px 0;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	&__close {
+		top: 15px;
+		right: 15px;
+		color: $black-color;
+	}
+	&__btn {
+		min-width: 80px;
+		margin-right: 8px;
+        padding: 4px 10px;
+	}
+	&_dark {
+		background-color: #4c4b4b;
+		color: #fff;
+		& > .popover__close {
+			color: #FFF;
+		}
+		& > .popover__btn {
+			&_positive {
+				border-color: $green-color;
+				color: $green-color;
+				&:hover {
+					border-color: #2ce8cf;
+					color: #2ce8cf;
+				}
+			}
+			&_negative {
+				border-color: $orange-color;
+				color: $orange-color;
+				&:hover {
+					border-color: #E8DAA4;
+					color: #E8DAA4;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,600");
+.btn_rounded, .template-link {
+  border-radius: 6px; }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+.btn {
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 140px;
+  padding: 10px;
+  border: 2px solid transparent;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s; }
+  .btn:hover {
+    text-decoration: none; }
+  .btn_sm {
+    min-width: 120px;
+    padding: 4px 10px;
+    font-size: 14px; }
+  .btn_lg {
+    min-width: 190px;
+    padding: 16px;
+    font-size: 18px; }
+  .btn_round {
+    border-radius: 999em; }
+  .btn_circle {
+    border-radius: 50%; }
+  .btn_chevron {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    color: #FFF;
+    border: 2px solid #fff; }
+    .btn_chevron:after {
+      width: 2px;
+      height: 2px;
+      background: currentColor;
+      content: "";
+      transform: translate(-50%, -50%); }
+    .btn_chevron-left:after {
+      top: 50%;
+      left: calc(50% - 4px);
+      position: absolute;
+      box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, 5px 5px 0 0 currentColor, 6px 6px 0 0 currentColor; }
+    .btn_chevron-right:after {
+      top: 50%;
+      left: calc(50% + 4px);
+      position: absolute;
+      box-shadow: -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor; }
+    .btn_chevron-down:after {
+      top: calc(50% + 4px);
+      left: 50%;
+      position: absolute;
+      box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 5px -5px 0 0 currentColor, 6px -6px 0 0 currentColor, -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -5px -5px 0 0 currentColor, -6px -6px 0 0 currentColor; }
+  .btn_secondary {
+    background-color: transparent;
+    border-color: #65abd0;
+    color: #65abd0;
+    transition: 0.3s; }
+    .btn_secondary:hover {
+      border-color: #4F87A4;
+      color: #4F87A4; }
+  .btn_square {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    border: 2px solid transparent;
+    color: #FFF;
+    width: 48px;
+    height: 48px;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer; }
+    .btn_square-sm {
+      width: 36px;
+      height: 36px; }
+    .btn_square-lg {
+      width: 60px;
+      height: 60px; }
+  .btn_arrow {
+    position: relative;
+    min-width: 75px;
+    padding-left: 15px; }
+    .btn_arrow:after {
+      width: 30px;
+      height: 30px;
+      background: inherit;
+      top: 50%;
+      right: -1px;
+      position: absolute;
+      content: '';
+      border-top-right-radius: 6px;
+      transform: translate(50%, -50%) rotate(45deg); }
+    .btn_arrow__text {
+      position: relative;
+      z-index: 1; }
+    .btn_arrow__sm {
+      min-width: 90px; }
+      .btn_arrow__sm:after {
+        width: 25px;
+        height: 25px;
+        right: 1px; }
+  .btn_hamburger {
+    position: relative; }
+    .btn_hamburger:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      content: '';
+      height: 2px;
+      width: 20px;
+      background-color: currentColor;
+      box-shadow: 0 6px 0 0 currentColor, 0 -6px 0 0 currentColor; }
+  .btn_group {
+    display: inline-block;
+    vertical-align: middle; }
+    .btn_group__elem {
+      display: block;
+      float: left;
+      border: solid rgba(0, 0, 0, 0.1);
+      border-width: 0 1px 0 1px;
+      background-clip: border-box; }
+      .btn_group__elem:first-child {
+        border-left: none;
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px; }
+      .btn_group__elem:last-child {
+        border-right: none;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px; }
+  .btn_full {
+    width: 100%; }
+  .btn_success {
+    background-color: #24aa98; }
+    .btn_success:hover {
+      background-color: #258578; }
+  .btn_danger {
+    background-color: #db7560; }
+    .btn_danger:hover {
+      background-color: #B15E4D; }
+  .btn_warning {
+    background-color: #d9c26c; }
+    .btn_warning:hover {
+      background-color: #A99755; }
+  .btn_info {
+    background-color: #65abd0; }
+    .btn_info:hover {
+      background-color: #4F87A4; }
+  .btn_primary {
+    background-color: #3162a2; }
+    .btn_primary:hover {
+      background-color: #274873; }
+
+body {
+  font-family: "Cabin", sans-serif; }
+
+.container {
+  position: relative;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px; }
+
+.title {
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  text-shadow: 1px 1px 2px #383737; }
+
+.template-link {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px; }
+  .template-link span {
+    font-size: 30px;
+    line-height: 20px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    visibility: hidden; }
+  .template-link:hover {
+    box-shadow: 0 0 7px 3px #383737; }
+  .template-link:hover > span {
+    visibility: visible; }
+  .template-link_base {
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .template-link_headers {
+    background-color: orangered;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .template-link_footers {
+    background-color: firebrick;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .template-link_forms {
+    background-color: fuchsia;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .template-link_navigations {
+    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+/*# sourceMappingURL=styles.css.map */

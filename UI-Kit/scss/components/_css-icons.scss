@@ -1,0 +1,84 @@
+.icon {
+    &_search {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $grey-color;
+        border-radius: 100%;
+        color: $grey-color;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        cursor: pointer;
+        color: $grey-color;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 13px;
+            left: 4px;
+            width: 2px;
+            height: 8px;
+            background-color: $grey-color;
+        }
+    }
+    &_close-circle {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #c6ccd2;
+        border-radius: 100%;
+        background-color: #c6ccd2;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 10px;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 10px;
+            height: 2px;
+            background-color: #fff;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+    &_checked {
+        position: absolute;
+        width: 14px;
+        height: 10px;
+        color: $green-color;
+        &:after {
+            @include block-create(2px, 3px, currentColor);
+            @include pos('topRight', 0, 0);
+            content: '';
+            box-shadow: -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor, -5px 5px 0 0 currentColor, -6px 6px 0 0 currentColor, -7px 7px 0 0 currentColor, -8px 6px 0 0 currentColor, -9px 5px 0 0 currentColor, -10px 4px 0 0 currentColor, -11px 3px 0 0 currentColor;
+        }
+    }
+    &_close {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        color: #FFF;
+        cursor: pointer;
+        &:after {
+            @include block-create(2px, 2px, currentColor);
+            @include pos('topLeft', 50%, 50%);
+            content: "";
+            transform: translate(-50%, -50%);
+            box-shadow: 1px -1px 0 0 currentColor, 2px -2px 0 0 currentColor, 3px -3px 0 0 currentColor, 4px -4px 0 0 currentColor, 1px 1px 0 0 currentColor, 2px 2px 0 0 currentColor, 3px 3px 0 0 currentColor, 4px 4px 0 0 currentColor, -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor;
+        }
+    }
+    &_centered {
+		left: 50%;
+		top: 50%;
+	}
+}

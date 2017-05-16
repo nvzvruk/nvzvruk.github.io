@@ -1,0 +1,23 @@
+.r-btn {
+    display: none;
+    &+label {
+        position: relative;
+        cursor: pointer;
+    }
+    &__charger {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -25px;
+        margin: auto;
+        width: 13px;
+        height: 13px;
+        border-radius: 999rem;
+        background-color: $grey-color;
+        border: 2px solid $grey-color;
+    }
+    &:checked+label>&__charger {
+        background-color: $blue-color;
+    }
+}

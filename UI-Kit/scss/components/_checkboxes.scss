@@ -1,0 +1,72 @@
+.check-box {
+	&__main {
+		display: none;
+		&:checked + label > span {
+			background-color: $green-color; 
+			&:after {
+				display: block;
+			}
+		}
+	}
+	&__label {
+		position: relative;
+		@include text-setting(14px, 24px, $black-color);
+		font-family: $font-stack;
+		letter-spacing: 0.02em;
+		cursor: pointer;
+	}
+	&__changer {
+		@extend %border-radius;
+		@include block-create(16px, 16px, $border-color);
+		@include pos('topLeft', 50%, -25px);
+		color: #FFF;
+		transform: translateY(-55%);
+		&:after {
+			@include block-create(2px, 2px, currentColor);
+			@include pos('topLeft', 50%, 50%);
+			content: '';
+			display: none;
+			transform: translate(-100%, 50%);
+			box-shadow: 1px -1px 0 0 currentColor,
+			2px -2px 0 0 currentColor,
+			3px -3px 0 0 currentColor,
+			4px -4px 0 0 currentColor,
+			-1px -1px 0 0 currentColor,
+			-2px -2px 0 0 currentColor;
+		}
+	}
+}
+
+
+
+.c-box {
+	display: none;
+	&:checked + label {
+		background-color: $green-color; 
+		&:after {
+			display: block;
+		}
+	}
+	&__label {
+		@extend %border-radius;
+		@include block-create(16px, 16px, $border-color);
+		position: absolute;
+		top: 50%;
+		color: #FFF;
+		transform: translateY(-50%);
+		cursor: pointer;
+		&:after {
+			@include block-create(2px, 2px, currentColor);
+			@include pos('topLeft', 50%, 50%);
+			content: '';
+			display: none;
+			transform: translate(-100%, 50%);
+			box-shadow: 1px -1px 0 0 currentColor,
+			2px -2px 0 0 currentColor,
+			3px -3px 0 0 currentColor,
+			4px -4px 0 0 currentColor,
+			-1px -1px 0 0 currentColor,
+			-2px -2px 0 0 currentColor;
+		}
+	}
+}

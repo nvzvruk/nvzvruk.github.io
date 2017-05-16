@@ -1,0 +1,112 @@
+.switcher-outline {
+    display: none;
+    &+label {
+        position: relative;
+        display: block;
+        width: 72px;
+        height: 36px;
+        margin-bottom: 20px;
+        border-radius: 18px;
+        border: 2px solid $grey-color;
+        color: $grey-color;
+        cursor: pointer;
+        &:before {
+            width: 28px;
+            height: 28px;
+            background: currentColor;
+            top: 50%;
+            left: 2px;
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: 0.2s;
+        }
+        &:after {
+            top: 50%;
+            right: 10px;
+            position: absolute;
+            content: 'Off';
+            font-family: "Cabin", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transform: translateY(-50%);
+            transition: 0.2s;
+        }
+    }
+}
+
+.switcher-outline:checked+label {
+    border: 2px solid $green-color;
+    color: $green-color;
+    &:before {
+        width: 28px;
+        height: 28px;
+        background: currentColor;
+        top: 50%;
+        left: 36px;
+    }
+    &:after {
+        top: 50%;
+        right: 40px;
+        content: 'On';
+    }
+}
+
+.switcher-filled {
+    display: none;
+    &+label {
+        position: relative;
+        display: block;
+        width: 72px;
+        height: 36px;
+        margin-bottom: 20px;
+        border-radius: 18px;
+        border: 2px solid $grey-color;
+        background-color: $grey-color;
+        color: #fff;
+        cursor: pointer;
+        &:before {
+            width: 28px;
+            height: 28px;
+            background: currentColor;
+            top: 50%;
+            left: 2px;
+            position: absolute;
+            content: '';
+            border-radius: 50%;
+            transform: translateY(-50%);
+            transition: 0.2s;
+        }
+        &:after {
+            top: 50%;
+            right: 10px;
+            position: absolute;
+            content: 'Off';
+            font-family: "Cabin", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            transform: translateY(-50%);
+            transition: 0.2s;
+        }
+    }
+}
+
+.switcher-filled:checked+label {
+    border: 2px solid $green-color;
+    background-color: $green-color;
+    color: #fff;
+    &:before {
+        width: 28px;
+        height: 28px;
+        background: #fff;
+        top: 50%;
+        left: 36px;
+    }
+    &:after {
+        color: currentColor;
+        top: 50%;
+        right: 40px;
+        content: 'On';
+    }
+}

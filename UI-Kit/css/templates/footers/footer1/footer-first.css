@@ -1,0 +1,52 @@
+.footer {
+  background-color: grey;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+
+.logo {
+  display: inline-block;
+  height: 66px;
+  width: 71px;
+  margin-top: 56px;
+  margin-left: 120px;
+  margin-bottom: 46px; }
+
+.footer-first__navigation {
+  display: inline-block;
+  padding-top: 84px;
+  margin-left: 50px; }
+  .footer-first__navigation a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #383737; }
+    .footer-first__navigation a:not(:first-child) {
+      margin-left: 36px; }
+
+.footer-first__contacts {
+  display: inline-block;
+  margin-left: 148px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black; }
+  .footer-first__contacts ul {
+    list-style-type: none; }
+  .footer-first__contacts li:last-child {
+    margin-top: 15px;
+    color: #b4bbc2; }
+
+.About_Us {
+  font-size: 16px;
+  font-family: "Cabin";
+  color: #383737;
+  font-weight: bold;
+  line-height: 2.25;
+  text-align: left;
+  position: absolute;
+  left: 423.937px;
+  top: 71.5px;
+  z-index: 327; }
+
+/*# sourceMappingURL=footer-first.css.map */

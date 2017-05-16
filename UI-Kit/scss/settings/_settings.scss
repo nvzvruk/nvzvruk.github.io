@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600');
+
+$green-color: #24aa98;
+$blue-color: #65abd0;
+$dark-blue-color: #3162a2;
+$red-color: #db7560;
+$orange-color: #d9c26c;
+$light-grey-color: #f2f5f8;
+$grey-color: #b4bbc2;
+$steps-color: #dee2e7;
+$border-color: #c6ccd2;
+$black-color: #383737;
+$dribbble-color: #f552b6;
+$linked-in-color: #457ac0;
+$twitter-color: #2eb1eb;
+$vimeo-color: #3498b9;
+$google-plus-color: #f25c58;
+$font-stack: 'Cabin', sans-serif;
+$desktop-size: 1150px;
+$laptop-size: 960px;
+$tablet-size: 767px;
+$mobileL-size: 650px;
+$mobile-size: 450px;
+$mobileS-size: 320px;
+
+
+%border-radius {
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    border-radius: 6px;
+}
+
+@mixin block-create($width, $height, $bg) {
+	width: $width;
+	height: $height;
+	background: $bg;
+}
+
+@mixin text-setting($size, $line-height, $color: $black-color) {
+	font-size: $size;
+	line-height: $line-height;
+	color: $color;
+}
+
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+@mixin pos($type, $a, $b, $pos: absolute) {
+	@if $type == 'topLeft' {
+		top: $a;
+		left: $b;
+		position: $pos;
+	} @elseif $type == 'topRight' {
+			top: $a;
+			right: $b;
+			position: $pos;
+	} @elseif $type == 'bottomLeft' {
+			bottom: $a;
+			left: $b;
+			position: $pos;
+	} @elseif $type == 'bottomRight' {
+			bottom: $a;
+			right: $b;
+			position: $pos;
+	}
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}

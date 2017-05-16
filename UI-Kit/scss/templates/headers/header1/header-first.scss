@@ -1,0 +1,87 @@
+@import '../../../settings/normalize';
+@import '../../../settings/settings';
+@import '../../../components/buttons';
+
+body {
+	font-family: $font-stack;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+}
+
+.header {
+    height: 100vh;
+    background: url('../../../../templates/headers/views/img/bg-1-img.jpg') no-repeat center;
+    background-size: cover;
+    padding: 13vh 10%;
+    box-sizing: border-box;
+    &__top-content {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__logo {
+        @include block-create(71px,
+        66px,
+        url('../../../../img/logo.svg') no-repeat);
+        background-size: cover;
+    }
+    &__navigation {
+        &>:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+    &__navigation-link {
+        @include text-setting(16px, 24px, #fff);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: $mobileL-size) {
+			display: none;
+		}
+    }
+    &__dropdown {
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__bottom-content {
+		width: 90%;
+		margin-top: 37vh;
+		@media (max-width: $mobileL-size) {
+			margin-top: 25vh;
+			width: 100%;
+		}
+		@media (max-height: $mobile-size) {
+			margin-top: 15vh;
+		}
+	}
+	&__title {
+		@include text-setting(36px, 48px, #fff);
+        font-weight: 500;
+		@media (max-width: $tablet-size) {
+			font-size: 30px;
+			line-height: 40px;
+		}
+		@media (max-width: $mobileL-size) {
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+	&__paragraph {
+		@include text-setting(18px, 24px, #fff);
+        font-weight: 400;
+		margin-top: 25px;
+		@media (max-width: $tablet-size) {
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+}
+

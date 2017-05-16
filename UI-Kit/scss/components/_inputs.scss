@@ -1,0 +1,58 @@
+.input-field {
+	@extend %border-radius;
+	@include block-create(100%, 48px, #fff);
+	@include input-placeholder {
+		font-family: $font-stack;
+		color: $border-color;
+		letter-spacing: 0.02em;
+		font-weight: 600;
+	}
+	padding: 0 16px;
+	border: 2px solid $border-color;
+	font-family: $font-stack;
+	font-size: 16px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	outline: none;
+	&_split {
+		padding-right: 50px;
+		&--sm {
+			padding-right: 40px;
+		}
+	}
+	&_round {
+		border-radius: 999px;
+	}
+	&_ic {
+		padding: 0 40px 0 45px;
+		&_right {
+			padding: 0 30px 0 16px;
+		}
+		&_left {
+			padding: 0 10px 0 45px;
+			@media (max-width: $mobileL-size) {
+				padding: 0 10px 0 40px;
+			}
+		}
+	}
+}
+
+.split-input {
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	& > .input-field {
+		width: calc(100% - 58px);
+	}
+}
+
+.form-group {
+	&__label {
+		@include text-setting(16px, 24px, $grey-color);
+	}
+	&__input,
+	&__select,
+	&__area {
+		margin-top: 5px;
+	}
+}
