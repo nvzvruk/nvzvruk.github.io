@@ -10,26 +10,26 @@
 
 <body>
     <section id="home" class="home">
-        <nav>
-            <a href="#homer">home</a>
-            <a href="#about-me">about me</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="#contacts">contact</a>
+        <nav class="home__navigation">
+            <a class="home__navigation-link" href="#homer">home</a>
+            <a class="home__navigation-link" href="#about-me">about me</a>
+            <a class="home__navigation-link" href="#portfolio">portfolio</a>
+            <a class="home__navigation-link" href="#contacts">contact</a>
         </nav>
-        <h1>Dmytro Nazaruk</h1>
+        <h1 class="home__heading">Dmytro Nazaruk</h1>
         <h3>Front-end Developer</h3>
-        <div class="scroll scroll_header">
-            <span>scroll down to see more</span><br>
-            <a href="#about-me" class="arrow"><img src="img/double_arrow.svg" alt=""></a>
+        <div class="scroll scroll_home">
+
+            <a href="#about-me" class="arrow"><img src="img/arrows/arrow_home.svg" alt=""></a>
         </div>
 
     </section>
     <section id="about-me" class="about-me">
-        <nav>
-            <a href="#home">home</a>
-            <a href="#about-me">about me</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="#contacts">contact</a>
+        <nav class="about-me__navigation">
+            <a class="about-me__navigation-link" href="#home">home</a>
+            <a class="about-me__navigation-link" href="#about-me">about me</a>
+            <a class="about-me__navigation-link" href="#portfolio">portfolio</a>
+            <a class="about-me__navigation-link" href="#contacts">contact</a>
         </nav>
         <div class="about-me__content">
             <div class="about-me__photo"></div>
@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="scroll scroll_header">
-            <span>scroll down to see more</span><br>
+
             <a href="#portfolio" class="arrow"><img src="img/double_arrow.svg" alt=""></a>
         </div>
     </section>
@@ -59,19 +59,37 @@
             <a href="fruitful/index.html" class="portfolio__link"></a>
         </div>
         <div class="scroll scroll_portfolio">
-            <span>scroll down to see more</span><br>
+
             <a href="#contacts" class="arrow"><img src="img/arrows/arrow_blue-2.svg" alt=""></a>
         </div>
     </section>
     <section id="contacts" class="contacts">
-        <nav>
+        <nav class="contacts__navigation">
             <a href="#home">home</a>
             <a href="#about-me">about me</a>
             <a href="#portfolio">portfolio</a>
             <a href="#contacts">contact</a>
         </nav>
+        <div class="contacts__info">
+            <span>MAIL:</span>
+            <a href="mailto: jason@wood.com">JASON@WOOD.COM</a>
+            <span>PHONE:</span>
+            <a href="tel: +44212432444"> +44 212 432 444</a>
+            <span>SOCIAL MEDIA:</span>
+            <ul>
+                <li>
+                    <a href="#"><img src="img/socials/Facebook.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/socials/Twitter.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/socials/Instagram.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
     </section>
-    
+
     <script src="jQuery/jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function() {
