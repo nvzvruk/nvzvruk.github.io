@@ -32,10 +32,13 @@ nav a {
     padding: 40px 0;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
+    color: #483e3c;
     transition: .3s;
 }
 
 nav a:hover {
+    color: #4f3129;
     text-decoration: underline;
 }
 
@@ -61,36 +64,24 @@ nav a:hover {
 
 .home {
     background-image: url('../img/1449.jpg');
-    color: #2497aa;
-    
-}
-
-.home__navigation-link {
-    color: #2497aa;
-}
-
-.home__navigation-link:hover {
-    color: #1a7483;
+    color: #483e3c;
 }
 
 .home__heading {
     margin-top: 20vh;
-    color: #1a7483; 
+    color: #483e3c;
     font-size: 36px;
 }
 
 .scroll_home {
-    color:#1a7483;
+    color: #1a7483;
 }
 
 
 /*---------------------ABOUT-ME----------------------*/
+
 .about-me {
     background: linear-gradient(to right, rgb(131, 164, 212), rgb(182, 251, 255));
-}
-
-.about-me__navigation-link {
-    color: #483e3c;
 }
 
 .about-me__content {
@@ -112,6 +103,7 @@ nav a:hover {
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-me__info {
@@ -136,15 +128,6 @@ nav a:hover {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 0 50%;
-}
-
-.portfolio__navigation a {
-    font-weight: bold;
-    color: #483e3c;
-}
-
-.portfolio__navigation a:hover {
-    color: #4f3129;
 }
 
 .portfolio__heading {
@@ -217,8 +200,88 @@ nav a:hover {
     transform: translateY(35px);
 }
 
+
 /*-----------CONTACTS------------*/
 
 .contacts {
     background: linear-gradient(to right, rgb(112, 225, 245), rgb(255, 209, 148));
+}
+
+.contacts__info {
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.contacts__info span {
+    display: block;
+    padding: 40px 0;
+}
+
+.contacts__info span a {
+    color: black;
+}
+
+.contacts__info-link {
+    font-size: 30px;
+    text-decoration: none;
+    color: #202020;
+    letter-spacing: 5px;
+}
+
+.contacts__info a:visited {
+    color: #202020;
+}
+
+.socials {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.socials a {
+    width: 50px;
+    height: 50px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .3s;
+}
+
+.socials__insta {
+    background-image: url('../img/socials/instagram.svg');
+}
+
+.socials__insta:hover {
+    background-image: url('../img/socials/instagram-hover.svg');
+}
+
+.socials__facebook {
+    background-image: url('../img/socials/facebook.svg');
+}
+
+.socials__facebook:hover {
+    background-image: url('../img/socials/facebook-hover.svg');
+}
+
+.socials__linked-in {
+    background-image: url('../img/socials/linkedin.svg');
+}
+
+.socials__linked-in:hover {
+    background-image: url('../img/socials/linkedin-hover.svg');
+}
+
+.socials__skype {
+    background-image: url('../img/socials/skype.svg');
+}
+
+.socials__skype:hover {
+    background-image: url('../img/socials/skype-hover.svg');
 }
