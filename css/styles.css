@@ -32,13 +32,13 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
 }
 
 nav a {
     padding: 20px 0;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 18px;
     font-weight: bold;
     color: #483e3c;
     transition: .3s;
@@ -145,14 +145,13 @@ nav a:hover {
 
 .portfolio__link {
     position: relative;
-    width: 220px;
+    width: 320px;
     height: 220px;
     border: 1px solid #483e3c;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     margin-top: 10px;
-    border-radius: 5px;
     box-shadow: 0 0 1px transparent;
     transition: .3s;
     transform: perspective(1px) translateZ(0);
@@ -302,3 +301,213 @@ nav a:hover {
 .socials__skype:hover {
     background-image: url('../img/socials/skype-hover.svg');
 }
+
+
+/*--------------------Responsive------------------*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    nav {
+        width: 80%;
+    }
+    nav a {
+        font-size: 12px;
+    }
+    .about-me__content {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-me__photo {
+        width: 100px;
+        height: 100px;
+    }
+    .about-me__info {
+        width: 100%;
+    }
+    .about-me__title {
+        font-size: 26px;
+        text-align: center;
+    }
+    .about-me__position {
+        font-size: 18px;
+        text-align: center;
+    }
+    .about-me__paragraph {
+        font-size: 14px;
+        text-align: center;
+    }
+    .portfolio__heading {
+        margin-top: 50px;
+        font-size: 22px;
+    }
+    .portfolio__links {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .portfolio__link {
+        width: 120px;
+        height: 100px;
+    }
+    .contacts__info-link {
+        font-size: 18px;
+    }
+    .socials a {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    nav {
+        width: 70%;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .about-me__content {
+        padding: 30px;
+        flex-direction: column;
+    }
+    .about-me__photo {
+        width: 140px;
+        height: 140px;
+    }
+    .about-me__info {
+        width: 80%;
+    }
+    .about-me__title {
+        font-size: 32px;
+        text-align: center;
+    }
+    .about-me__position {
+        font-size: 24px;
+        text-align: center;
+    }
+    .about-me__paragraph {
+        font-size: 16px;
+        text-align: center;
+    }
+    .portfolio__heading {
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    .portfolio__links {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .portfolio__link {
+        width: 250px;
+        height: 150px;
+    }
+    .contacts__info-link {
+        font-size: 24px;
+    }
+    .socials a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    nav {
+        width: 70%;
+    }
+    .about-me__content {
+        padding: 30px 150px;
+        
+    }
+    .about-me__photo {
+        width: 300px;
+        height: 300px;
+    }
+    .about-me__info {
+        width: 50%;
+    }
+    .about-me__title {
+        font-size: 36px;
+        text-align: left;
+    }
+    .about-me__position {
+        font-size: 28px;
+        text-align: left;
+    }
+    .about-me__paragraph {
+        font-size: 18px;
+        text-align: left;
+    }
+    .portfolio__heading {
+        margin-top: 50px;
+        font-size: 26px;
+    }
+    .portfolio__links {
+        padding: 50px 100px;
+        margin-top: 30px;
+    }
+    .portfolio__link {
+        width: 300px;
+        height: 200px;
+    }
+    .contacts__info-link {
+        font-size: 28px;
+    }
+    .socials a {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media only screen and (min-width : 1824px) {
+    nav {
+        width: 70%;
+    }
+    nav a {
+        padding: 40px 0;
+        font-size: 24px;
+    }
+    .about-me__content {
+        padding: 100px 200px;
+    }
+    .about-me__photo {
+        width: 350px;
+        height: 350px;
+    }
+    .about-me__info {
+        width: 50%;
+    }
+    .about-me__title {
+        margin: 0;
+        font-size: 50px;
+        text-align: left;
+    }
+    .about-me__position {
+        font-size: 40px;
+        text-align: left;
+    }
+    .about-me__paragraph {
+        font-size: 28px;
+        text-align: left;
+    }
+    .portfolio__heading {
+        margin-top: 100px;
+        font-size: 40px;
+    }
+    .portfolio__links {
+        padding: 50px 100px;
+        margin-top: 30px;
+    }
+    .portfolio__link {
+        width: 400px;
+        height: 300px;
+    }
+    .contacts__info span {
+        font-size: 26px;
+    }
+    .contacts__info-link {
+        font-size: 48px;
+    }
+    .socials a {
+        width: 60px;
+        height: 60px;
+    }
+}
+ 
+
