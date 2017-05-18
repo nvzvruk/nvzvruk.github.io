@@ -116,7 +116,8 @@ nav a:hover {
 /*----------PORTFOLIO------------------*/
 
 .portfolio {
-    background: url('../img/O9ZJHU0.jpg');
+   /* background: url('../img/O9ZJHU0.jpg');*/
+        background: linear-gradient(to right, rgb(67, 198, 172), rgb(248, 255, 174));
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 0 50%;
