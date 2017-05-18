@@ -68,8 +68,8 @@ nav a:hover {
 /*---------------------ABOUT-ME----------------------*/
 
 .about-me {
-    background-image: url('../img/1449.jpg');
-    color: #483e3c;   
+    background: linear-gradient(to right, rgb(192, 192, 170), rgb(28, 239, 255));
+    color: #483e3c;
 }
 
 .about-me__content {
@@ -113,11 +113,12 @@ nav a:hover {
     font-size: 18px;
     text-align: left;
 }
+
+
 /*----------PORTFOLIO------------------*/
 
 .portfolio {
-   /* background: url('../img/O9ZJHU0.jpg');*/
-        background: linear-gradient(to right, rgb(67, 198, 172), rgb(248, 255, 174));
+    background: linear-gradient(to right, rgb(67, 198, 172), rgb(248, 255, 174));
     -webkit-background-size: cover;
     background-size: cover;
     background-position: 0 50%;
@@ -218,6 +219,7 @@ nav a:hover {
 .portfolio__link_j-wood:after {
     content: 'J-Wood';
 }
+
 
 /*-------------------------CONTACTS-----------------------*/
 
