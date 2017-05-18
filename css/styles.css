@@ -19,7 +19,7 @@ section {
 .nav-wrap {
     width: 90vw;
     margin: 0 auto;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #483e3c;
 }
 
 nav {
@@ -55,11 +55,6 @@ nav a:hover {
     margin: 0 auto;
     position: absolute;
     bottom: 3vh;
-}
-
-.arrow {
-    display: block;
-    margin-top: 5px;
 }
 
 .arrow img {
@@ -161,14 +156,6 @@ nav a:hover {
     transform: perspective(1px) translateZ(0);
 }
 
-.portfolio__link_ui-kit {
-    background-image: url('../img/base.jpg');
-}
-
-.portfolio__link_j-wood {
-    background-image: url('../img/Home-min.jpg');
-}
-
 .portfolio__link:hover {
     margin-top: -15px;
 }
@@ -191,14 +178,47 @@ nav a:hover {
     transition-property: transform, opacity;
 }
 
+.portfolio__link:after {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(67, 198, 172, 0.5);
+    font-size: 28px;
+    color: black;
+}
+
+.portfolio__link:hover:after {
+    display: block;
+}
+
 .portfolio__link:hover:before {
     opacity: 1;
     -webkit-transform: translateY(5px);
     transform: translateY(35px);
 }
 
+.portfolio__link_ui-kit {
+    background-image: url('../img/base.jpg');
+}
 
-/*-----------CONTACTS------------*/
+.portfolio__link_ui-kit:after {
+    content: 'UI-Kit';
+}
+
+.portfolio__link_j-wood {
+    background-image: url('../img/Home-min.jpg');
+}
+
+.portfolio__link_j-wood:after {
+    content: 'J-Wood';
+}
+
+/*-------------------------CONTACTS-----------------------*/
 
 .contacts {
     background: linear-gradient(to right, rgb(112, 225, 245), rgb(255, 209, 148));
