@@ -215,18 +215,15 @@ nav a:hover {
 }
 
 .contacts__info span a {
-    color: black;
+    text-decoration: none;
+    color: #483e3c;
 }
 
 .contacts__info-link {
     font-size: 30px;
     text-decoration: none;
-    color: #202020;
+    color: #483e3c;
     letter-spacing: 5px;
-}
-
-.contacts__info a:visited {
-    color: #202020;
 }
 
 .socials {
