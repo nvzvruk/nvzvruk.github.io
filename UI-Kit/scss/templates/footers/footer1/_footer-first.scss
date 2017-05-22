@@ -1,58 +1,115 @@
-.footer {
-    background-color: grey;
-    display:flex;
-    margin-bottom: 20px;
+body {
+    font-family: $font-stack;
+    letter-spacing: 0.02em;
+    color: $black-color;
+    font-weight: 600;
 }
 
 .logo {
-    display: inline-block;
-    height: 66px;
-    width: 71px;
-    margin-top: 56px;
-    margin-left: 120px;
-    margin-bottom: 46px;
+    @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+    margin-right: 50px;
+    @media (max-width: $laptop-size) {
+        margin-right: 30px;
+    }
 }
 
-.footer-first__navigation {
-    display:inline-block;
-    padding-top: 84px;
-    margin-left: 50px;
-    a {
-        font-size: 16px;
-        text-decoration: none;
-        font-weight: bold;
-        color: #383737;
-        &:not(:first-child){
-            margin-left: 36px;
+.footer:not(:first-child) {
+    margin-top: 20px;
+}
+
+.footer-first {
+    padding: 56px 10px 46px 10px;
+    background-color: $light-grey-color;
+    &__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 980px;
+        margin: 0 auto;
+        @media (max-width: $mobile-size) {
+            -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
         }
     }
-}
-
-.footer-first__contacts {
-    display: inline-block;
-    margin-left: 148px;
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    ul {
-        list-style-type: none;
+    &__menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-    li:last-child {
-        margin-top: 15px;
-        color: #b4bbc2; 
+    &__nav {
+        &-link {
+            @include text-setting(16px,
+            24px,
+            $black-color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:not(:first-child) {
+                margin-left: 40px;
+                @media (max-width: $laptop-size) {
+                    margin-left: 20px;
+                }
+                @media (max-width: $tablet-size) {
+                    margin-left: 0;
+                }
+            }
+            @media (max-width: $tablet-size) {
+                display: block;
+            }
+        }
     }
-}
-
-.About_Us {
-  font-size: 16px;
-  font-family: "Cabin";
-  color: rgb(56, 55, 55);
-  font-weight: bold;
-  line-height: 2.25;
-  text-align: left;
-  position: absolute;
-  left: 423.937px;
-  top: 71.5px;
-  z-index: 327;
+    &__social-links {
+        margin-left: 30px;
+        @media (max-width: $tablet-size) {
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        &>.icon {
+            font-size: 14px;
+            color: $black-color;
+            text-decoration: none;
+            &:not(:first-child) {
+                margin-left: 30px;
+                @media (max-width: $tablet-size) {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            }
+            &:hover {
+                opacity: 0.6;
+            }
+            @media (max-width: $tablet-size) {
+                display: block;
+            }
+        }
+    }
+    &__contact-info {
+        &-region {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        &-more {
+            @include text-setting(16px,
+            20px,
+            $grey-color);
+        }
+    }
+    &__phone-num {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

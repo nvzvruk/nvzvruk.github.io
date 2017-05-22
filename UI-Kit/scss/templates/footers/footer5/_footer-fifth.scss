@@ -1,106 +1,180 @@
-.footer-fifth {
-    display: block;
-    text-align: center;
+
+
+.footer-fifth__logo {
+    @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+    margin-top: 10px;
+    @media (max-width: $mobileL-size) {
+        margin: 20px auto;
+    }
 }
 
-.footer-fifth__top-part {
-    background-color: #24aa98;
-    width: 100%;
-    form {
-        color: #fff;
-        div {
-            display: inline-block;
-            height: 48px;
-            width: 320px;
-            position: relative;
-            margin-top: 37px;
-            margin-bottom: 35px;
-            margin-left: 16px;
-            border-radius: 5px;
-            [type="email"] {
-                height: 100%;
-                width: 100%;
-                box-sizing: border-box;
-                padding-left: 48px;
-                border: none;
-                border-radius: 5px;
-            }
-            img {
-                position: absolute;
-                top: 17px;
-                left: 16px;
+.footer-fifth__container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-fifth__head {
+    padding: 36px 10px;
+    background-color: $green-color;
+    &-container {
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        @media (max-width: $mobile-size) {
+            flex-direction: column;
+        }
+    }
+    &-label {
+        @include text-setting(16px,
+        36px,
+        #fff);
+        @media (max-width: $mobileL-size) {
+            display: none;
+        }
+    }
+    &-input {
+        position: relative;
+        width: 34%;
+        margin: 0 20px 0 15px;
+        &>.icon--envelope {
+            @include pos('topLeft',
+            50%,
+            16px);
+            font-size: 20px;
+            font-weight: 400;
+            color: $orange-color;
+            transform: translateY(-50%);
+            pointer-events: none;
+            @media (max-width: $mobileL-size) {
+                left: 10px;
             }
         }
-        [type="submit"] {
-            background-color: #d9c26c;
-            padding: 17px 54px;
-            border: none;
-            border-radius: 5px;
-            box-sizing: border-box;
-            margin-left: 20px;
-            color: #fff;
+        @media (max-width: $mobileL-size) {
+            width: 60%;
+        }
+        @media (max-width: $mobile-size) {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+    }
+    &-btn {
+        width: 18%;
+        @media (max-width: $mobileL-size) {
+            width: 30%;
+        }
+        @media (max-width: $mobile-size) {
+            width: 90%;
         }
     }
 }
 
-.footer-fifth__bottom-part {
-    width: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+.footer-fifth__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    padding: 80px 120px;
-    background-color: #f2f5f8;
-    box-sizing: border-box;
-    justify-content: space-around;
-    img {
-        display: inline-block;
-        max-height: 66px;
-    }
-}
-
-.footer-fifth__services {
-    display: inline-block;
-    span {
-        font-size: 16px;
-        font-weight: bold;
-        color: #434242;
-    }
-    a {
-        margin-top: 15px;
+    @media (max-width: $mobileL-size) {
         display: block;
-        color: #b4bbc2;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
+        overflow: hidden;
     }
 }
 
-.footer-fifth__map {
-    width: 300px;
-    height: 193px;
-    background-size: cover;
+.footer-fifth__body {
+    padding: 48px 10px;
+    background-color: $light-grey-color;
+    &-part {
+        padding: 5px;
+        &_logo {
+            width: 15%;
+        }
+        &_nav {
+            width: 20%;
+            @media (max-width: $mobileL-size) {
+                margin-bottom: 30px;
+                padding-left: 50px;
+            }
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 36px;
+        }
+        &_map {
+            @extend %border-radius;
+            @include block-create(35%,
+            auto,
+            $green-color url('../../../../templates/footers/img/map.jpg') center);
+            position: relative;
+            cursor: pointer;
+            @media (max-width: $mobileL-size) {
+                height: 200px;
+            }
+            @media (max-width: $mobile-size) {
+                margin-bottom: 20px;
+            }
+        }
+        &_contacts {
+            position: relative;
+            width: 30%;
+            padding-left: 50px;
+            @media (max-width: $mobileL-size) {
+                height: 200px;
+            }
+        }
+        @media (max-width: $mobileL-size) {
+            width: 50%;
+            float: left;
+        }
+        @media (max-width: $mobile-size) {
+            width: auto;
+            padding: 0;
+            float: none;
+            text-align: center;
+        }
+    }
 }
 
-.footer-fifth__copyrights {
-    text-align: left;
-    &>* {
+.icon--placeholder {
+    @include pos('topLeft',
+    40%,
+    50%);
+    font-size: 24px;
+}
+
+.footer-fifth__contact {
+    &-info {
+        @include text-setting(16px,
+        22px,
+        $grey-color);
         display: block;
+        &_phone-num {
+            @include text-setting(16px,
+            22px,
+            $grey-color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
-    span {
-        font-weight: bold;
-        color: #434242;
+    &-link {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        min-width: 100px;
+        @media (max-width: $mobile-size) {
+            position: static;
+            margin-top: 20px;
+        }
     }
-    ul {
-        padding: 0;
-        list-style-type: none;
-    }
-    li {
-        color: #b4bbc2;
-        font-weight: bold;
-    }
-    li:not(:first-child) {
-        margin-top: 10px;
+}
+
+.footer-fifth__service-nav-link {
+    @include text-setting(16px,
+    32px,
+    $grey-color);
+    text-decoration: none;
+    &:hover {
+        color: $black-color;
     }
 }

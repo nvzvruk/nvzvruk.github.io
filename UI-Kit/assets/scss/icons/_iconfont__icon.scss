@@ -1,0 +1,87 @@
+$global-font-icon: 'myicons';
+
+@font-face {
+ font-family: $global-font-icon;
+ src:url("../../../dist/fonts/myicons.eot");
+ src:url("../../../dist/fonts/myicons.?#iefix") format("embedded-opentype"),
+   url("../../../dist/fonts/myicons.woff") format("woff"),
+   url("../../../dist/fonts/myicons.ttf") format("truetype"),
+   url("../../../dist/fonts/myicons.#myicons") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.icon {
+ font-family: $global-font-icon;
+
+ &:before {
+   /* Some common icon stuff */
+ }
+
+ &.icon--basket {
+   &:before {
+     content: $icon-basket;
+   }
+ }
+ &.icon--dribbble {
+   &:before {
+     content: $icon-dribbble;
+   }
+ }
+ &.icon--envelope {
+   &:before {
+     content: $icon-envelope;
+   }
+ }
+ &.icon--fb {
+   &:before {
+     content: $icon-fb;
+   }
+ }
+ &.icon--google-plus {
+   &:before {
+     content: $icon-google-plus;
+   }
+ }
+ &.icon--linked-in {
+   &:before {
+     content: $icon-linked-in;
+   }
+ }
+ &.icon--padlock {
+   &:before {
+     content: $icon-padlock;
+   }
+ }
+ &.icon--phone {
+   &:before {
+     content: $icon-phone;
+   }
+ }
+ &.icon--placeholder {
+   &:before {
+     content: $icon-placeholder;
+   }
+ }
+ &.icon--settings {
+   &:before {
+     content: $icon-settings;
+   }
+ }
+ &.icon--twitter {
+   &:before {
+     content: $icon-twitter;
+   }
+ }
+ &.icon--upload-cloud {
+   &:before {
+     content: $icon-upload-cloud;
+   }
+ }
+ &.icon--vimeo {
+   &:before {
+     content: $icon-vimeo;
+   }
+ }
+
+}

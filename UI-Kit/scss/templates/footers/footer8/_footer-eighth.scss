@@ -1,30 +1,74 @@
 .footer-eighth {
-    display: block;
-    background-color: #383737;
-    padding: 30px 120px;
-}
-
-.footer-eighth__menu {
-    display: inline-block;
-    a {
-        &:not(:first-child) {
-            margin-left: 30px;
+    padding: 20px 0;
+    background-color: $black-color;
+    &__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: 960px;
+        margin: 0 auto;
+        @media (max-width: $tablet-size) {
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
         }
-        color: #fff;
-        font-size: 16px;
-        text-decoration: none;
     }
-}
-
-.footer-eighth__copyright-and-socials {
-    display: inline-block;
-    float: right;
-    span {
-        color: #838282;
-        font-size: 14px;
-        font-weight: bold;
-    }
-    a {
-        margin-left: 30px;
+    &__part {
+        padding: 10px;
+        &_nav-link {
+            @include text-setting(16px, 36px, #fff);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:not(:first-child) {
+                margin-left: 30px;
+                @media (max-width: $laptop-size) {
+                    margin-left: 20px;
+                }
+                @media (max-width: $mobile-size) {
+                    margin-left: 0;
+                }
+            }
+            @media (max-width: $mobile-size) {
+                display: block;
+                text-align: center;
+            }
+        }
+        &_copy {
+            &-text {
+                @include text-setting(14px, 36px, rgba(255, 255, 255, .5));
+                margin-right: 10px;
+            }
+            @media (max-width: $mobile-size) {
+                -webkit-align-self: center;
+                -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+                align-self: center;
+            }
+            &>.icon {
+                margin-left: 20px;
+                font-size: 14px;
+                color: #FFF;
+                text-decoration: none;
+                opacity: 0.5;
+                &:hover {
+                    opacity: 1;
+                }
+                &--linked-in {
+                    font-size: 16px;
+                }
+                @media (max-width: $mobile-size) {
+                    margin-left: 10px;
+                }
+            }
+        }
     }
 }

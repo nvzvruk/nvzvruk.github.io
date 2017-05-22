@@ -1,63 +1,111 @@
 .footer-ninth {
-    background-color: #383737;
-}
-
-.footer-ninth__content {
-    margin: 58px auto;
-    & > * {
+    padding: 40px 0;
+    background-color: $black-color;
+    &__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        max-width: 960px;
+        margin: 0 auto;
+        @media (max-width: $tablet-size) {
+            -webkit-justify-content: space-around;
+            justify-content: space-around;
+        }
+    }
+    &__part {
+        padding: 10px;
+        &-link {
+            @include text-setting(16px, 32px, $grey-color);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &_follow {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+        }
+    }
+    &__follow-box>.icon {
         display: inline-block;
-        vertical-align: top;
-    }
-    img {
-        margin-top: -8px;
-        max-height: 66px;
-    }
-}
-
-.footer-ninth__item {
-    &>* {
-        display: block;
-    }
-    &:not(:first-child) {
-        margin-left: 70px;
-    }
-    span {
-        color: #fff;
-        font-size: 16px;
-    }
-    a {
-        margin-top: 20px;
+        vertical-align: middle;
+        margin-top: 10px;
+        margin-right: 25px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFF;
         text-decoration: none;
-        color: #b4bbc2;
-        font-weight: 600;
-    }
-}
-
-.footer-ninth__subscribing {
-    form {
-        margin-top: 22px;
-        margin-bottom: 36px;
-    }
-    input {
-        height: 36px;
-        box-sizing: border-box;
-        border: none;
-        border-radius: 5px;
-    }
-    [type="email"] {
-        width: 180px;
-        padding: 0 12px;
-    }
-    [type="submit"] {
-        width: 36px;
-        margin-left: 12px;
-        background-color: #24aa98;
-        color: #fff;
-    }
-    a {
-        display: inline-block;
-        &:not(:first-of-type) {
-            margin-left: 28px;
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
+
+.footer__part-title,
+.subscribe__title,
+.follow__title {
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.subscribe {
+    &-box {
+        margin-bottom: 30px;
+    }
+    &__input-group {
+        position: relative;
+        width: 220px;
+        margin-top: 10px;
+    }
+    &__field {
+        padding-left: 10px;
+        padding-right: 10px;
+        border: none;
+        color: $black-color;
+        height: 36px;
+        font-size: 14px;
+        &:valid {
+            width: calc(100% - 48px);
+        }
+    }
+    &__btn {
+        @include pos('topRight', 0, 0);
+        width: 36px;
+        height: 36px;
+        border: none;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        color: #FFF;
+        outline: none;
+        &:after {
+            @include pos('topLeft', 50%, calc(50% + 3px));
+            @include block-create(2px, 2px, currentColor);
+            content: "";
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            box-shadow: -1px -1px 0 0 currentColor, -2px -2px 0 0 currentColor, -3px -3px 0 0 currentColor, -4px -4px 0 0 currentColor, -1px 1px 0 0 currentColor, -2px 2px 0 0 currentColor, -3px 3px 0 0 currentColor, -4px 4px 0 0 currentColor;
+        }
+    }
+    &__field:valid+&__btn {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        background-color: $green-color;
+        cursor: pointer;
+    }
+}
+

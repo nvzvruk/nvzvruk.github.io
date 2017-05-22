@@ -1,61 +1,88 @@
 .footer-tenth {
-    display: block;
-    background-color: #24aa98;
-    margin-bottom: 0;
-    h1 {
-        margin: 0;
-        padding: 62px;
+    padding: 50px 0 30px;
+    background-color: $green-color;
+    color: #fff;
+    &__content {
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 40px;
         font-size: 50px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
+        line-height: 58px;
+        font-weight: 600;
+        @media (max-width: $mobile-size) {
+            font-size: 36px;
+        }
     }
-    span {
-        display: block;
-        text-align: center;
+    &__sign-up-text {
         font-size: 16px;
-        color: #fff;
+        line-height: 36px;
     }
-    form {
-        margin: 30px auto;
-        padding: 24px 20px;
-        max-width: 660px;
-        border-radius: 5px;
-        background-color: #f2f5f8;
-        text-align: center;
-        input {
-            padding: 16px;
-            border: 2px solid #c6ccd2;
-            border-radius: 5px;
-            &:not(:first-child) {
-                margin-left: 20px;
+    &__form {
+        @extend %border-radius;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 70%;
+        margin: 15px auto 70px;
+        padding: 25px 10px;
+        background-color: $light-grey-color;
+        &-btn {
+            width: 100%;
+            min-width: 80px;
+        }
+        @media (max-width: $tablet-size) {
+            width: 90%;
+            padding: 15px 5px;
+        }
+        @media (max-width: $mobileL-size) {
+            flex-direction: column;
+        }
+    }
+    &__input-group {
+        flex: 1 1 auto;
+        padding: 0 10px;
+        &_btn {
+            width: 25%;
+        }
+        &:last-child {
+            @media (max-width: $mobile-size) {
+                margin-bottom: 0;
             }
         }
-        [type="submit"] {
-            padding: 18px 44px;
-            background-color: #d9c26c;
-            border: none;
-            color: #fff;
+        @media (max-width: $mobileL-size) {
+            width: 100%;
+            margin-bottom: 10px;
         }
     }
-}
-
-.footer-tenth__menu {
-    margin-top: 78px;
-    text-align: center;
-    a {
-        color: #fff;
-        font-size: 14px;
-        text-transform: uppercase;
-        text-decoration: none;
-        &:not(:first-child) {
-            margin-left: 58px;
+    &__copyright {
+        @include text-setting(14px, 36px, rgba(255, 255, 255, .5));
+    }
+    &__nav {
+        margin-bottom: 20px;
+        &-link {
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #FFF;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:not(:first-child) {
+                margin-left: 50px;
+                @media (max-width: $mobile-size) {
+                    margin-left: 20px;
+                }
+            }
+            @media (max-width: $mobile-size) {
+                font-size: 12px;
+            }
         }
     }
-}
-
-.copyright {
-    margin-top: 28px;
-    padding-bottom: 38px;
-    color: rgba(255, 255, 255, 0.502);
 }
