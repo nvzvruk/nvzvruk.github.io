@@ -1,15 +1,9 @@
-body {
-    font-family: $font-stack;
-    letter-spacing: 0.02em;
-    color: $black-color;
-    font-weight: 600;
-}
-
-.footer:not(:first-child) {
+.footer {
     margin-top: 20px;
 }
 
 .footer-first {
+    margin-top: -20px;
     padding: 56px 10px 46px 10px;
     background-color: $light-grey-color;
     &__content {

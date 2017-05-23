@@ -611,16 +611,11 @@ table {
   .icon.icon--vimeo:before {
     content: ""; }
 
-body {
-  font-family: "Cabin", sans-serif;
-  letter-spacing: 0.02em;
-  color: #383737;
-  font-weight: 600; }
-
-.footer:not(:first-child) {
+.footer {
   margin-top: 20px; }
 
 .footer-first {
+  margin-top: -20px;
   padding: 56px 10px 46px 10px;
   background-color: #f2f5f8; }
   .footer-first__content {
@@ -703,12 +698,6 @@ body {
 * {
   padding: 0;
   margin: 0; }
-
-body {
-  font-family: "Cabin", sans-serif;
-  letter-spacing: 0.02em;
-  color: #383737;
-  font-weight: 600; }
 
 ul {
   list-style: none; }
@@ -823,8 +812,9 @@ ul {
     display: flex; }
     .footer-third__nav-title {
       font-size: 16px;
-      line-height: 36px; }
-      .footer-third__nav-title--name {
+      line-height: 36px;
+      font-weight: 400; }
+      .footer-third__nav-title_name {
         color: #65abd0; }
     .footer-third__nav-link {
       font-size: 16px;
@@ -885,7 +875,8 @@ ul {
       width: 24%; }
     .footer-fourth__part-title {
       font-size: 16px;
-      line-height: 36px; }
+      line-height: 36px;
+      font-weight: 400; }
     .footer-fourth__part-paragraph {
       font-size: 16px;
       line-height: 22px;
@@ -1006,7 +997,8 @@ ul {
           padding-left: 50px; } }
     .footer-fifth__body-part-title {
       font-size: 16px;
-      line-height: 36px; }
+      line-height: 36px;
+      font-weight: 400; }
     .footer-fifth__body-part_map {
       width: 35%;
       height: auto;
@@ -1160,6 +1152,13 @@ ul {
     .footer-seventh__part_logo {
       width: 16%;
       padding-top: 15px; }
+      .footer-seventh__part_logo > .logo {
+        width: 71px;
+        height: 66px;
+        background: url("../../../../img/logo.svg"); }
+        @media (max-width: 450px) {
+          .footer-seventh__part_logo > .logo {
+            margin: 0 auto; } }
       @media (max-width: 767px) {
         .footer-seventh__part_logo {
           width: 25%; } }
@@ -1386,6 +1385,10 @@ ul {
             justify-content: space-around; } }
   .footer-ninth__part {
     padding: 10px; }
+    .footer-ninth__part > .logo {
+      width: 71px;
+      height: 66px;
+      background: url("../../../../img/logo.svg"); }
     .footer-ninth__part-link {
       font-size: 16px;
       line-height: 32px;
@@ -1413,11 +1416,12 @@ ul {
     .footer-ninth__follow-box > .icon:last-child {
       margin-right: 0; }
 
-.footer__part-title,
+.footer-ninth__part-title,
 .subscribe__title,
 .follow__title {
   color: #fff;
   font-size: 18px;
+  font-weight: 400;
   line-height: 36px; }
 
 .subscribe-box {
@@ -1433,6 +1437,7 @@ ul {
   padding-right: 10px;
   border: none;
   color: #383737;
+  background-color: #fff;
   height: 36px;
   font-size: 14px; }
   .subscribe__field:valid {

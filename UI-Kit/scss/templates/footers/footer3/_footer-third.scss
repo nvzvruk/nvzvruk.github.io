@@ -10,7 +10,8 @@
         &-title {
             font-size: 16px;
             line-height: 36px;
-            &--name {
+            font-weight: 400;
+            &_name {
                 color: $blue-color;
             }
         }

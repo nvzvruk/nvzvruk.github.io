@@ -21,6 +21,14 @@
         padding: 10px;
         float: left;
         &_logo {
+            &>.logo {
+                @include block-create(71px,
+                66px,
+                url('../../../../img/logo.svg'));
+                @media (max-width: $mobile-size) {
+                    margin: 0 auto;
+                }
+            }
             width: 16%;
             padding-top: 15px;
             @media (max-width: $tablet-size) {
@@ -35,7 +43,10 @@
             &-link {
                 @include text-setting(16px,
                 32px,
-                rgba(255, 255, 255, .5));
+                rgba(255,
+                255,
+                255,
+                .5));
                 position: relative;
                 font-weight: 600;
                 text-decoration: none;
@@ -161,7 +172,10 @@
     &__text {
         @include text-setting(16px,
         20px,
-        rgba(255, 255, 255, .5));
+        rgba(255,
+        255,
+        255,
+        .5));
         margin-bottom: 10px;
         font-weight: 600;
     }

@@ -19,8 +19,13 @@
     }
     &__part {
         padding: 10px;
+        &>.logo {
+            @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+        }
         &-link {
-            @include text-setting(16px, 32px, $grey-color);
+            @include text-setting(16px,
+            32px,
+            $grey-color);
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -55,11 +60,12 @@
     }
 }
 
-.footer__part-title,
+.footer-ninth__part-title,
 .subscribe__title,
 .follow__title {
     color: #fff;
     font-size: 18px;
+    font-weight: 400;
     line-height: 36px;
 }
 
@@ -77,6 +83,7 @@
         padding-right: 10px;
         border: none;
         color: $black-color;
+        background-color: #fff;
         height: 36px;
         font-size: 14px;
         &:valid {
@@ -84,7 +91,9 @@
         }
     }
     &__btn {
-        @include pos('topRight', 0, 0);
+        @include pos('topRight',
+        0,
+        0);
         width: 36px;
         height: 36px;
         border: none;
@@ -93,8 +102,12 @@
         color: #FFF;
         outline: none;
         &:after {
-            @include pos('topLeft', 50%, calc(50% + 3px));
-            @include block-create(2px, 2px, currentColor);
+            @include pos('topLeft',
+            50%,
+            calc(50% + 3px));
+            @include block-create(2px,
+            2px,
+            currentColor);
             content: "";
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -108,4 +121,3 @@
         cursor: pointer;
     }
 }
-
