@@ -10,7 +10,8 @@
 	}
 	&__label {
 		position: relative;
-		@include text-setting(14px, 24px, $black-color);
+		left: 25px;
+		@include text-setting(14px, 24px, $grey-color);
 		font-family: $font-stack;
 		letter-spacing: 0.02em;
 		cursor: pointer;

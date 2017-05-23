@@ -1,0 +1,22 @@
+
+.form {
+	&_shipping {
+		&__content {
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+			&__action {
+				padding-top: 20px;
+			}
+		}
+		&__title {
+			margin-bottom: 20px;
+		}
+		&__contact-info {
+			margin-top: 30px;
+		}
+	}
+}

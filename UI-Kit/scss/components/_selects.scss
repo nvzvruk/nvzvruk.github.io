@@ -1,0 +1,41 @@
+.select {
+	&-wrap {
+		position: relative;
+		color: #FFF;
+		&:after {
+			@include block-create(2px, 2px, currentColor);
+			@include pos('topRight', 50%, 20px);
+			content: '';
+			transform: translateY(calc(-50% + 3px));
+			box-shadow: 1px -1px 0 0 currentColor,
+			2px -2px 0 0 currentColor,
+			3px -3px 0 0 currentColor,
+			4px -4px 0 0 currentColor,
+			-1px -1px 0 0 currentColor,
+			-2px -2px 0 0 currentColor,
+			-3px -3px 0 0 currentColor,
+			-4px -4px 0 0 currentColor;
+		}
+	}
+	&-menu {
+		@extend %border-radius;
+		@include text-setting(16px, 24px, #fff);
+		position: relative;
+		width: 100%;
+		height: 48px;
+		padding: 0 18px;
+		border: none;
+		font-family: $font-stack;
+		letter-spacing: 0.02em;
+		font-weight: 600;
+		appearance: none;
+		outline: none;
+		cursor: pointer;
+	}
+	&_info {
+		background-color: $blue-color;
+	}
+	&_warning {
+		background-color: $orange-color;
+	}
+}

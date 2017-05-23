@@ -1,0 +1,221 @@
+.form {
+	&_cart {
+		&__content {
+			&-check {
+				 @media (max-width: $mobileL-size) {
+					margin: 0;
+				}
+			}
+		}
+		&__product {
+			@extend %border-radius;
+			width: 80px;
+			height: 60px;
+			margin-right: 20px;
+			float: left;
+			-webkit-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			&_bag {
+				background: url(../../../../templates/forms/img/product-pic-1.jpg) center bottom no-repeat;
+			}
+			&_belt {
+				background: url(../../../../templates/forms/img/product-pic-2.jpg) center no-repeat;
+			}
+			&_shoes {
+				background: url(../../../../templates/forms/img/product-pic-3.jpg) center bottom no-repeat;
+			}
+			&-info {
+				display: flex;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-webkit-justify-content: center;
+				justify-content: center;
+				height: 60px;
+				&-name {
+					@include text-setting(16px, 20px);
+					@media (max-width: $mobileL-size) {
+						font-size: 14px;
+						line-height: 18px;
+					}
+					@media (max-width: $mobile-size) {
+						font-size: 12px;
+						line-height: 16px;
+					}
+				}
+				&-select {
+					@include text-setting(14px, 20px, $grey-color);
+					margin-top: 5px;
+					&-color {
+						display: inline-block;
+						vertical-align: middle;
+					}
+					&-size {
+						display: inline-block;
+						vertical-align: middle;
+						margin-left: 20px;
+						@media (max-width: $mobileL-size) {
+							margin-left: 10px;
+						}
+						@media (max-width: $mobile-size) {
+							margin: 0;
+						}
+					}
+					&-size-num {
+						@include block-create(23px, 16px, $grey-color);
+						@include text-setting(12px, 17px, #fff);
+						display: inline-block;
+						vertical-align: middle;
+						margin-left: 4px;
+						border-radius: 4px;
+						text-align: center;
+						@media (max-width: $mobile-size) {
+							width: 20px;
+							height: 14px;
+							font-size: 10px;
+							line-height: 14px;
+						}
+					}
+					@media (max-width: $mobileL-size) {
+						font-size: 12px;
+						line-height: 18px;
+					}
+					@media (max-width: $mobile-size) {
+						font-size: 10px;
+						line-height: 16px;
+					}
+				}
+				@media (max-width: $mobileL-size) {
+					height: 40px;
+				}
+			}
+			@media (max-width: $mobileL-size) {
+				width: 60px;
+				height: 40px;
+				margin-right: 10px;
+			}
+			@media (max-width: $mobile-size) {
+				margin-right: 5px;
+			}
+		}
+		&__list {
+			&-cell {
+				padding: 10px;
+				@media (max-width: $mobileL-size) {
+					padding: 5px;
+				}
+				@media (max-width: $mobile-size) {
+					padding-top: 15px;
+					padding-bottom: 15px;
+				}
+			}
+			&-title {
+				text-align: center;
+				&:first-child {
+					text-align: left;
+					padding-left: 10%;
+				}
+				@media (max-width: $mobile-size) {
+					font-size: 12px;
+				}
+			}
+			&-quantity {
+				width: 20%;
+				text-align: center;
+				span {
+					display: inline-block;
+					vertical-align: middle;
+					width: 10px;
+					margin-right: 8px;
+					margin-left: 8px;
+					text-align: center;
+					outline: none;
+					@media (max-width: $mobileL-size) {
+						margin-left: 4px;
+						margin-right: 4px;
+					}
+				}
+				@media (max-width: $mobileL-size) {
+					font-size: 14px;
+				}
+				@media (max-width: $mobile-size) {
+					width: 70px;
+					font-size: 12px;
+				}
+			}
+			&-price,
+			&-total {
+				width: 10%;
+				text-align: center;
+				@media (max-width: $mobileL-size) {
+					padding: 0;
+					font-size: 14px;
+				}
+				@media (max-width: $mobile-size) {
+					font-size: 12px;
+				}
+			}
+		}
+		&__quantity-btn {
+			position: relative;
+			width: 26px;
+			height: 26px;
+			color: #FFF;
+			&:after {
+				@include block-create(2px, 2px, currentColor);
+				@include pos('topLeft', 50%, 50%);
+				content: "";
+				transform: translate(-50%, -50%);
+			}
+			&_minus:after {
+				box-shadow: 1px 0 0 0 currentColor,
+				2px 0 0 0 currentColor,
+				3px 0 0 0 currentColor,
+				4px 0 0 0 currentColor,
+				-1px 0 0 0 currentColor,
+				-2px 0 0 0 currentColor,
+				-3px 0 0 0 currentColor,
+				-4px 0 0 0 currentColor;
+			}
+			&_plus:after {
+				box-shadow: 1px 0 0 0 currentColor,
+				2px 0 0 0 currentColor,
+				3px 0 0 0 currentColor,
+				4px 0 0 0 currentColor,
+				-1px 0 0 0 currentColor,
+				-2px 0 0 0 currentColor,
+				-3px 0 0 0 currentColor,
+				-4px 0 0 0 currentColor,
+				0 -1px 0 0 currentColor,
+				0 -2px 0 0 currentColor,
+				0 -3px 0 0 currentColor,
+				0 -4px 0 0 currentColor,
+				0 1px 0 0 currentColor,
+				0 2px 0 0 currentColor,
+				0 3px 0 0 currentColor,
+				0 4px 0 0 currentColor;
+			}
+			@media (max-width: $mobileL-size) {
+				width: 16px;
+				height: 16px;
+			}
+		}
+		&__total-price {
+			display: flex;
+			-webkit-justify-content: flex-end;
+			justify-content: flex-end;
+			-webkit-align-items: center;
+			align-items: center;
+			padding-right: 25px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			&-result {
+				margin-left: 15px;
+			}
+			@media (max-width: $mobile-size) {
+				padding-right: 0;
+			}
+		}
+	}
+}

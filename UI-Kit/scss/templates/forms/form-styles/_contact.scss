@@ -1,0 +1,80 @@
+.form {
+	@extend %border-radius;
+	background-color: $light-grey-color;
+	overflow: hidden;
+	&_contact {
+		&__header {
+			padding: 20px;
+			@media (max-width: $laptop-size) {
+				padding: 10px;
+			}
+		}
+		&__title {
+			@include text-setting(16px, 16px);
+			margin: 0;
+			text-transform: uppercase;
+		}
+		&__content {
+			padding: 10px 30px;
+			@media (max-width: $laptop-size) {
+				padding: 10px 20px;
+			}
+			@media (max-width: $mobileL-size) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			&_small {
+				padding: 10px 20px;
+				@media (max-width: $laptop-size) {
+					padding: 10px;
+				}
+			}
+		}
+		&_small {
+			@media (max-width: $tablet-size) {
+				width: 60%;
+			}
+			@media (max-width: $mobile-size) {
+				width: 100%;
+			}
+		}
+	}
+	&-group {
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		margin-bottom: 20px;
+		@media (max-width: $mobile-size) {
+			flex-wrap: wrap;
+		}
+		&__item {
+			width: 46%;
+			@media (max-width: $mobileL-size) {
+				width: 48%;
+			}
+			@media (max-width: $mobile-size) {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			&_sm {
+				width: 100%;
+			}
+		}
+		&__message {
+			width: 100%;
+		}
+		&__select {
+			margin-top: 5px;
+		}
+		&_footer {
+			-webkit-justify-content: flex-end;
+			justify-content: flex-end;
+		}
+		&__label {
+			@include text-setting(16px, 24px, $grey-color);
+		}
+		&__input {
+			margin-top: 5px;
+		}
+	}
+}

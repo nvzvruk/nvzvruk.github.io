@@ -1,0 +1,22 @@
+@import '../../settings/settings';
+@import '../../settings/normalize';
+
+@import '../../components/table';
+@import '../../components/buttons';
+@import '../../components/inputs';
+@import '../../components/checkboxes';
+@import '../../components/selects';
+@import '../../components/t-area';
+@import '../../components/radio-buttons';
+@import '../../components/css-icons';
+
+@import '../../../assets/scss/icons/iconfont__varible';
+@import '../../../assets/scss/icons/iconfont__icon';
+
+@import 'form-styles/general.scss';
+@import 'form-styles/login.scss';
+@import 'form-styles/contact.scss';
+@import 'form-styles/shopping-forms.scss';
+@import 'form-styles/shopping-card.scss';
+@import 'form-styles/shipping-address.scss';
+@import 'form-styles/payment.scss';

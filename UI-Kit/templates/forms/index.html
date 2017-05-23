@@ -3,256 +3,529 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../../css/templates/forms/styles.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="wrapper wrapper_lg-forms">
-            <div class="form-lg form-lg_sign-up">
-                <div class="form-lg__header form-lg__header_sign-up">
-                    <h1>Sign up</h1>
-                    <a href="#">Already registered?</a>
-                </div>
-                <div class="form-lg__content form-lg__content_sign-up">
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
+        <div class="wrapper wrapper_big-forms">
+            <div class="wrapper__form">
+                <div class="form form_big">
+                    <div class="form__header form__header_sign-up">
+                        <h2 class="form_big__title">Sign up</h2>
+                        <a href="javascript:void(0)" class="form__top-link">Alredy Registered?</a>
+                    </div>
+                    <div class="form__content form__content_sign-up">
+                        <form action="javascript:void(0)">
+                            <div class="form__input form__input_login">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail or login" required>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                            <div class="form__input form__input_password">
+                                <input type="password" class="input-field input-field_ic_left form__input-field" placeholder="Password" required>
+                                <span class="icon icon--padlock icon_vertical-align"></span>
+                            </div>
+                            <a href="javascript:void(0)" class="form__content-link">Forgot password?</a>
+                            <button class="btn btn_rounded btn_full btn_info form__content-btn">Sign Up</button>
+                        </form>
+                        <div class="form__footer">
+                            <span class="form__footer-choise">or</span>
+                            <div class="form__social-link">
+                                <a href="javascript:void(0)" class="btn btn_rounded btn_primary form__footer-link">Login via Facebook</a>
+                            </div>
+                            <div class="form__social-link">
+                                <a href="javascript:void(0)" class="btn btn_rounded btn_info form__footer-link">Login via Twitter</a>
+                            </div>
                         </div>
-                        <div class="form__input">
-                            <input type="password" class="form__input-field form__input-field_password" placeholder="Password">
-                        </div>
-                        <span>Forgot password?</span>
-                        <input type="submit" value="Sign up">
-                    </form>
-                    <div class="form-lg__socials">
-                        <span class="social-choice">Or</span>
-                        <a href="" class="btn btn_facebook">Login via Facebook</a>
-                        <a href="" class="btn btn_twitter">Login via Twitter</a>
                     </div>
                 </div>
             </div>
-
-            <div class="form-lg form-lg_sign-in">
-                <div class="form-lg__header form-lg__header_sign-in">
-                    <h1>Sign in</h1>
-                    <a href="#">Create an Account</a>
+            <div class="wrapper__form">
+                <div class="form form_big">
+                    <div class="form__header form__header_sign-in">
+                        <h2 class="form_big__title">Sign in</h2>
+                        <a href="#" class="form__top-link">Create an Account</a>
+                    </div>
+                    <div class="form__content">
+                        <form action="javascript:void(0)">
+                            <div class="form__input form__input_login">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail or login" required>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                            <div class="form__input form__input_password">
+                                <input type="password" class="input-field input-field_ic_left form__input-field" placeholder="Password" required>
+                                <span class="icon icon--padlock icon_vertical-align"></span>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="box1" id="check1" class="check-box__main" checked>
+                                <label for="check1" class="check-box__label"><span class="check-box__changer"></span>Remember password?</label>
+                            </div>
+                            <button class="btn btn_rounded btn_full btn_success form__content-btn">Sign In</button>
+                        </form>
+                        <div class="form__footer">
+                            <span class="form__footer-choise">or</span>
+                            <div class="form__social-link">
+                                <a href="javascript:void(0)" class="btn btn_rounded btn_primary form__footer-link">Login via Facebook</a>
+                            </div>
+                            <div class="form__social-link">
+                                <a href="javascript:void(0)" class="btn btn_rounded btn_info form__footer-link">Login via Twitter</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-lg__content form-lg__content_sign-in">
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
+            </div>
+        </div>
+        <div class="wrapper wrapper_small-forms">
+            <div class="wrapper__form wrapper__form_sm">
+                <div class="form form_small">
+                    <div class="form__header_small">
+                        <h3 class="form_small__title">Sign up</h3>
+                        <a href="javascript:void(0)" class="form__top-link form__top-link_small">Alredy Registered?</a>
+                    </div>
+                    <div class="form__content_small form__content_small_sign-up">
+                        <form action="javascript:void(0)">
+                            <div class="form__input form__input_login">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail or login" required>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                            <div class="form__input form__input_password">
+                                <input type="password" class="input-field input-field_ic_left form__input-field" placeholder="Password" required>
+                                <span class="icon icon--padlock icon_vertical-align"></span>
+                            </div>
+                            <a href="javascript:void(0)" class="form__content-link">Forgot password?</a>
+                            <button class="btn btn_rounded btn_full btn_info form__content-btn_sm">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form__footer_small">
+                        <span class="form__footer-choise">or</span>
+                        <div class="form__social-link_small">
+                            <a href="javascript:void(0)" class="btn btn_sm btn_rounded btn_primary form__btn_fb"><span class="icon icon--fb icon_vertical-align"></span>Facebook</a>
                         </div>
-                        <div class="form__input">
-                            <input type="password" class="form__input-field form__input-field_password" placeholder="Password">
+                        <div class="form__social-link_small">
+                            <a href="javascript:void(0)" class="btn btn_sm btn_rounded btn_info form__btn_tw"><span class="icon icon--twitter icon_vertical-align"></span>Twitter</a>
                         </div>
-                        <div class="checkbox">
-                            <input name="checkbox1" class="checkbox" id="checkbox1" type="checkbox">
-                            <label for="checkbox1" class="checkbox__label">
-                                    <span class="checkbox-changer"></span>
-                                    Remember password?
-                            </label>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__form wrapper__form_sm">
+                <div class="form form_small">
+                    <div class="form__header_small">
+                        <h3 class="form_small__title">Sign in</h3>
+                        <a href="javascript:void(0)" class="form__top-link form__top-link_small">Create an Account</a>
+                    </div>
+                    <div class="form__content_small">
+                        <form action="javascript:void(0)">
+                            <div class="form__input form__input_login">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail or login" value="hello@creativeda.sh" required>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                            <div class="form__input form__input_password">
+                                <input type="password" class="input-field input-field_ic_left form__input-field" placeholder="Password" value="aaaaa" required>
+                                <span class="icon icon--padlock icon_vertical-align"></span>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="box1" id="check2" class="check-box__main" checked><label for="check2" class="check-box__label"><span class="check-box__changer"></span>Remember password?</label>
+                            </div>
+                            <button class="btn btn_rounded btn_full btn_primary form__content-btn_sm">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="form__footer_small">
+                        <span class="form__footer-choise">or</span>
+                        <div class="form__social-link_small">
+                            <a href="javascript:void(0)" class="btn btn_sm btn_rounded btn_primary form__btn_fb"><span class="icon icon--fb icon_vertical-align"></span>Facebook</a>   
                         </div>
-                        <input type="submit" value="Sign in">
-                    </form>
-                    <div class="form-lg__socials">
-                        <span>Or</span>
-                        <a href="" class="btn btn_facebook">Login via Facebook</a>
-                        <a href="" class="btn btn_twitter">Login via Twitter</a>
+                        <div class="form__social-link_small">
+                            <a href="javascript:void(0)" class="btn btn_sm btn_rounded btn_info form__btn_tw"><span class="icon icon--twitter icon_vertical-align"></span>Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper__form wrapper__form_sm wrapper__form_config-data">
+                <div class="form form_small form_reset-pass">
+                    <div class="form__header_small">
+                        <h3 class="form_small__title">Reset Password</h3>
+                        <a href="javascript:void(0)" class="form__top-link form__top-link_small">Sign In</a>
+                    </div>
+                    <div class="form__content_small form__content_small_reset">
+                        <form action="javascript:void(0)">
+                            <div class="form__input form__input_login">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail" required>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                            <button class="btn btn_rounded btn_danger btn_full form__content-reset-btn">Reset</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="form form_small form_subscribing">
+                    <div class="form__header_small">
+                        <h3 class="form_small__title">Subscribing</h3>
+                    </div>
+                    <div class="form__content_small form__content_small_subscribing">
+                        <p class="form_subscribing__text">We will never send you spam or some other trash</p>
+                        <form action="javascript:void(0)">
+                            <div class="form__split-input split-input">
+                                <input type="text" class="input-field input-field_ic_left form__input-field" placeholder="E-mail" required>
+                                <button class="btn_square btn_rounded btn_warning form_subscribing__btn"></button>
+                                <span class="icon icon--envelope icon_vertical-align"></span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="wrapper wrapper_sm-forms">
-            <div class="form-wrapper">
-                <div class="form-sm form-sm_sign-up">
-                    <span class="form-sm__title">Sign up</span>
-                    <a class="form-sm__link" href="#">Already registered?</a>
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
-                        </div>
-                        <div class="form__input">
-                            <input type="password" class="form__input-field form__input-field_password" placeholder="Password">
-                        </div>
-                        <span class="form-sm__question">Forgot password?</span>
-                        <input type="submit" value="Sign up">
-                    </form>
-                    <div class="form-sm__socials">
-                        <span class="social-choice">Or</span>
-                        <a href="" class="btn btn_facebook">Facebook</a>
-                        <a href="" class="btn btn_twitter">Twitter</a>
+        <div class="wrapper wrapper_contact-forms">
+            <div class="wrapper__form wrapper__form_contact">
+                <div class="form form_contact form_contact_big">
+                    <div class="form_contact__header">
+                        <h3 class="form_contact__title">Contact</h3>
                     </div>
+                    <form action="javascript:void(0)">
+                        <div class="form_contact__content">
+                            <div class="form-group">
+                                <div class="form-group__item">
+                                    <label for="name1" class="form-group__label">Name</label>
+                                    <div class="form-group__input form__input_contact">
+                                        <input type="text" id="name1" class="input-field" value="Carlos Shorter">
+                                    </div>
+                                </div>
+                                <div class="form-group__item">
+                                    <label for="email1" class="form-group__label">E-mail</label>
+                                    <div class="form-group__input form__input_contact">
+                                        <input type="email" id="email1" class="input-field" value="shotercarlos@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group__item">
+                                    <label for="subject1" class="form-group__label">Subject</label>
+                                    <div class="form-group__input form__input_contact">
+                                        <input type="text" id="subject1" class="input-field" value="Partnership">
+                                    </div>
+                                </div>
+                                <div class="form-group__item">
+                                    <label for="budget1" class="form-group__label">Select Budget</label>
+                                    <div class="select-wrap form-group__select">
+                                        <select name="budjet" class="select-menu select_info">
+											<option value="1" class="select-menu__item">$5.000 – $10.000</option>
+											<option value="2" selected>$10.000 – $15.000</option>
+											<option value="3">$15.000 – $20.000</option>
+										</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group__message">
+                                    <label for="message1" class="form-group__label">Message</label>
+                                    <div class="form-group__area">
+                                        <textarea name="message" id="message1" class="t-area">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
+										</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form--contact__check">
+                                    <input type="checkbox" name="box3" id="check3" class="check-box__main" checked><label for="check3" class="check-box__label"><span class="check-box__changer"></span>Send me a copy</label>
+                                </div>
+                                <div class="form-group__send-btn">
+                                    <div class="form_contact__btn">
+                                        <input type="submit" value="Send" class="btn btn_rounded btn_success">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="form-wrapper">
-                <div class="form-sm form-sm_sign-in">
-                    <span class="form-sm__title">Sign up</span>
-                    <a class="form-sm__link" href="#">Already registered?</a>
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
+            <div class="wrapper__form_contact_sm">
+                <div class="form form_contact form_contact_small">
+                    <form action="javascript:void(0)">
+                        <div class="form_contact__header">
+                            <h3 class="form_contact__title">Contact</h3>
                         </div>
-                        <div class="form__input">
-                            <input type="password" class="form__input-field form__input-field_password" placeholder="Password">
+                        <div class="form_contact__content form_contact__content_small">
+                            <div class="form-group">
+                                <div class="form-group__item_sm">
+                                    <label for="name2" class="form-group__label">Name</label>
+                                    <div class="form-group__input form__input_contact">
+                                        <input type="text" id="name2" class="input-field" value="Carlos Shorter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group__item_sm">
+                                    <label for="email2" class="form-group__label">E-mail</label>
+                                    <div class="form-group__input form__input_contact">
+                                        <input type="email" id="email2" class="input-field" value="shotercarlos@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group__message">
+                                    <label for="message2" class="form-group__label">Message</label>
+                                    <div class="form-group__area">
+                                        <textarea name="message" id="message2" class="t-area">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+										</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-group_footer">
+                                <div class="form-group__send-btn">
+                                    <div class="form_contact__btn">
+                                        <input type="submit" value="Send" class="btn btn_rounded btn_success">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="checkbox">
-                            <input name="checkbox2" class="checkbox" id="checkbox2" type="checkbox">
-                            <label for="checkbox2" class="checkbox__label">
-                                    <span class="checkbox-changer"></span>
-                                    Remember password?
-                            </label>
-                        </div>
-                        <input type="submit" value="Sign in">
-                    </form>
-                    <div class="form-sm__socials">
-                        <span>Or</span>
-                        <a href="" class="btn btn_facebook">Facebook</a>
-                        <a href="" class="btn btn_twitter">Twitter</a>
-                    </div>
-                </div>
-            </div>
-            <div class="form-wrapper">
-                <div class="form-sm form-sm_reset-pass">
-                    <span class="form-sm__title">Reset password</span>
-                    <a class="form-sm__link" href="#">Sign in</a>
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
-                        </div>
-                        <input type="submit" value="Reset">
-                    </form>
-                </div>
-                <div class="form-sm form-sm_subscribe">
-                    <span class="form-sm__title">Subscribing</span>
-                    <p>We will never send you spam or some othe trash</p>
-                    <form action="#">
-                        <div class="form__input">
-                            <input type="text" class="form__input-field form__input-field_email" placeholder="E-mail or login">
-                        </div>
-                        <input type="submit" value=">">
                     </form>
                 </div>
             </div>
         </div>
-        <div class="wrapper wrapper_contact-form">
-            <div class="contact-form contact-form_lg">
-                <span class="contact-form__title">Contact</span>
-                <form action="#">
-                    <div class="form-line">
-                        <div class="form-line__item">
-                            <label for="name-input">Name</label>
-                            <div class="form__input">
-                                <input type="text" id="name-input" class="form__input-field" placeholder="Carlos Shorter">
+        <div class="wrapper wrapper_shopping-forms">
+            <div class="wrapper__form wrapper__form_cart">
+                <div class="form form_shopping">
+                    <h3 class="form_shopping__title">Cart</h3>
+                    <div class="form_shopping__content form_cart__content">
+                        <form action="javascript:void(0)">
+                            <div class="form_cart__list">
+                                <table class="table">
+                                    <tr>
+                                        <td class="table__cell table__cell_title form_cart__list-cell form_cart__list-title">Item</td>
+                                        <td class="table__cell table__cell_title form_cart__list-cell form_cart__list-title">Price</td>
+                                        <td class="table__cell table__cell_title form_cart__list-cell form_cart__list-title">Quantity</td>
+                                        <td class="table__cell table__cell_title form_cart__list-cell form_cart__list-title">Total</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__cell form_cart__list-cell">
+                                            <div class="form_cart__product form_cart__product_bag"></div>
+                                            <div class="form_cart__product-info">
+                                                <span class="form_cart__product-info-name">Leather Bag</span>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-price">$<span class="js_price">199</span></td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-quantity">
+                                            <div class="btn_square btn_rounded btn_danger form_cart__quantity-btn form_cart__quantity-btn_minus js_minus-product"></div>
+                                            <span class="form_cart__list-count js_quantity">1</span>
+                                            <div class="btn_square btn_rounded btn_success form_cart__quantity-btn form_cart__quantity-btn_plus js_plus-product"></div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-total">$<span class="js--total">199</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__cell form_cart__list-cell">
+                                            <div class="form_cart__product form_cart__product_belt"></div>
+                                            <div class="form_cart__product-info">
+                                                <span class="form_cart__product-info-name">Leather Belt</span>
+                                                <div class="form_cart__product-info-select">
+                                                    <span class="form_cart__product-info-select-color">Color:</span>
+                                                    <input type="radio" class="radio-btn" name="belt-color" id="checkColor1" checked><label for="checkColor1" class="radio-btn__label radio-btn_warning form_cart__content-check"></label>
+                                                    <input type="radio" class="radio-btn" name="belt-color" id="checkColor2"><label for="checkColor2" class="radio-btn__label radio-btn_info form_cart__content-check"></label>
+                                                    <input type="radio" class="radio-btn" name="belt-color" id="checkColor3"><label for="checkColor3" class="radio-btn__label radio-btn_success form_cart__content-check"></label>
+                                                    <input type="radio" class="radio-btn" name="belt-color" id="checkColor4"><label for="checkColor4" class="radio-btn__label radio-btn_danger form_cart__content-check"></label>
+                                                    <input type="radio" class="radio-btn" name="belt-color" id="checkColor5"><label for="checkColor5" class="radio-btn__label form_cart__content-check"></label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-price">$<span class="js--price">49</span></td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-quantity">
+                                            <div class="btn_square btn_rounded btn_danger form_cart__quantity-btn form_cart__quantity-btn_minus js_minus-product"></div>
+                                            <span class="form_cart__list-count js_quantity">2</span>
+                                            <div class="btn_square btn_rounded btn_success form_cart__quantity-btn form_cart__quantity-btn_plus js_plus-product"></div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-total">$<span class="js_total">98</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table__cell form_cart__list-cell">
+                                            <div class="form_cart__product form_cart__product_shoes"></div>
+                                            <div class="form_cart__product-info">
+                                                <span class="form_cart__product-info-name">Leather Shoes</span>
+                                                <div class="form_cart__product-info-select">
+                                                    <span class="form_cart__product-info-select-color">Color:</span>
+                                                    <input type="radio" class="radio-btn" name="shoes-color" id="checkColor6" checked><label for="checkColor6" class="radio-btn__label radio-btn_brown form_cart__content-check"></label>
+                                                    <input type="radio" class="radio-btn" name="shoes-color" id="checkColor7"><label for="checkColor7" class="radio-btn__label form_cart__content-check"></label>
+                                                    <span class="form_cart__product-info-select-size">Size:</span>
+                                                    <span class="form_cart__product-info-select-size-num">42</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-price">$<span class="js_price">199</span></td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-quantity">
+                                            <div class="btn_square btn_rounded btn_danger form_cart__quantity-btn form_cart__quantity-btn_minus js_minus-product"></div>
+                                            <span class="form_cart__list-count js_quantity">1</span>
+                                            <div class="btn_square btn_rounded btn_success form_cart__quantity-btn form_cart__quantity-btn_plus js_plus-product"></div>
+                                        </td>
+                                        <td class="table__cell form_cart__list-cell form_cart__list-total">$<span class="js--total">199</span></td>
+                                    </tr>
+                                </table>
                             </div>
-                        </div>
-                        <div class="form-line__item">
-                            <label for="email-input">Email</label>
-                            <div class="form__input">
-                                <input type="email" id="email-input" class="form__input-field" placeholder="shotercarlos@gmail.com">
+                            <div class="form_cart__total-price">
+                                <span class="table__cell_title">Subtotal:</span>
+                                <span class="form_cart__total-price-result">$<span class="js_total-price">496</span></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="form-line">
-                        <div class="form-line__item">
-                            <label for="subject-input">Subject</label>
-                            <div class="form__input">
-                                <input type="text" id="subject-input" class="form__input-field" placeholder="Partnership">
+                            <div class="form_shopping__content-action">
+                                <a href="javascript:void(0)" class="form_shopping__content-action-link-back ic--chevron ic--chevron--left">Continue Shopping</a>
+                                <button class="btn btn_rounded btn_success form_shopping__content-action-btn-forward"><span class="ic--chevron ic--chevron--right">Order</span></button>
                             </div>
-                        </div>
-                        <div class="form-line__item">
-                            <div class="form-contact__select-wrapper">
-                                <select name="select-budget" id="budget" class="form__select-menu form__select-budget">
-                                <option value="1">$5.000 – $10.000</option>
-                                <option value="2">$15.000 – $20.000</option>
-                                <option value="3">$25.000 – $30.000</option>
-                            </select>
-                            </div>
-                        </div>
+                        </form>
                     </div>
-                    <div class="form-line">
-                        <div class="form-line__textarea">
-                            <label for="form-textarea">Message</label>
-                            <textarea name="form-contact__textarea" id="form-textarea">Just then her head struck against the roof of the hall: in fact she was now more than nine feet high, and she at once took up the little golden key and hurried off to the garden door.
-                            </textarea>
-                        </div>
-                    </div>
-                    <div class="form-line form-line_bottom">
-                        <div class="checkbox">
-                            <input name="checkbox3" class="checkbox" id="checkbox3" type="checkbox">
-                            <label for="checkbox3" class="checkbox__label">
-                                    <span class="checkbox-changer"></span>
-                                    Send me a copy
-                            </label>
-                        </div>
-                        <input type="submit" value="Send">
-                    </div>
-                </form>
+                </div>
             </div>
-            <div class="contact-form contact-form_sm">
-                <span class="contact-form__title">Contact</span>
-                <form action="#">
-                    <div class="contact-form_sm__item">
-                        <label for="name-input">Name</label>
-                        <div class="form__input">
-                            <input type="text" id="name-input" class="form__input-field" placeholder="Carlos Shorter">
+            <div class="wrapper__form wrapper__form_shipping">
+                <div class="form form_shopping">
+                    <form action="javascript:void(0)">
+                        <h3 class="form_shopping__title form_shipping__title">Shipping Address</h3>
+                        <div class="form_shopping__content form_shipping__content">
+                            <div class="form_shopping__content-item form_shopping__content-item_country">
+                                <label class="form-group__label">Select Country</label>
+                                <div class="select-wrap">
+                                    <select name="countries" class="select-menu select_warning form-group__select js_countries">
+										<option value="1" selected>USA</option>
+										<option value="2">Canada</option>
+										<option value="3">Great Britain</option>
+									</select>
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item">
+                                <label for="state" class="form-group__label">State, Region, Province</label>
+                                <div class="form-group__input">
+                                    <input type="text" id="state" class="input-field" value="California">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item">
+                                <label for="addr1" class="form-group__label">Address 1</label>
+                                <div class="form-group__input">
+                                    <input type="text" id="addr1" class="input-field">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item form_shopping__content-item_city">
+                                <label class="form-group__label">Select City</label>
+                                <div class="select-wrap">
+                                    <select name="cities" class="select-menu select_warning form-group__select js_cities">
+										<option value="1" selected>California</option>
+										<option value="2">New York</option>
+										<option value="3">Florida</option>
+									</select>
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item form_shopping__content-item_zip">
+                                <label for="zip-code" class="form-group__label">ZIP Code</label>
+                                <div class="form-group__input">
+                                    <input type="text" id="zip-code" class="input-field">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item">
+                                <label for="addr2" class="form-group__label">Address 2</label>
+                                <div class="form-group__input">
+                                    <input type="text" id="addr2" class="input-field">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-form_sm__item">
-                        <label for="email-input">Email</label>
-                        <div class="form__input">
-                            <input type="email" id="email-input" class="form__input-field" placeholder="shotercarlos@gmail.com">
+                        <h3 class="form_shopping__title form_shipping__title form_shipping__contact-info">Contact info</h3>
+                        <div class="form_shopping__content form_shipping__content">
+                            <div class="form_shopping__content-item">
+                                <label for="f-name" class="form-group__label">Full Name</label>
+                                <div class="form-group__input">
+                                    <input type="text" id="f-name" class="input-field" value="California">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item">
+                                <label for="email" class="form-group__label">E-mail</label>
+                                <div class="form-group__input">
+                                    <input type="email" id="email" class="input-field" value="95661">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-item">
+                                <label for="phone" class="form-group__label">Phone</label>
+                                <div class="form-group__input">
+                                    <input type="tel" id="phone" class="input-field">
+                                </div>
+                            </div>
+                            <div class="form_shopping__content-action form_shipping__content-action">
+                                <a href="javascript:void(0)" class="form_shopping__content-action-link-back ic--chevron ic--chevron--left">Return to Cart</a>
+                                <button class="btn btn_rounded btn_success form_shopping__content-action-btn-forward"><span class="ic--chevron ic--chevron--right">Payment method</span></button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-form_sm__item">
-                        <label for="form-textarea">Message</label>
-                        <textarea name="form-contact__textarea" id="form-textarea">Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you..
-                        </textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="wrapper wrapper_shipping-form">
-            <div class="shipping-form">
-                <form action="#">
-                    <h3 class="shipping-form__title"></h3>
-                    <div class="shipping-form__content">
-                        <div class="shipping-form__content-item">
-                            <label class="form-label">Select country</label>
-                            <div class="select-wrapper">
-                                <select name="country" class="select-menu select-menu_warning form__select">
-								    <option value="1" selected="">USA</option>
-								    <option value="2">Canada</option>
-								    <option value="3">Great Britain</option>
-								</select>
+            <div class="wrapper__form wrapper__form_payment">
+                <form action="javascript:void(0)">
+                    <div class="form form_shopping">
+                        <div class="form__payment">
+                            <div class="form__payment-part">
+                                <h3 class="form_shopping__title form__payment-title">Payment Method</h3>
+                                <div class="form_shopping__content">
+                                    <div class="form__payment-item">
+                                        <label for="credit-card" class="form-group__label">Credit Card</label>
+                                        <div class="form__group">
+                                            <div class="form-group__input form__group-field">
+                                                <input type="text" id="credit-card" class="input-field form__group-field-item js_card-code" value="6594" maxlength="4">
+                                            </div>
+                                            <div class="form-group__input form__group-field">
+                                                <input type="text" class="input-field form__group-field-item js_card-code" value="6594" maxlength="4">
+                                            </div>
+                                            <div class="form-group__input form__group-field">
+                                                <input type="text" class="input-field form__group-field-item js_card-code" value="6594" maxlength="4">
+                                            </div>
+                                            <div class="form-group__input form__group-field">
+                                                <input type="text" class="input-field form__group-field-item js_card-code" value="6594" maxlength="4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__payment-item">
+                                        <label for="cardholder" class="form-group__label">Cardholder Name</label>
+                                        <div class="form__group form-group__input">
+                                            <input type="text" id="cardholder" class="input-field">
+                                        </div>
+                                    </div>
+                                    <div class="form__payment-item">
+                                        <label class="form-group__label">Expire</label>
+                                        <div class="form__group form-group__select">
+                                            <div class="form__group-select select-wrap">
+                                                <select name="month" class="select-menu select_warning">
+													<option value="Month" selected>Month</option>
+													<option value="1">October</option>
+													<option value="2">November</option>
+													<option value="3">December</option>
+												</select>
+                                            </div>
+                                            <div class="form__group-select select-wrap">
+                                                <select name="year" class="select-menu select_warning">
+													<option value="Year" selected>Year</option>
+													<option value="1">2017</option>
+													<option value="2">2016</option>
+													<option value="3">2015</option>
+												</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__payment-item">
+                                        <label for="cvv" class="form-group__label form__payment-item-label">cvv</label>
+                                        <div class="form__group form__group_cvv">
+                                            <div class="form-group__input form__group-field">
+                                                <input type="text" class="input-field form__group-field-item js_cvv-code" maxlength="3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__payment-part form__payment-part_bill-addr">
+                                <h3 class="form_shopping__title form__payment-title form__payment-title_bill-addr">Billing Address</h3>
+                                <input type="checkbox" class="check-box__main" id="same" checked><label for="same" class="check-box__label form__payment-addr-label"><span class="check-box__changer"></span>Same as shipping address</label>
+                                <p class="form__payment-text">A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+                                <span class="form__payment-total-price">$<span class="js_total-price">496</span></span>
                             </div>
                         </div>
-                        <div class="shipping-form__content-item">
-                            <label for=""></label>
-                            <div class="form__input">
-                                <input type="text" class="form__input-field">
-                            </div>
+                        <div class="form_shopping__content-action form__payment-action">
+                            <a href="javascript:void(0)" class="form_shopping__content-action-link-back ic--chevron ic--chevron--left">Edit Shipping Address</a>
+                            <button class="btn btn_rounded btn_success form_shopping__content-action-btn-forward"><span class="ic--chevron ic--chevron--right">Place Order</span></button>
                         </div>
-                        <div class="shipping-form__content-item"></div>
-                        <div class="shipping-form__content-item">
-                            <label class="form-label">Select country</label>
-                            <div class="select-wrapper">
-                                <select name="country" class="select-menu select-menu_warning form__select">
-								    <option value="1" selected="">USA</option>
-								    <option value="2">Canada</option>
-								    <option value="3">Great Britain</option>
-								</select>
-                            </div>
-                        </div>
-                        <div class="shipping-form__content-item"></div>
-                        <div class="shipping-form__content-item"></div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -657,6 +657,10 @@ table {
   left: 50%;
   top: 50%; }
 
+.icon_vertical-align {
+  top: 50%;
+  transform: translateY(-50%); }
+
 body {
   font-family: "Cabin", sans-serif;
   letter-spacing: 0.02em;

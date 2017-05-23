@@ -1,0 +1,70 @@
+.form {
+	&_shopping {
+		padding: 20px;
+		&__title {
+			@include text-setting(16px, 16px);
+			margin: 0;
+			text-transform: uppercase;
+		}
+		&__content {
+			padding: 10px;
+			&-action {
+				display: flex;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				-webkit-align-items: center;
+				align-items: center;
+				width: 100%;
+				padding-left: 30px;
+				&-link-back {
+					color: $blue-color;
+					@media (max-width: $mobile-size) {
+						font-size: 13px;
+					}
+				}
+				&-btn-forward {
+					min-width: 140px;
+					padding-left: 35px;
+					padding-right: 30px;
+					text-indent: -10px;
+					@media (max-width: $mobile-size) {
+						min-width: 100px;
+						padding: 8px 20px 8px 25px;
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
+				@media (max-width: $mobile-size) {
+					padding-left: 15px;
+				}
+			}
+			&-item {
+				width: 30%;
+				margin-bottom: 22px;
+				@media (max-width: $mobileL-size) {
+					width: 45%;
+				}
+				@media (max-width: $mobile-size) {
+					width: 100%;
+				}
+				&_country,
+				&_city {
+					@media (max-width: $mobileL-size) {
+						order: -1;
+					}
+				}
+				&_zip {
+					@media (max-width: $mobile-size) {
+						order: 1;
+					}
+				}
+			}
+			@media (max-width: $mobileL-size) {
+				padding: 0;
+			}
+		}
+		@media (max-width: $mobileL-size) {
+			padding: 10px;
+		}
+	}
+}
