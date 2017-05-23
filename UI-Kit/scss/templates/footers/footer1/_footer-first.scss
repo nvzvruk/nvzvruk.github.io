@@ -5,14 +5,6 @@ body {
     font-weight: 600;
 }
 
-.logo {
-    @include block-create(71px, 66px, url('../../../../img/logo.svg'));
-    margin-right: 50px;
-    @media (max-width: $laptop-size) {
-        margin-right: 30px;
-    }
-}
-
 .footer:not(:first-child) {
     margin-top: 20px;
 }
@@ -46,6 +38,13 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        &>.logo {
+            @include block-create(71px, 66px, url('../../../img/logo.svg'));
+            margin-right: 50px;
+            @media (max-width: $laptop-size) {
+                margin-right: 30px;
+            }
+        }
     }
     &__nav {
         &-link {

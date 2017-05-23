@@ -1,11 +1,3 @@
-.logo {
-    @include block-create(71px, 66px, url('../../../../img/logo.svg'));
-    margin-bottom: 10px;
-    @media (max-width: $mobileL-size) {
-        margin: 0 auto 10px;
-    }
-}
-
 .footer-third {
     padding: 40px 0;
     background-color: $light-grey-color;
@@ -23,9 +15,7 @@
             }
         }
         &-link {
-            @include text-setting(16px,
-            32px,
-            $grey-color);
+            @include text-setting(16px, 32px, $grey-color);
             text-decoration: none;
             &:hover {
                 color: $black-color;
@@ -39,6 +29,13 @@
         -webkit-flex: 1;
         -ms-flex: 1;
         flex: 1;
+        &>.logo {
+            @include block-create(71px, 66px, url('../../../img/logo.svg'));
+            margin-bottom: 10px;
+            @media (max-width: $mobileL-size) {
+                margin: 0 auto 10px;
+            }
+        }
         @media (max-width: $mobileL-size) {
             width: 50%;
             margin-bottom: 30px;

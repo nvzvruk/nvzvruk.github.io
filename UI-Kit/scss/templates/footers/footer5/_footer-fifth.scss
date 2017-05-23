@@ -1,7 +1,7 @@
 
 
 .footer-fifth__logo {
-    @include block-create(71px, 66px, url('../../../../img/logo.svg'));
+    @include block-create(71px, 66px, url('../../../img/logo.svg'));
     margin-top: 10px;
     @media (max-width: $mobileL-size) {
         margin: 20px auto;
@@ -103,7 +103,7 @@
             @extend %border-radius;
             @include block-create(35%,
             auto,
-            $green-color url('../../../../templates/footers/img/map.jpg') center);
+            $green-color url('../../../templates/footers/img/map.jpg') center);
             position: relative;
             cursor: pointer;
             @media (max-width: $mobileL-size) {

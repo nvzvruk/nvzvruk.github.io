@@ -9,16 +9,23 @@
     &__part {
         padding: 10px;
         float: left;
-        &--logo {
+        &_logo {
             width: 16%;
         }
-        &--contacts {
+        &>.logo {
+            @include block-create(71px, 66px, url('../../../img/logo.svg'));
+            margin-bottom: 10px;
+            @media (max-width: $mobileL-size) {
+                margin: 0 auto 10px;
+            }
+        }
+        &_contacts {
             width: 26%;
         }
-        &--info {
+        &_info {
             width: 34%;
         }
-        &--app {
+        &_app {
             width: 24%;
         }
         &-title {
@@ -26,7 +33,9 @@
             line-height: 36px;
         }
         &-paragraph {
-            @include text-setting(16px, 22px, $grey-color);
+            @include text-setting(16px,
+            22px,
+            $grey-color);
             display: block;
         }
         &-btn-link {
@@ -36,7 +45,9 @@
             margin-bottom: 15px;
         }
         &-simple-link {
-            @include text-setting(16px, 22px, $blue-color);
+            @include text-setting(16px,
+            22px,
+            $blue-color);
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
