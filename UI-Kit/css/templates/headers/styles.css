@@ -16,13 +16,15 @@
     width: 250px;
     height: 250px;
     margin-bottom: 30px;
+    border: 1px solid grey;
     border-radius: 5px;
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     transition-duration: 0.3s;
     transition-property: transform; }
     .container .header-link:hover {
-      transform: translateY(-10px); }
+      transform: translateY(-10px);
+      box-shadow: 0 0 7px 3px black; }
   .container .header-first-link {
     background: url("../../../templates/headers/img/header-1-icon.jpg") no-repeat;
     background-size: cover; }
