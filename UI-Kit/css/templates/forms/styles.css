@@ -974,10 +974,10 @@ a {
         align-items: center;
     height: 144px; }
     .form__header_sign-up {
-      background: #383737 url(../../../../templates/forms/img/sign-up-bg.jpg) center no-repeat;
+      background: #383737 url(./../../../templates/forms/img/sign-up-bg.jpg) center no-repeat;
       background-size: cover; }
     .form__header_sign-in {
-      background: #383737 url(../../../../templates/forms/img/sign-in-bg.jpg) center no-repeat;
+      background: #383737 url(./../../../templates/forms/img/sign-in-bg.jpg) center no-repeat;
       background-size: cover; }
     .form__header_small {
       position: relative; }
@@ -1299,11 +1299,11 @@ a {
   float: left;
   background-size: cover; }
   .form_cart__product_bag {
-    background: url(../../../../templates/forms/img/product-pic-1.jpg) center bottom no-repeat; }
+    background: url(./../../../templates/forms/img/product-pic-1.jpg) center bottom no-repeat; }
   .form_cart__product_belt {
-    background: url(../../../../templates/forms/img/product-pic-2.jpg) center no-repeat; }
+    background: url(./../../../templates/forms/img/product-pic-2.jpg) center no-repeat; }
   .form_cart__product_shoes {
-    background: url(../../../../templates/forms/img/product-pic-3.jpg) center bottom no-repeat; }
+    background: url(./../../../templates/forms/img/product-pic-3.jpg) center bottom no-repeat; }
   .form_cart__product-info {
     display: -ms-flexbox;
     display: flex;

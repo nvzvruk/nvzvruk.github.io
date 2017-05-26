@@ -17,13 +17,13 @@
 			-o-background-size: cover;
 			background-size: cover;
 			&_bag {
-				background: url(../../../../templates/forms/img/product-pic-1.jpg) center bottom no-repeat;
+				background: url(./../../../templates/forms/img/product-pic-1.jpg) center bottom no-repeat;
 			}
 			&_belt {
-				background: url(../../../../templates/forms/img/product-pic-2.jpg) center no-repeat;
+				background: url(./../../../templates/forms/img/product-pic-2.jpg) center no-repeat;
 			}
 			&_shoes {
-				background: url(../../../../templates/forms/img/product-pic-3.jpg) center bottom no-repeat;
+				background: url(./../../../templates/forms/img/product-pic-3.jpg) center bottom no-repeat;
 			}
 			&-info {
 				display: flex;

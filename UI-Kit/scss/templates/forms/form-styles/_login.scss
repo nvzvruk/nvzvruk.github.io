@@ -11,13 +11,13 @@
 		align-items: center;
 		height: 144px;
 		&_sign-up {
-			background: $black-color url(../../../../templates/forms/img/sign-up-bg.jpg) center no-repeat;
+			background: $black-color url(./../../../templates/forms/img/sign-up-bg.jpg) center no-repeat;
 			-webkit-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
 		}
 		&_sign-in {
-			background: $black-color url(../../../../templates/forms/img/sign-in-bg.jpg) center no-repeat;
+			background: $black-color url(./../../../templates/forms/img/sign-in-bg.jpg) center no-repeat;
 			-webkit-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
