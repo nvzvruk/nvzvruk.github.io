@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, rgb(112, 225, 245), rgb(255, 209, 148));
 }
 
 section {
@@ -68,7 +69,6 @@ nav a:hover {
 /*---------------------ABOUT-ME----------------------*/
 
 .about-me {
-    background: linear-gradient(to right, rgb(192, 192, 170), rgb(28, 239, 255));
     color: #483e3c;
 }
 
@@ -117,13 +117,6 @@ nav a:hover {
 
 /*----------PORTFOLIO------------------*/
 
-.portfolio {
-    background: linear-gradient(to right, rgb(67, 198, 172), rgb(248, 255, 174));
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: 0 50%;
-}
-
 .portfolio__heading {
     margin-top: 100px;
     font-size: 40px;
@@ -137,7 +130,8 @@ nav a:hover {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /*justify-content: space-between;*/
     flex-flow: row wrap;
     padding: 20px 150px;
     margin-top: 50px;
@@ -148,17 +142,35 @@ nav a:hover {
     width: 320px;
     height: 220px;
     border: 1px solid #483e3c;
+    border-radius: 2px;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
     margin-top: 10px;
     box-shadow: 0 0 1px transparent;
     transition: .3s;
-    transform: perspective(1px) translateZ(0);
+}
+
+.portfolio__link-name {
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    display: none;
 }
 
 .portfolio__link:hover {
-    margin-top: -15px;
+    transform: translateY(-15px);
+}
+
+.portfolio__link:hover>span {
+    display: block;
 }
 
 .portfolio__link:before {
@@ -179,24 +191,6 @@ nav a:hover {
     transition-property: transform, opacity;
 }
 
-.portfolio__link:after {
-    position: absolute;
-    display: none;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 30px;
-    width: 100%;
-    background-color: rgba(67, 198, 172, 0.5);
-    font-size: 28px;
-    color: black;
-}
-
-.portfolio__link:hover:after {
-    display: block;
-}
-
 .portfolio__link:hover:before {
     opacity: 1;
     -webkit-transform: translateY(5px);
@@ -207,24 +201,13 @@ nav a:hover {
     background-image: url('../img/base.jpg');
 }
 
-.portfolio__link_ui-kit:after {
-    content: 'UI-Kit';
-}
-
 .portfolio__link_j-wood {
     background-image: url('../img/Home-min.jpg');
 }
 
-.portfolio__link_j-wood:after {
-    content: 'J-Wood';
-}
 
 
 /*-------------------------CONTACTS-----------------------*/
-
-.contacts {
-    background: linear-gradient(to right, rgb(112, 225, 245), rgb(255, 209, 148));
-}
 
 .contacts__info {
     margin-top: 40px;
@@ -234,6 +217,7 @@ nav a:hover {
 .contacts__info span {
     display: block;
     padding: 40px 0;
+    color: #483e3c;
 }
 
 .contacts__info span a {
