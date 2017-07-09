@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Home Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top__left">
+                <a href="#">delivery</a>
+                <a href="#">faq</a>
+                <a href="#">help</a>
+            </div>
+            <div class="header-top__right">
+                <div class="header-top__right-select header__currency">
+                    <select name="currency" id="currency">
+                        <option value="1" selected>dollars</option>
+                        <option value="2">euros</option>
+                        <option value="3">hryvnas</option>
+                    </select>
+                </div>
+                <div class="header-top__right-select header__lang ">
+                    <select name="language" id="language">
+                        <option value="1" selected>en</option>
+                        <option value="2">ua</option>
+                        <option value="3">ru</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="logo">c<span class="lower">&amp;</span>b</div>
+            <nav class="header-bottom__nav nav">
+                <a class="header-bottom__nav-item nav__item js-nav-item" href="#">home</a>
+                <a class="header-bottom__nav-item nav__item js-nav-item nav__item_is-active" href="">catalog</a>
+                <a class="header-bottom__nav-item nav__item js-nav-item" href="#">news</a>
+                <a class="header-bottom__nav-item nav__item js-nav-item sale" href="#">sale</a>
+                <a class="header-bottom__nav-item nav__item js-nav-item" href="#">about</a>
+                <a class="header-bottom__nav-item nav__item js-nav-item" href="#">contact</a>
+            </nav>
+            <div class="header-bottom__bag">
+                <span class="text">your bag</span>
+                <span class="count">2</span>
+                <span class="icon icon--search"></span>
+            </div>
+        </div>
+    </header>
+    <section class="catalog">
+        <h1>catalog</h1>
+        <nav class="catalog__navigation nav">
+            <a class="nav__item js-nav-item js-nav-item nav__item_is-active" href="#">all</a>
+            <a class="nav__item js-nav-item js-nav-item" href="#">t-shirts</a>
+            <a class="nav__item js-nav-item js-nav-item" href="#">sweaters</a>
+            <a class="nav__item js-nav-item js-nav-item" href="#">shorts</a>
+            <a class="nav__item js-nav-item js-nav-item" href="#">jackets</a>
+            <a class="nav__item js-nav-item js-nav-item" href="#">accessories</a>
+        </nav>
+        <div class="catalog__list">
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-10.jpg" alt="">
+                <span class="description">printed swimsuit</span>
+                <span class="price">$23</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-4.jpg" alt="">
+                <span class="description">jogging bermuda shorts</span>
+                <span class="price">$36</span>
+            </div>
+            <div class="catalog__list-item catalog__list-item_new">
+                <img src="./img/products/Base-copy-3.jpg" alt="">
+                <span class="description">basic beach flip flops</span>
+                <span class="price">$9</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-102.jpg" alt="">
+                <span class="description">black sunglasses</span>
+                <span class="price">$29</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-23.jpg" alt="">
+                <span class="description">long sleeved twill shirt</span>
+                <span class="price">$20</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-41.jpg" alt="">
+                <span class="description">basic swimsuit</span>
+                <span class="price">$36</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-20.jpg" alt="">
+                <span class="description">bleaches shorts</span>
+                <span class="price">$12</span>
+            </div>
+            <div class="catalog__list-item">
+                <img src="./img/products/Base-copy-2.jpg" alt="">
+                <span class="description">t-shirt with lower panel</span>
+                <input type="search" class="moving-input">
+                <span class="price">$32</span>
+            </div>
+        </div>
+        <span class="catalog__load-more">load more...</span>
+    </section>
+    <section class="subscribe">
+        <div class="subscribe-info">
+            <span class="subscribe-info__text">subscribe</span>
+            <h2 class="subscribe-info__heading">stay updated on news</h2>
+            <div class="subscribe-info__input">
+                <input type="email" placeholder="your email address">
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="logo">c<span class="lower">&amp;</span>b</div>
+        <nav class="footer__nav nav">
+            <a class="navigation__nav-item nav__item" href="">home</a>
+            <a class="navigation__nav-item nav__item" href="">catalog</a>
+            <a class="navigation__nav-item nav__item" href="">news</a>
+            <a class="navigation__nav-item nav__item" href="">sale</a>
+            <a class="navigation__nav-item nav__item" href="">about</a>
+            <a class="navigation__nav-item nav__item" href="">contact</a>
+        </nav>
+        <div class="footer__copy">&copy;2010 -2016 All rights reserved</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>  
+
+    
+</body>
+
+</html>

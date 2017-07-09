@@ -1,0 +1,294 @@
+@import "./utils/normalize";
+@import "./utils/settings";
+@import "./utils/mixins";
+@import "./icons/iconfont-varible";
+@import "./icons/iconfont-icons";
+body {
+    @include text-config($lato-font, 12px, 600);
+}
+
+.logo {
+    @include text-config($didot-font, 52px, 600, $text-black-color);
+    text-transform: uppercase;
+    &>.lower {
+        font-size: 75%;
+    }
+}
+
+.nav {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    &__item {
+        display: inline-block;
+        padding: 8px 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $text-grey-color;
+        &:not(:first-child) {
+            margin-left: 56px;
+        }
+        &.sale {
+            color: $red-color;
+        }
+        &_is-active {
+            border-bottom: 2px solid $blue-color;
+            color: $text-black-color;
+        }
+    }
+}
+
+
+/*--------------------header-styles------------------*/
+
+.header {
+    &-top {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 150px;
+        &__left {
+            &>a {
+                @include text-config($lato-font, 11px, 600, $text-grey-color);
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 2px;
+                &:not(:first-child) {
+                    margin-left: 36px;
+                }
+            }
+        }
+        &__right {
+            &-select {
+                position: relative;
+                display: inline-block;
+                padding: 18px 0;
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin: auto;
+                    content: "";
+                    @include block-create(5px, 5px);
+                    box-sizing: border-box;
+                    border-bottom: 1px solid $text-grey-color;
+                    border-right: 1px solid $text-grey-color;
+                    transform: rotate(45deg);
+                }
+                &>select {
+                    @include text-config($lato-font, 11px, 600, $text-grey-color);
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    appearance: none;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &__currency {
+        width: 76px;
+        padding: 18px 20px 18px 0;
+        border-right: 1px solid $light-grey-color;
+        &:after {
+            right: 20px
+        }
+    }
+    &__lang {
+        padding: 18px 16px 18px 20px;
+        &:after {
+            right: 1px
+        }
+    }
+    &-bottom {
+        border-top: 1px solid $light-grey-color;
+        border-bottom: 1px solid $light-grey-color;
+        padding: 26px 150px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__bag {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            &>* {
+                vertical-align: top;
+                &:not(:first-child) {
+                    margin-left: 16px;
+                }
+            }
+            &>.count {
+                @include text-config($lato-font, 12px, 600);
+                padding: 18px 20px;
+                box-sizing: border-box;
+                border: 2px solid $blue-color;
+                border-radius: 100%;
+            }
+            
+            &>.icon {
+                font-weight: 900;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+/*----------------catalog-styles--------------*/
+
+.catalog {
+    margin-top: 96px;
+    padding: 0 150px;
+    text-align: center;
+    &>h1 {
+        @include text-config($playfair-font, 58px, 300, $text-black-color);
+        text-transform: capitalize;
+    }
+    &__list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 4px;
+        &-item {
+            position: relative;
+            text-align: center;
+            margin-top: 36px;
+            &_new:after {
+                position: absolute;
+                content: "new";
+                padding: 6px 10px;
+                color: #fff;
+                text-transform: uppercase;
+                top: 26px;
+                left: 26px;
+                background-color: $blue-color;
+                border-radius: 18px;
+            }
+            &>* {
+                display: block;
+            }
+            &>img {
+                width: 262px;
+                height: 336px;
+            }
+            &>.description {
+                margin-top: 30px;
+                @include text-config($playfair-font, 16px, 300, $text-black-color);
+                &:first-letter {
+                    text-transform: uppercase;
+                }
+            }
+            &>.price {
+                color: $text-grey-color;
+                margin-top: 12px;
+                @include text-config($lato-font, 16px, 300, $text-grey-color);
+            }
+        }
+    }
+    &__load-more {
+        display: block;
+        margin-top: 60px;
+        font-family: $lato-font;
+        text-transform: uppercase;
+        color: $text-grey-color;
+        cursor: pointer;
+    }
+}
+
+
+/*---------subscribe-styles----------------*/
+
+.subscribe {
+    background-image: url(../img/blue-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    margin-top: 60px;
+    &>* {
+        display: block;
+    }
+    &-info {
+        padding: 70px 0;
+        &__text {
+            @include text-config($lato-font, 12px, 600, rgba(51, 51, 51, 0.6));
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        &__heading {
+            margin: 26px 0;
+            @include text-config($playfair-font, 38px, 300, #fff);
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+        &__input {
+            position: relative;
+            margin: 0 auto;
+            width: 302px;
+            display: block;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 6px;
+                height: 6px;
+                right: 26px;
+                background-color: transparent;
+                border-bottom: 2px solid #fff;
+                border-right: 2px solid #fff;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                transform: rotate(-45deg);
+            }
+            &>input {
+                width: 100%;
+                padding: 18px 24px;
+                background-color: transparent;
+                border-radius: 30px;
+                border: 2px solid #a1d0f0;
+                box-sizing: border-box;
+                letter-spacing: 2px;
+                word-spacing: 4px;
+                @include text-config($lato-font, 12px, 600, #fff);
+                @include input-placeholder {
+                    color: currentColor;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    word-spacing: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+/*-------------------footer-styles---------------*/
+
+.footer {
+    padding: 28px 150px 30px 150px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav>a {
+        color: $text-black-color;
+    }
+    &__copy {
+        letter-spacing: 1px;
+        color: $text-grey-color;
+    }
+}

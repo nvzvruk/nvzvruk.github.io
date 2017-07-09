@@ -1,0 +1,49 @@
+@mixin block-create($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin text-config($family, $size, $weight, $color: $text-grey-color) {
+    font-family: $family;
+	font-size: $size;
+    font-weight: $weight;
+	color: $color;
+}
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+@mixin vertical-centered {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin media($type) {
+	@if $type == 'wLaptop' {
+		@media (max-width: 1023px) {
+			@content;
+		}
+	} @elseif $type == 'wTablet' {
+		@media (max-width: 767px) {
+			@content;
+		}
+	} @elseif $type == 'wMobile' {
+		@media (max-width: 449px) {
+			@content;
+		}
+	} @elseif $type == 'wMobileS' {
+		@media (max-width: 320px) {
+			@content;
+		}
+	} @elseif $type == 'hMobile' {
+		@media (max-height: 449px) {
+			@content;
+		}
+	}
+}
