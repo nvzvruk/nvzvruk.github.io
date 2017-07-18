@@ -1,0 +1,91 @@
+$global-font-icon: 'icon-font';
+
+@font-face {
+	font-family: $global-font-icon;
+	src: url("../font/icon/icon-font.woff2") format("woff2"),
+	url("../font/icon/icon-font.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	font-family: $global-font-icon;
+	&:before {
+   /* Some common icon stuff */
+ }
+ 
+ 	&.icon--envelope {
+ 		&:before {
+ 			content: $icon-envelope;
+ 		}
+ 	}
+ 	&.icon--facebook {
+ 		&:before {
+ 			content: $icon-facebook;
+ 		}
+ 	}
+ 	&.icon--google {
+ 		&:before {
+ 			content: $icon-google;
+ 		}
+ 	}
+ 	&.icon--in {
+ 		&:before {
+ 			content: $icon-in;
+ 		}
+ 	}
+ 	&.icon--menu {
+ 		&:before {
+ 			content: $icon-menu;
+ 		}
+ 	}
+ 	&.icon--phone {
+ 		&:before {
+ 			content: $icon-phone;
+ 		}
+ 	}
+ 	&.icon--pinterest {
+ 		&:before {
+ 			content: $icon-pinterest;
+ 		}
+ 	}
+ 	&.icon--placeholder {
+ 		&:before {
+ 			content: $icon-placeholder;
+ 		}
+ 	}
+ 	&.icon--russia {
+ 		&:before {
+ 			content: $icon-russia;
+ 		}
+ 	}
+ 	&.icon--time {
+ 		&:before {
+ 			content: $icon-time;
+ 		}
+ 	}
+ 	&.icon--twitter {
+ 		&:before {
+ 			content: $icon-twitter;
+ 		}
+ 	}
+ 	&.icon--uk {
+ 		&:before {
+ 			content: $icon-uk;
+ 		}
+ 	}
+ 	&.icon--ukraine {
+ 		&:before {
+ 			content: $icon-ukraine;
+ 		}
+ 	}
+ 	&.icon--user {
+ 		&:before {
+ 			content: $icon-user;
+ 		}
+ 	}
+ 	&.icon--vimeo {
+ 		&:before {
+ 			content: $icon-vimeo;
+ 		}
+ 	}
+}

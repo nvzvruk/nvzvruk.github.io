@@ -1,0 +1,103 @@
+@mixin text-config($family, $size, $weight, $color: $text-grey-color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin form-select {
+    position: relative;
+    width: 100%;
+    display: block;
+    cursor: default;
+    text-align: left;
+    line-height: 36px;
+    margin-top: 16px;
+    color: $text-grey-color;
+    &>.selected {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-indent: 20px;
+        border: 1px solid $border-grey-color;
+        border-right: none;
+        background: #fff;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    &>.selectArrow {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 34px;
+        border: 1px solid $border-grey-color;
+        text-align: center;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        background: $active_color_scheme;
+        color: #fff;
+        
+    }
+    &>.selectOptions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border: 1px solid $border-grey-color;
+        overflow: hidden;
+        background: #f6f6f6;
+        padding-top: 2px;
+        display: none;
+        z-index: 3;
+        &>.selectOption {
+            display: block;
+            width: 100%;
+            line-height: 20px;
+            padding: 5px 10%;
+            &:hover {
+                background: $active_color_scheme;
+            }
+        }
+    }
+}
+
+@mixin media($type) {
+    @if $type=='lLaptop' {
+        @media (max-width: 1681px) {
+            @content;
+        }
+    }
+    @elseif $type=='mLaptop' {
+        @media (max-width: 1281px) {
+            @content;
+        }
+    }
+    @elseif $type=='lTablet' {
+        @media (max-width: 1080px) {
+            @content;
+        }
+    }
+    @elseif $type=='mTablet' {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+    @elseif $type=='sTablet' {
+        @media (max-width: 849px) {
+            @content;
+        }
+    }
+    @elseif $type=='xsTablet' {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @elseif $type=='wMobile' {
+        @media (max-width: 449px) {
+            @content;
+        }
+    }
+}

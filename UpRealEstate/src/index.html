@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Up real estate</title>
+    <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top__socials">
+                <div class="header-top__socials-wrap">
+                    <a href="#" class="header-top__socials-item icon icon--facebook"></a>
+                    <a href="#" class="header-top__socials-item icon icon--in"></a>
+                    <a href="#" class="header-top__socials-item icon icon--twitter"></a>
+                    <a href="#" class="header-top__socials-item icon icon--google"></a>
+                    <a href="#" class="header-top__socials-item icon icon--vimeo"></a>
+                    <a href="#" class="header-top__socials-item icon icon--pinterest"></a>
+                </div>
+            </div>
+            <div class="header-top__actions">
+                <span class="icon icon--time" class="header-top__actions-info"> Open House: Mon - Fri - 9:00-18:00</span>
+                <div class="header-top__actions-select header-top__actions-lang">
+                    <select name="language" id="lang">
+                        <option value="1">english</option>
+                        <option value="2">russian</option>
+                        <option value="3">ukrainian</option>
+                    </select>
+                </div>
+                <div class="header-top__actions-select header-top__actions-currency">
+                    <select name="currency" id="curr">
+                        <option value="1">usd</option>
+                        <option value="2">rub</option>
+                        <option value="3">uah</option>
+                    </select>
+                </div>
+                <div class="header-top__actions-login">
+                    <span class="icon icon--user"></span>
+                    <a href="#">Login/Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-top_xs">
+           <span class="header-top__actions-info icon icon--time"> Open House: Mon - Fri - 9:00-18:00</span>
+            <div class="header-top__socials">
+                <div class="header-top__socials-wrap">
+                    <a href="#" class="header-top__socials-item icon icon--facebook"></a>
+                    <a href="#" class="header-top__socials-item icon icon--in"></a>
+                    <a href="#" class="header-top__socials-item icon icon--twitter"></a>
+                    <a href="#" class="header-top__socials-item icon icon--google"></a>
+                    <a href="#" class="header-top__socials-item icon icon--vimeo"></a>
+                    <a href="#" class="header-top__socials-item icon icon--pinterest"></a>
+                </div>
+            </div>
+            <div class="header-top__actions">
+                   <div class="header-top__actions-select header-top__actions-lang">
+                    <select name="language" id="lang">
+                        <option value="1">english</option>
+                        <option value="2">russian</option>
+                        <option value="3">ukrainian</option>
+                    </select>
+                </div>
+                <div class="header-top__actions-select header-top__actions-currency">
+                    <select name="currency" id="curr">
+                        <option value="1">usd</option>
+                        <option value="2">rub</option>
+                        <option value="3">uah</option>
+                    </select>
+                </div>
+                <div class="header-top__actions-login">
+                    <span class="icon icon--user"></span>
+                    <a href="#">Login/Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-bottom-content">
+                <div class="header-bottom__logo">
+                    <img src="./img/logo.jpg" alt="">
+                </div>
+                <div class="header-bottom__actions">
+                    <div class="header-bottom__actions-item">
+                        <div class="icon icon--phone"></div>
+                        <div class="info">
+                            <span>call us:</span>
+                            <a href="tel:435-234-9867">435-234-9867</a>
+                        </div>
+                    </div>
+                    <div class="header-bottom__actions-item">
+                        <div class="icon icon--envelope"></div>
+                        <div class="info">
+                            <span>mail us:</span>
+                            <a href="mailto:info@luxuarylife.com">info@luxuarylife.com</a>
+                        </div>
+                    </div>
+                    <div class="header-bottom__actions-item">
+                        <div class="icon icon--placeholder"></div>
+                        <div class="info">
+                            <span>visit us:</span>
+                            <a href="#">Beverly Hills, CA 90210</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="menu__nav">
+            <a href="" class="menu__nav-item">home</a>
+            <a href="" class="menu__nav-item">properties</a>
+            <a href="" class="menu__nav-item">agents</a>
+            <a href="" class="menu__nav-item">blog</a>
+            <a href="" class="menu__nav-item">idx</a>
+            <a href="" class="menu__nav-item">pagess</a>
+            <a href="" class="menu__nav-item">features</a>
+        </div>
+        <a href="" class="menu__submit-btn">submit object</a>
+    </div>
+    <div class="menu_xs">
+        <span class="menu_xs__icon icon icon--menu"></span>
+    </div>
+    <div class="form-holder">
+        <div class="form-holder__text-wrap">
+            <div class="form-holder__text">
+                <strong>House of Your Dream</strong><br>
+                <span>We Will Help to Find it</span>
+            </div>
+        </div>
+        <div class="form-holder__search-form-wrap">
+            <label class="form-label" for="">Find your home</label>
+            <form name="search-form" class="search-form" action="">
+                <div class="search-form__row">
+                    <div class="search-form__row-elem">
+                        <label for="property-type">Property type</label>
+                        <div class="search-form__select" id="property-type">
+                            <span class='selected'></span>
+                            <span class='selectArrow'>&#9660</span>
+                            <div class="selectOptions">
+                                <span class="selectOption" value="Option 1">Any</span>
+                                <span class="selectOption" value="Option 2">Элемент 2</span>
+                                <span class="selectOption" value="Option 3">Элемент 3</span>
+                                <span class="selectOption" value="Option 4">Элемент 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-form__row-elem">
+                        <label for="location">Location</label>
+                        <div class="search-form__select" id="location">
+                            <span class='selected'></span>
+                            <span class='selectArrow'>&#9660</span>
+                            <div class="selectOptions">
+                                <span class="selectOption" value="Option 1">Any</span>
+                                <span class="selectOption" value="Option 2">Элемент 2</span>
+                                <span class="selectOption" value="Option 3">Элемент 3</span>
+                                <span class="selectOption" value="Option 4">Элемент 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-form__row-elem">
+                        <label for="property-status">Property status</label>
+                        <div class="search-form__select" id="property-status">
+                            <span class='selected'></span>
+                            <span class='selectArrow'>&#9660</span>
+                            <div class="selectOptions">
+                                <span class="selectOption" value="Option 1">Any</span>
+                                <span class="selectOption" value="Option 2">Элемент 2</span>
+                                <span class="selectOption" value="Option 3">Элемент 3</span>
+                                <span class="selectOption" value="Option 4">Элемент 4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-form__row">
+                    <div class="search-form__row-elem">
+                        <div class="search-form__row-elem_top">
+                            <label for="slider">Price range</label>
+                            <div class="number-inputs">
+                                <input id="txtMinAge" type="text">
+                                <input id="txtMaxAge" type="text">
+                            </div>
+                        </div>
+                        <div class="search-form__row-elem_bottom">
+                            <br />
+                            <div id="slider"></div>
+                            <span>0</span>
+                            <span>1000000</span>
+                        </div>
+                    </div>
+                    <div class="search-form__row-elem search-form__row-elem_devided">
+                        <div class="search-form__row-elem_sm">
+                            <label for="property-status">Beds</label>
+                            <div class="search-form__select" id="property-status">
+                                <span class='selected'></span>
+                                <span class='selectArrow'>&#9660</span>
+                                <div class="selectOptions">
+                                    <span class="selectOption" value="Option 1">Any</span>
+                                    <span class="selectOption" value="Option 2">Элемент 2</span>
+                                    <span class="selectOption" value="Option 3">Элемент 3</span>
+                                    <span class="selectOption" value="Option 4">Элемент 4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-form__row-elem_sm">
+                            <label for="property-status">Baths</label>
+                            <div class="search-form__select" id="property-status">
+                                <span class='selected'></span>
+                                <span class='selectArrow'>&#9660</span>
+                                <div class="selectOptions">
+                                    <span class="selectOption" value="Option 1">Any</span>
+                                    <span class="selectOption" value="Option 2">Элемент 2</span>
+                                    <span class="selectOption" value="Option 3">Элемент 3</span>
+                                    <span class="selectOption" value="Option 4">Элемент 4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-form__row-elem search-form__row-elem_devided">
+                        <div class="search-form__row-elem_sm">
+                            <label for="property-status">Area <span>(Sq Ft)</span></label>
+                            <div class="search-form__select" id="property-status">
+                                <span class='selected'></span>
+                                <span class='selectArrow'>&#9660</span>
+                                <div class="selectOptions">
+                                    <span class="selectOption" value="Option 1">Any</span>
+                                    <span class="selectOption" value="Option 2">Элемент 2</span>
+                                    <span class="selectOption" value="Option 3">Элемент 3</span><span class="selectOption" value="Option 4">Элемент 4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-form__row-elem_sm search-form__row-elem_sm-input">
+                            <input type="submit" value="find now">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form-holder_xs__submit-btn">find now</div>
+    </div>
+    <div class="properties">
+        <h2 class="properties__heading">Latest properties</h2>
+        <div class="properties__slider">
+            <span class="properties__slider-arrow properties__slider-arrow_left js-left-arrow"></span>
+            <span class="properties__slider-arrow properties__slider-arrow_right js-right-arrow">  &#8594; </span>
+            <div class="properties__slider-box">
+                <div class="properties__slider-wrapper">
+                    <div class="slider-item js-slide"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                    <div class="slider-item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

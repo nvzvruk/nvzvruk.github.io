@@ -1,0 +1,92 @@
+.menu {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 375px;
+    background-color: $dark-nav-color;
+    text-transform: uppercase;
+    @include text-config($lato-font, 16px, 300, #fff);
+    @include media(lLaptop) {
+        padding: 0 150px;
+        @include text-config($lato-font, 14px, 300, #fff);
+    }
+    @include media(mLaptop) {
+        padding: 0 80px;
+        @include text-config($lato-font, 12px, 300, #fff);
+    }
+    @include media(lTablet) {
+        padding: 0 40px;
+    }
+    @include media(mTablet) {
+        padding: 0 30px;
+    }
+    @include media(xsTablet) {
+        display: none;
+    }
+    &>* {
+        display: inline-block;
+    }
+    &_xs {
+        background-color: $dark-nav-color;
+        display: none;
+        color: #fff;
+        text-align: center;
+        &__icon {
+            display: block;
+            font-size: 28px;
+            padding: 10px 0;
+        }
+        @include media(xsTablet) {
+            display: block;
+        }
+    }
+    &__nav {
+        &-item {
+            display: inline-block;
+            position: relative;
+            padding: 20px 24px;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            box-sizing: border-box;
+            transition: .3s;
+            @include media(lLaptop) {
+                padding: 16px 20px;
+            }
+            @include media(mLaptop) {
+                padding: 12px 20px;
+            }
+            &:not(:last-child) {
+                &:after {
+                    position: absolute;
+                    right: 0;
+                    content: '';
+                    width: 1px;
+                    height: 20px;
+                    background-color: $border-nav-color;
+                }
+            }
+            &:hover {
+                background-color: $active_color_scheme-bg;
+                border-top: 2px solid $active_color_scheme;
+                border-bottom: 2px solid $active_color_scheme;
+            }
+        }
+    }
+    &__submit-btn {
+        padding: 22px 24px;
+        background-color: $nav_color_scheme;
+        box-sizing: border-box;
+        @include media(lLaptop) {
+            padding: 18px 20px;
+            @include text-config($lato-font, 14px, 300, #fff);
+        }
+        @include media(mLaptop) {
+            padding: 14px 18px;
+            @include text-config($lato-font, 12px, 300, #fff);
+        }
+    }
+}

@@ -1,0 +1,244 @@
+.header-top {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 375px;
+    max-height: 48px;
+    overflow: hidden;
+    @include text-config($lato-font, 13px, 300, $text-grey-color);
+    @include media(lLaptop) {
+        margin: 0 150px;
+    }
+    @include media(mLaptop) {
+        margin: 0 80px;
+    }
+    @include media(lTablet) {
+        margin: 0 40px;
+    }
+    @include media(mTablet) {
+        margin: 0 30px;
+    }
+    @include media(sTablet) {
+        margin: 0;
+    }
+    @include media(xsTablet) {
+        display: none;
+    }
+    &_xs {
+        display: none;
+        @include media(xsTablet) {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            @include text-config($lato-font, 12px, 300, $text-grey-color);
+        }
+    }
+    &__socials {
+        &-wrap {
+            padding: 16px 0;
+            border-left: 1px solid $border-grey-color;
+            border-right: 1px solid $border-grey-color;
+            @include media(sTablet) {
+                border-left: none;
+                border-right: none;
+                padding: 0;
+            }
+        }
+        &-item {
+            display: inline-block;
+            padding: 0 12px;
+            transition: .3s;
+            @include media(xsTablet) {
+                padding: 0 18px;
+            }
+            &:not(:last-child) {
+                border-right: 1px solid $border-grey-color;
+            }
+            &:hover {
+                color: $active_color_scheme;
+            }
+        }
+    }
+    &__actions {
+        @include media(xsTablet) {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+            min-width: 70%;
+            align-items: center;
+        }
+        &-info {
+            @include media(xsTablet) {
+                padding: 15px 0;
+                font-size: 16px;
+            }
+        }
+        &>* {
+            display: inline-block;
+            padding: 16px;
+            border-left: 1px solid $border-grey-color;
+            height: inherit;
+            box-sizing: border-box;
+            &>span {
+                @include media(sTablet) {
+                    display: inline-block;
+                }
+            }
+            &:last-child {
+                border-right: 1px solid $border-grey-color;
+                @include media(xsTablet) {
+                    border: none;
+                }
+            }
+            @include media(xsTablet) {
+                border: none;
+                padding: 10px;
+            }
+        }
+        &-select {
+            position: relative;
+            padding: 0;
+            &>select {
+                padding: 16px;
+                border: none;
+                height: 100%;
+                appearance: none;
+            }
+            &:after {
+                position: absolute;
+                top: 50%;
+                right: 14px;
+                content: '';
+                width: 7px;
+                height: 7px;
+                box-sizing: border-box;
+                border-bottom: 1px solid $text-grey-color;
+                border-right: 1px solid $text-grey-color;
+                transform: rotate(45deg) translateY(-50%);
+            }
+        }
+        &-lang {
+            &>select {
+                text-transform: capitalize;
+            }
+        }
+        &-currency {
+            &>select {
+                padding-right: 32px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    border-top: 1px solid $border-grey-color;
+    &-content {
+        padding: 30px 375px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(lLaptop) {
+            padding: 30px 150px;
+        }
+        @include media(mLaptop) {
+            padding: 20px 80px;
+        }
+        @include media(lTablet) {
+            padding: 10px 40px;
+        }
+        @include media(mTablet) {
+            padding: 10px 30px;
+        }
+        @include media(xsTablet) {
+            padding: 20px;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__logo {
+        @include media(sTablet) {
+            display: block;
+        }
+    }
+    &__actions {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        min-width: 74%;
+        @include media(xsTablet) {
+            display: block;
+            min-width: inherit;
+        }
+        &-item {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 6px;
+            @include media(lTablet) {
+                font-size: 12px;
+            }
+            @include media(xsTablet) {
+                display: inline-block;
+            }
+            &>.icon {
+                padding: 18px;
+                border: 3px solid $active-color-scheme;
+                border-radius: 50%;
+                font-size: 16px;
+                @include media(lTablet) {
+                    font-size: 12px;
+                    padding: 14px;
+                }
+                @include media(sTablet) {
+                    display: none;
+                }
+            }
+            &>.info {
+                margin-left: 10px;
+                @include media(xsTablet) {
+                    display: inline-block;
+                    margin-top: 16px;
+                }
+                &>* {
+                    display: block;
+                    @include media(xsTablet) {
+                        display: inline-block;
+                    }
+                }
+                &>span {
+                    &:first-of-type {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+                }
+                &>a {
+                    color: $text-grey-color;
+                }
+            }
+        }
+    }
+}
