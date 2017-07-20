@@ -1,0 +1,59 @@
+.user {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 163px 0 163px;
+    background-color: $background-color;
+    height: 1000px;
+    &-menu {
+        min-width: 157px;
+        &__item {
+            padding: 10.5px 0 10.5px 43px;
+            min-width: 157px;
+            box-sizing: border-box;
+            @include bg-img(10% center, initial, no-repeat, url('./../img/icons/menu_calendar.svg'));
+            @include text-config($lato,
+            14px,
+            300,
+            $user-menu-color);
+            text-transform: capitalize;
+            vertical-align: text-bottom;
+            line-height: 17px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: $black-color;
+                font-weight: 700;
+            }
+            &_current {
+                border-left: 2px solid $dark-grey-color;
+                color: $black-color;
+                font-weight: 700;
+            }
+            &_calendar {
+                background-image: url('./../img/icons/menu_calendar.svg');
+            }
+            &_friends {
+                background-image: url('./../img/icons/menu_friends.svg');
+            }
+            &_group {
+                background-image: url('./../img/icons/menu_group.svg');
+            }
+            &_locations {
+                background-image: url('./../img/icons/menu_locations.svg');
+            }
+            &_library {
+                background-image: url('./../img/icons/menu_library.svg');
+            }
+            &_stats {
+                background-image: url('./../img/icons/menu_stats.svg');
+            }
+            &_help {
+                background-image: url('./../img/icons/menu_help.svg');
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+$global-font-icon: '<%= fontName %>';
+
+@font-face {
+	font-family: $global-font-icon;
+	src: url("<%= fontPath %><%= fontName %>.woff2") format("woff2"),
+	url("<%= fontPath %><%= fontName %>.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	font-family: $global-font-icon;
+	&:before {
+   /* Some common icon stuff */
+ }
+ <% _.each(glyphs, function(glyph) { %>
+ 	&.icon--<%= glyph.name %> {
+ 		&:before {
+ 			content: $icon-<%= glyph.name %>;
+ 		}
+ 	}<% }); %>
+}

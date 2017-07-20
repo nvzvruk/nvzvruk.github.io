@@ -1,0 +1,61 @@
+$global-font-icon: 'icon-font';
+
+@font-face {
+	font-family: $global-font-icon;
+	src: url("../font/icon/icon-font.woff2") format("woff2"),
+	url("../font/icon/icon-font.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	font-family: $global-font-icon;
+	&:before {
+   /* Some common icon stuff */
+ }
+ 
+ 	&.icon--bookmark {
+ 		&:before {
+ 			content: $icon-bookmark;
+ 		}
+ 	}
+ 	&.icon--chevron_down {
+ 		&:before {
+ 			content: $icon-chevron_down;
+ 		}
+ 	}
+ 	&.icon--menu_calendar {
+ 		&:before {
+ 			content: $icon-menu_calendar;
+ 		}
+ 	}
+ 	&.icon--menu_friends {
+ 		&:before {
+ 			content: $icon-menu_friends;
+ 		}
+ 	}
+ 	&.icon--menu_group {
+ 		&:before {
+ 			content: $icon-menu_group;
+ 		}
+ 	}
+ 	&.icon--menu_help {
+ 		&:before {
+ 			content: $icon-menu_help;
+ 		}
+ 	}
+ 	&.icon--menu_library {
+ 		&:before {
+ 			content: $icon-menu_library;
+ 		}
+ 	}
+ 	&.icon--menu_locations {
+ 		&:before {
+ 			content: $icon-menu_locations;
+ 		}
+ 	}
+ 	&.icon--menu_stats {
+ 		&:before {
+ 			content: $icon-menu_stats;
+ 		}
+ 	}
+}

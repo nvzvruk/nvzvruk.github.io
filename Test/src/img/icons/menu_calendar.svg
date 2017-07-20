@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>menu_calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.1-Profile---Teacher-(own,-expanded)" transform="translate(-180.000000, -114.000000)">
+            <g id="components/menu-(game-manager)" transform="translate(163.000000, 101.000000)">
+                <g id="menu-item">
+                    <g id="menu_calendar" transform="translate(11.000000, 8.000000)">
+                        <path d="M16.656,17.056 L16.656,9.744 L7.344,9.744 L7.344,17.056 L16.656,17.056 Z M14.656,5.056 L16,5.056 L16,6.4 L16.656,6.4 C17.0186685,6.4 17.333332,6.533332 17.6,6.8 C17.866668,7.066668 18,7.38133152 18,7.744 L18,17.056 C18,17.4186685 17.866668,17.733332 17.6,18 C17.333332,18.266668 17.0186685,18.4 16.656,18.4 L7.344,18.4 C6.9706648,18.4 6.65333464,18.266668 6.392,18 C6.13066536,17.733332 6,17.4186685 6,17.056 L6,7.744 C6,7.38133152 6.13066536,7.066668 6.392,6.8 C6.65333464,6.533332 6.9706648,6.4 7.344,6.4 L8,6.4 L8,5.056 L9.344,5.056 L9.344,6.4 L14.656,6.4 L14.656,5.056 Z M15.344,12.4 L15.344,15.744 L12,15.744 L12,12.4 L15.344,12.4 Z" id="event---material" fill="#000000"></path>
+                        <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

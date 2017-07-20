@@ -1,0 +1,33 @@
+.user-profile-search {
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+    &__field {
+        width: 100%;
+        border: none;
+        padding: 10px 52px 10px 34px;
+        @include text-config($lato, 14px, 400, $dark-grey-color);
+        line-height: 17px;
+        @include input-placeholder {
+            @include text-config($lato, 14px, 400, $light-grey-color);
+            line-height: 17px;
+            text-transform: capitalize;
+        }
+    }
+    &>.icon {
+        @include block-create(14px, 14px);
+        @include bg-img(center, cover, no-repeat, url('./../img/icons/search.svg'));
+        @include vertical-centered;
+        left: 9.3px;
+    }
+    &>.filter {
+        @include text-config($lato,
+        14px,
+        400,
+        $light-grey-color);
+        line-height: 17px;
+        text-transform: capitalize;
+        @include vertical-centered;
+        right: 17px;
+        cursor: pointer;
+    }
+}

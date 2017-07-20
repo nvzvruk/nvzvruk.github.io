@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron_down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.1-Profile---Teacher-(own,-expanded)" transform="translate(-1251.000000, -28.000000)">
+            <g id="header">
+                <g id="header/profile" transform="translate(1038.000000, 16.000000)">
+                    <g id="chevron_down" transform="translate(206.000000, 3.000000)">
+                        <polygon id="expand_more---material" fill="#4A4A4A" opacity="0.5" points="15.82 9.14 17 10.32 12 15.32 7 10.32 8.18 9.14 12 12.98"></polygon>
+                        <rect id="Rectangle-7" x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

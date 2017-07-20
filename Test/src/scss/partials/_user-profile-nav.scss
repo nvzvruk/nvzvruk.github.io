@@ -1,0 +1,20 @@
+.user-profile-nav {
+    padding: 0 9.5px;
+    border-bottom: 1px solid #f0f0f0;
+    &__item {
+        display: inline-block;
+        padding: 9.5px 18px;
+        @include text-config($lato, 14px, 700, $light-grey-color);
+        line-height: 17px;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: .3s;
+        &_current {
+            color: $black-color;
+            border-bottom: 2px solid $dark-grey-color;
+        }
+        &:hover {
+            color: $black-color;
+        }
+    }
+}
