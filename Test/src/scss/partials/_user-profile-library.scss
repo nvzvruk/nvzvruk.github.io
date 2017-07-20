@@ -1,5 +1,4 @@
 .user-profile-library {
-    text-align: left;
     &__row {
         display: -webkit-flex;
         display: -moz-flex;
@@ -39,10 +38,18 @@
         margin-left: 12px;
         &>strong {
             @include text-config($lato, 14px, 700, $red-color);
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         &>span {
             margin-top: 3px;
             @include text-config($lato, 12px, 400, #9b9b9b);
+            &>strong {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
         }
     }
 }

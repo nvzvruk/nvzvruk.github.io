@@ -12,8 +12,14 @@
             line-height: 17px;
             text-transform: capitalize;
         }
+        &:focus+.search-icon {
+            background-image: url('./../img/icons/search_black.svg')
+        }
+        &:focus~.filter {
+            color: $black-color;
+        }
     }
-    &>.icon {
+    &>.search-icon {
         @include block-create(14px, 14px);
         @include bg-img(center, cover, no-repeat, url('./../img/icons/search.svg'));
         @include vertical-centered;

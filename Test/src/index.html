@@ -21,13 +21,13 @@
     </header>
     <section class="user">
         <aside class="user-menu">
-            <div class="user-menu__item user-menu__item_current user-menu__item_calendar">spil</div>
-            <div class="user-menu__item user-menu__item_friends">venner</div>
-            <div class="user-menu__item user-menu__item_group">grupper</div>
-            <div class="user-menu__item user-menu__item_locations">belligenhed</div>
-            <div class="user-menu__item user-menu__item_library">bibliotek</div>
-            <div class="user-menu__item user-menu__item_stats">statistik</div>
-            <div class="user-menu__item user-menu__item_help">help</div>
+            <div class="user-menu__item user-menu__item_calendar js-user-menu-item is-active">spil</div>
+            <div class="user-menu__item user-menu__item_friends js-user-menu-item">venner</div>
+            <div class="user-menu__item user-menu__item_grou js-user-menu-item">grupper</div>
+            <div class="user-menu__item user-menu__item_locations js-user-menu-item">belligenhed</div>
+            <div class="user-menu__item user-menu__item_library js-user-menu-item">bibliotek</div>
+            <div class="user-menu__item user-menu__item_stats js-user-menu-item">statistik</div>
+            <div class="user-menu__item user-menu__item_help js-user-menu-item">help</div>
         </aside>
         <div class="user-profile">
             <div class="user-profile-main">
@@ -65,25 +65,29 @@
                 </div>
             </div>
             <div class="user-profile-nav">
-                <div class="user-profile-nav__item">events</div>
-                <div class="user-profile-nav__item">friends</div>
-                <div class="user-profile-nav__item">groups</div>
-                <div class="user-profile-nav__item">locations</div>
-                <div class="user-profile-nav__item user-profile-nav__item_current">library</div>
+                <div class="user-profile-nav__item js-user-profile-nav__item">events</div>
+                <div class="user-profile-nav__item js-user-profile-nav__item">friends</div>
+                <div class="user-profile-nav__item js-user-profile-nav__item">groups</div>
+                <div class="user-profile-nav__item js-user-profile-nav__item">locations</div>
+                <div class="user-profile-nav__item js-user-profile-nav__item is-active">library</div>
             </div>
             <div class="user-profile-search">
                 <input class="user-profile-search__field" type="search" placeholder="search">
-                <span class="icon"></span>
+                <span class="search-icon"></span>
                 <span class="filter">filter</span>
             </div>
-            <div class="user-profile-shown-block">
-                <div class="user-profile-library">
+            <div class="shown-block">
+                <div class="shown-block__item user-profile-groups"></div>
+                <div class="shown-block__item user-profile-events"></div>
+                <div class="shown-block__item user-profile-friends"></div>
+                <div class="shown-block__item user-profile-locations"></div>
+                <div class="shown-block__item user-profile-library is-active">
                     <div class="user-profile-library__row">
                         <div class="left-element">
                             <div class="left-element__icon"></div>
                             <div class="left-element__text">
                                 <strong>Mixtures and Compounds</strong>
-                                <span>hanne pedersen in chemistry</span>
+                                <span><strong>hanne pedersen</strong> in Chemistry</span>
                             </div>
                         </div>
                         <div class="central-element">
@@ -111,7 +115,7 @@
                             <div class="left-element__icon"></div>
                             <div class="left-element__text">
                                 <strong>Unsaturated Hydrocarbons</strong>
-                                <span>hanne pedersen in chemistry</span>
+                                <span><strong>hanne pedersen</strong> in Chemistry</span>
                             </div>
                         </div>
                         <div class="central-element">
@@ -139,7 +143,7 @@
                             <div class="left-element__icon"></div>
                             <div class="left-element__text">
                                 <strong>Mole-mass conversions</strong>
-                                <span>hanne pedersen in chemistry</span>
+                                <span><strong>hanne pedersen</strong> in Chemistry</span>
                             </div>
                         </div>
                         <div class="central-element">
@@ -167,7 +171,7 @@
                             <div class="left-element__icon"></div>
                             <div class="left-element__text">
                                 <strong>The Gas Laws II: Combined and Avogadro's principles</strong>
-                                <span>hanne pedersen in chemistry</span>
+                                <span><strong>hanne pedersen</strong> in Chemistry</span>
                             </div>
                         </div>
                         <div class="central-element">
@@ -194,6 +198,8 @@
             </div>
         </div>
     </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
                 color: $black-color;
                 font-weight: 700;
             }
-            &_current {
+            &.is-active {
                 border-left: 2px solid $dark-grey-color;
                 color: $black-color;
                 font-weight: 700;

@@ -31,6 +31,7 @@
             @include block-create(24px, 24px);
             @include bg-img(center, 10px, no-repeat, url('./../img/icons/chevron_down.svg'));
             vertical-align: baseline;
+            cursor: pointer;
         }
     }
 }
