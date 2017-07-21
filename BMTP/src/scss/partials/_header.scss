@@ -16,12 +16,19 @@
     @include media(wTablet) {
         padding: 10px 30px;
     }
+    @include media(Mobile) {
+        padding: 10px 10px;
+    }
     &-left {
         @include block-create(171px, 32px);
         @include bg-img(left, contain, no-repeat, url('./../img/logo.svg'));
         @include media(xlLaptop) {
             @include block-create(250px,
             56px);
+        }
+        @include media(Mobile) {
+            @include block-create(100px,
+            36px);
         }
     }
     &-right {
@@ -40,6 +47,10 @@
             $color: $black-color);
             @include media(xlLaptop) {
                 font-size: 24px;
+                margin-right: 8px;
+            }
+            @include media(Mobile) {
+                font-size: 12px;
                 margin-right: 8px;
             }
         }

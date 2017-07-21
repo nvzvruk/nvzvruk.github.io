@@ -384,6 +384,9 @@ th {
   @media (max-width: 768px) {
     .header {
       padding: 10px 30px; } }
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px 10px; } }
   .header-left {
     width: 171px;
     height: 32px;
@@ -395,6 +398,10 @@ th {
       .header-left {
         width: 250px;
         height: 56px; } }
+    @media (max-width: 480px) {
+      .header-left {
+        width: 100px;
+        height: 36px; } }
   .header-right {
     display: -moz-flex;
     display: -ms-flex;
@@ -415,6 +422,10 @@ th {
       @media (min-width: 1681px) {
         .header-right__name {
           font-size: 24px;
+          margin-right: 8px; } }
+      @media (max-width: 480px) {
+        .header-right__name {
+          font-size: 12px;
           margin-right: 8px; } }
     .header-right__avatar {
       width: 30px;
@@ -501,9 +512,28 @@ th {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
+      padding: 30px 20px; } }
+  @media (max-width: 768px) {
+    .user {
       padding: 30px 10px; } }
+  @media (max-width: 480px) {
+    .user {
+      padding: 20px 5px; } }
   .user-menu {
     min-width: 14%; }
+    .user-menu_mobile {
+      display: none; }
+      @media (max-width: 480px) {
+        .user-menu_mobile {
+          -ms-flex-item-align: end;
+              align-self: flex-end;
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url("./../img/icons/hamburger.svg"); } }
     @media (max-width: 768px) {
       .user-menu {
         min-width: 100%;
@@ -515,7 +545,9 @@ th {
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between; } }
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
     .user-menu__item {
       padding: 10.5px 0 10.5px 43px;
       min-width: 157px;
@@ -548,6 +580,15 @@ th {
           min-width: 50px;
           padding: 15px 0 15px 20px;
           background-position: left; } }
+      @media (max-width: 700px) {
+        .user-menu__item {
+          background-size: 0;
+          padding: 15px 0;
+          text-align: center;
+          min-width: 20px; } }
+      @media (max-width: 480px) {
+        .user-menu__item {
+          display: none; } }
       .user-menu__item:hover {
         color: #333333;
         font-weight: 700; }
@@ -597,6 +638,9 @@ th {
     @media (min-width: 1681px) {
       .user-profile-main {
         min-height: 220px; } }
+    @media (max-width: 480px) {
+      .user-profile-main {
+        margin-left: 16px; } }
     .user-profile-main > * {
       display: inline-block; }
     .user-profile-main__info {
@@ -662,6 +706,10 @@ th {
         .user-profile-main__text > strong {
           font-size: 28px;
           line-height: 34px; } }
+      @media (max-width: 480px) {
+        .user-profile-main__text > strong {
+          font-size: 14px;
+          line-height: 14px; } }
     .user-profile-main__text > .nickname {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -672,6 +720,10 @@ th {
         .user-profile-main__text > .nickname {
           font-size: 24px;
           line-height: 29px; } }
+      @media (max-width: 480px) {
+        .user-profile-main__text > .nickname {
+          font-size: 12px;
+          line-height: 20px; } }
     .user-profile-main__text > .status {
       font-family: "Lato", sans-serif;
       font-size: 14px;
@@ -682,6 +734,10 @@ th {
         .user-profile-main__text > .status {
           font-size: 24px;
           line-height: 40px; } }
+      @media (max-width: 480px) {
+        .user-profile-main__text > .status {
+          font-size: 12px;
+          line-height: 20px; } }
     .user-profile-main__btn {
       max-width: 98px;
       padding: 9.5px 25.5px;
@@ -721,6 +777,9 @@ th {
             font-size: 22px;
             max-width: none;
             padding: 14px 27px; } }
+        @media (max-width: 700px) {
+          .user-profile-main__btn_show-less {
+            display: none; } }
 
 .user-profile-info {
   background-color: #f9f9f9;
@@ -738,6 +797,10 @@ th {
       padding: 30px 46px 35px 46px;
       font-size: 24px;
       line-height: 29px; } }
+  @media (max-width: 480px) {
+    .user-profile-info {
+      font-size: 12px;
+      line-height: 14px; } }
   .user-profile-info__row:not(:first-child) {
     margin-top: 7px; }
   .user-profile-info__row > .data-desc {
@@ -790,6 +853,11 @@ inset 0 -5px 5px 0 #ccc,
     @media (max-width: 1024px) {
       .user-profile-nav__item {
         padding: 9.5px 12px; } }
+    @media (max-width: 480px) {
+      .user-profile-nav__item {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 9.5px 6px; } }
 
 .user-profile-search {
   position: relative;
@@ -921,6 +989,9 @@ inset 0 -5px 5px 0 #ccc,
   @media (min-width: 1681px) {
     .user-profile-library__row {
       padding: 26px; } }
+  @media (max-width: 480px) {
+    .user-profile-library__row {
+      padding: 20px 6px; } }
 
 .left-element {
   display: -moz-flex;
@@ -993,6 +1064,9 @@ inset 0 -5px 5px 0 #ccc,
 
 .central-element {
   width: 18%; }
+  @media (max-width: 480px) {
+    .central-element {
+      display: none; } }
   .central-element > * {
     display: block;
     font-family: "Lato", sans-serif;

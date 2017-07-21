@@ -13,6 +13,9 @@
         @include media(xlLaptop) {
             padding: 26px;
         }
+        @include media(Mobile) {
+            padding: 20px 6px;
+        }
     }
 }
 
@@ -79,6 +82,9 @@
 
 .central-element {
     width: 18%;
+    @include media(Mobile) {
+        display: none;
+    }
     &>* {
         display: block;
         @include text-config($lato, 12px, 400, #9b9b9b);

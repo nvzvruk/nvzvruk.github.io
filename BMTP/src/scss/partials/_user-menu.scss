@@ -17,10 +17,25 @@
     @include media(wTablet) {
         flex-direction: column;
         justify-content: flex-start;
+        padding: 30px 20px;
+    }
+    @include media(wTablet) {
         padding: 30px 10px;
+    }
+    @include media(Mobile) {
+        padding: 20px 5px;
     }
     &-menu {
         min-width: 14%;
+        &_mobile {
+            display: none;
+            @include media(Mobile) {
+                align-self: flex-end;
+                display: block;
+                @include block-create(24px, 24px);
+                @include bg-img(center, cover, no-repeat, url('./../img/icons/hamburger.svg'));
+            }
+        }
         @include media(wTablet) {
             min-width: 100%;
             display: -webkit-flex;
@@ -29,12 +44,16 @@
             display: -o-flex;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         &__item {
             padding: 10.5px 0 10.5px 43px;
             min-width: 157px;
             box-sizing: border-box;
-            @include bg-img(10% center, initial, no-repeat, url('./../img/icons/menu_calendar.svg'));
+            @include bg-img(10% center,
+            initial,
+            no-repeat,
+            url('./../img/icons/menu_calendar.svg'));
             @include text-config($lato,
             14px,
             300,
@@ -62,6 +81,15 @@
                 min-width: 50px;
                 padding: 15px 0 15px 20px;
                 background-position: left;
+            }
+            @include media(sTablet) {
+                background-size: 0;
+                padding: 15px 0;
+                text-align: center;
+                min-width: 20px;
+            }
+            @include media(Mobile) {
+                display: none;
             }
             &:hover {
                 color: $black-color;

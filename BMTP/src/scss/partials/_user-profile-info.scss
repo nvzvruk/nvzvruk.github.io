@@ -10,6 +10,10 @@
         font-size: 24px;
         line-height: 29px;
     }
+    @include media(Mobile) {
+        font-size: 12px;
+        line-height: 14px;
+    }
     &__row {
         &:not(:first-child) {
             margin-top: 7px;
@@ -18,7 +22,7 @@
             display: inline-block;
             min-width: 105px;
             @include media(xlLaptop) {
-               min-width: 145px;
+                min-width: 145px;
             }
         }
         &>.data-def {

@@ -58,7 +58,12 @@
         }
     }
     @elseif $type=='sTablet' {
-        @media (min-width: 700px) {
+        @media (max-width: 700px) {
+            @content;
+        }
+    }
+    @elseif $type=='Mobile' {
+        @media (max-width: 480px) {
             @content;
         }
     }

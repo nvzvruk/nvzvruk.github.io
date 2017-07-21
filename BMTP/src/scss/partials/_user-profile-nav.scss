@@ -31,5 +31,10 @@
         @include media(sLaptop) {
             padding: 9.5px 12px;
         }
+        @include media(Mobile) {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 9.5px 6px;
+        }
     }
 }
