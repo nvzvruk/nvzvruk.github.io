@@ -5,21 +5,48 @@
     box-sizing: border-box;
     &-main {
         position: relative;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        margin-left: 36px;
         min-height: 152px;
         &>* {
             display: inline-block;
         }
         &__info {
-            margin-top: 10px;
-            padding-left: 202px;
+            margin-left: 45px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
         }
         &__avatar {
-            position: absolute;
-            top: -17px;
-            left: 36px;
+            position: relative;
+            margin-top: -17px;
             @include block-create(120px, 120px);
-            @include bg-img(center, cover, no-repeat, url('./../img/avatar.jpg'));
-            border-radius: 4px;
+            &-photo {
+                height: inherit;
+                border-radius: 4px;
+            }
+            &-tag {
+                position: absolute;
+                bottom: 10px;
+                left: -7px;
+                display: block;
+                @include text-config(lato-font, 10px, 700, $color: #fff);
+                background-color: $red-color;
+                line-height: 12px;
+                text-transform: capitalize;
+                padding: 2px 8px;
+                border: 1px solid #a60001;
+                box-sizing: border-box;
+                border-radius: 14px;
+            }
         }
         &__text {
             &>* {
@@ -27,39 +54,26 @@
             }
             &>strong {
                 text-transform: capitalize;
-                @include text-config($lato,
-                18px,
-                700,
-                $black-color);
+                @include text-config($lato, 18px, 700, $black-color);
                 line-height: 22px;
             }
             &>.nickname {
-                @include text-config($lato,
-                14px,
-                700,
-                $black-color);
+                @include text-config($lato, 14px, 700, $black-color);
                 line-height: 17px;
             }
             &>.status {
-                @include text-config($lato,
-                14px,
-                400,
-                $dark-grey-color);
+                @include text-config($lato, 14px, 400, $dark-grey-color);
                 line-height: 24px;
             }
         }
         &__btn {
-            margin-top: 26px;
+            max-width: 95px;
             padding: 9.5px 25.5px;
             box-sizing: border-box;
             border: 1px solid #7f7f7f;
-            display: inline-block;
             border-radius: 4px;
             text-transform: capitalize;
-            @include text-config($lato,
-            14px,
-            400,
-            #545454);
+            @include text-config($lato, 14px, 400, #545454);
             transition: .3s;
             cursor: pointer;
             &:hover {

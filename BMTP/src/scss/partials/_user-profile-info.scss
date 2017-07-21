@@ -4,6 +4,7 @@
     text-transform: capitalize;
     @include text-config($lato, 14px, 400, $profile-grey-color);
     line-height: 17px;
+    box-shadow: inset 0px 10px 8px -8px #ccc, inset 0px -10px 8px -8px #ccc;
     &__row {
         &:not(:first-child) {
             margin-top: 7px;
@@ -18,3 +19,8 @@
         }
     }
 }
+
+
+/*
+inset 0 -5px 5px 0 #ccc, 
+                inset 0 10px 10px -10px #ccc;*/

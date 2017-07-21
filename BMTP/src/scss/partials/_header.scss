@@ -1,0 +1,75 @@
+.header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 178px;
+    &-left {
+        @include block-create(171px, 32px);
+        @include bg-img(left, contain, no-repeat, url('./../img/logo.svg'));
+    }
+    &-right {
+        &>* {
+            display: inline-block;
+        }
+        &__name {
+            margin-right: 4px;
+            text-transform: capitalize;
+            vertical-align: super;
+            @include text-config($lato,
+            14px,
+            700,
+            $color: $black-color);
+        }
+        &__avatar {
+            @include block-create(30px,
+            30px);
+            border-radius: 50%;
+            vertical-align: sub;
+        }
+        &__dropDown {
+            position: relative;
+            height: 100%;
+            &-btn {
+                @include block-create(24px,
+                24px);
+                @include bg-img(center,
+                10px,
+                no-repeat,
+                url('./../img/icons/chevron_down.svg'));
+                vertical-align: baseline;
+                cursor: pointer;
+            }
+            &-links {
+                display: none;
+                position: absolute;
+                top: 150%;
+                right: 0;
+                min-width: 160px;
+                background-color: #f9f9f9;
+                border-radius: 4px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                &>a {
+                    display: block;
+                    padding: 8px 16px;
+                    @include text-config($lato,
+                    14px,
+                    400,
+                    $color: $black-color);
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: $background-color;
+                    }
+                }
+                &.is-active {
+                    display: block;
+                }
+            }
+        }
+    }
+}

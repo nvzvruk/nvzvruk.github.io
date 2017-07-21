@@ -13,14 +13,19 @@
         <div class="header-left"></div>
         <div class="header-right">
             <div class="header-right__name">hanne pedersen</div>
-            <div class="header-right__avatar"></div>
-            <div class="header-right__drop-down">
-
+            <img class="header-right__avatar" src="img/avatar.jpg" alt="">
+            <div class="header-right__dropDown">
+                <div class="header-right__dropDown-btn js-dropDown-btn"></div>
+                <div class="header-right__dropDown-links js-dropDown-links">
+                    <a href="#">action 1</a>
+                    <a href="#">action 2</a>
+                    <a href="#">action 3</a>
+                </div>
             </div>
         </div>
     </header>
     <section class="user">
-        <aside class="user-menu">
+        <nav class="user-menu">
             <div class="user-menu__item user-menu__item_calendar js-user-menu-item is-active">spil</div>
             <div class="user-menu__item user-menu__item_friends js-user-menu-item">venner</div>
             <div class="user-menu__item user-menu__item_grou js-user-menu-item">grupper</div>
@@ -28,17 +33,20 @@
             <div class="user-menu__item user-menu__item_library js-user-menu-item">bibliotek</div>
             <div class="user-menu__item user-menu__item_stats js-user-menu-item">statistik</div>
             <div class="user-menu__item user-menu__item_help js-user-menu-item">help</div>
-        </aside>
+        </nav>
         <div class="user-profile">
             <div class="user-profile-main">
-                <div class="user-profile-main__avatar"></div>
+                <div class="user-profile-main__avatar">
+                    <img class="user-profile-main__avatar-photo" src="img/avatar.jpg">
+                    <span class="user-profile-main__avatar-tag">official</span>
+                </div>
                 <div class="user-profile-main__info">
                     <div class="user-profile-main__text">
                         <strong>hanne pedersen</strong>
                         <span class="nickname">@HannePedersen1</span>
                         <span class="status">Kemi laerer pa Blagard skole</span>
-                        <div class="user-profile-main__btn">details</div>
                     </div>
+                    <div class="user-profile-main__btn">details</div>
                 </div>
                 <div class="user-profile-main__btn user-profile-main__btn_show-less">show less</div>
             </div>
@@ -77,9 +85,9 @@
                 <span class="filter">filter</span>
             </div>
             <div class="shown-block">
-                <div class="shown-block__item user-profile-groups"></div>
                 <div class="shown-block__item user-profile-events"></div>
                 <div class="shown-block__item user-profile-friends"></div>
+                <div class="shown-block__item user-profile-groups"></div>
                 <div class="shown-block__item user-profile-locations"></div>
                 <div class="shown-block__item user-profile-library is-active">
                     <div class="user-profile-library__row">
