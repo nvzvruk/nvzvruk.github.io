@@ -13,4 +13,7 @@ $(document).ready(function () {
     $('div.js-dropDown-links').mouseleave(function () {
         $(this).removeClass('is-active');
     });
+    $('div.user-menu_mobile').click(function () {
+        $('div.user-menu_mobile__items').hasClass("is-active") ? $('div.user-menu_mobile__items').removeClass('is-active') : $('div.user-menu_mobile__items').addClass("is-active");
+    });
 });

@@ -29,11 +29,39 @@
         min-width: 14%;
         &_mobile {
             display: none;
+            position: relative;
+            align-self: flex-start;
+            @include block-create(24px, 24px);
+            @include bg-img(center, cover, no-repeat, url('./../img/icons/hamburger.svg'));
             @include media(Mobile) {
-                align-self: flex-end;
                 display: block;
-                @include block-create(24px, 24px);
-                @include bg-img(center, cover, no-repeat, url('./../img/icons/hamburger.svg'));
+            }
+            &__items {
+                display: none;
+                position: absolute;
+                top: 150%;
+                left: 0;
+                min-width: 160px;
+                background-color: #f9f9f9;
+                border-radius: 4px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+                &>a {
+                    display: block;
+                    padding: 8px 16px;
+                    @include text-config($lato,
+                    14px,
+                    400,
+                    $color: $black-color);
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: $background-color;
+                    }
+                }
+                &.is-active {
+                    display: block;
+                }
             }
         }
         @include media(wTablet) {
