@@ -10,6 +10,9 @@
         padding: 16px;
         background-color: #fbfbfc;
         border-bottom: 1px solid #f0f0f0;
+        @include media(xlLaptop) {
+            padding: 26px;
+        }
     }
 }
 
@@ -26,6 +29,10 @@
         border-radius: 4px;
         min-width: 48px;
         min-height: 48px;
+        @include media(xlLaptop) {
+            min-height: 68px;
+            min-width: 68px;
+        }
     }
     &__text {
         display: -webkit-flex;
@@ -36,11 +43,20 @@
         justify-content: center;
         flex-direction: column;
         margin-left: 12px;
+        @include media(xlLaptop) {
+            margin-left: 22px;
+        }
         &>strong {
             @include text-config($lato, 14px, 700, $red-color);
             cursor: pointer;
             &:hover {
                 text-decoration: underline;
+            }
+            @include media(xlLaptop) {
+                font-size: 24px;
+            }
+            @include media(sLaptop) {
+                font-size: 12px;
             }
         }
         &>span {
@@ -49,6 +65,13 @@
             &>strong {
                 font-weight: bold;
                 text-transform: capitalize;
+            }
+            @include media(xlLaptop) {
+                margin-top: 13px;
+                font-size: 22px;
+            }
+            @include media(sLaptop) {
+                display: none;
             }
         }
     }
@@ -60,6 +83,10 @@
         display: block;
         @include text-config($lato, 12px, 400, #9b9b9b);
         line-height: 14px;
+        @include media(xlLaptop) {
+            font-size: 22px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -72,6 +99,9 @@
     justify-content: space-around;
     align-items: center;
     width: 160px;
+    @include media(xlLaptop) {
+        width: 260px;
+    }
     &__saves {
         display: -webkit-flex;
         display: -moz-flex;
@@ -84,6 +114,9 @@
         &>.bookmark {
             @include block-create(12px, 15px);
             @include bg-img(center, cover, no-repeat, url('./../img/icons/bookmark.svg'));
+            @include media(xlLaptop) {
+                @include block-create(22px, 25px);
+            }
         }
         &>span {
             @include text-config($lato,
@@ -91,6 +124,10 @@
             400,
             #9b9b9b);
             margin-top: 3.5px;
+            @include media(xlLaptop) {
+                font-size: 22px;
+                margin-top: 13.5px;
+            }
         }
     }
     &__rates {
@@ -108,12 +145,19 @@
             400,
             #9b9b9b);
             margin-top: 3.5px;
+            @include media(xlLaptop) {
+                font-size: 22px;
+                margin-top: 13.5px;
+            }
         }
     }
 }
 
 .rate {
     max-height: 15px;
+    @include media(xlLaptop) {
+        max-height: 25px;
+    }
     &__star {
         display: inline-block;
         @include block-create(15px,
@@ -122,6 +166,9 @@
         cover,
         no-repeat,
         url('./../img/icons/grey_star.svg'));
+        @include media(xlLaptop) {
+            @include block-create(25px, 25px);
+        }
         &_yellow {
             background-image: url('./../img/icons/yellow_star.svg');
         }

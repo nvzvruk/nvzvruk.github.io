@@ -3,6 +3,10 @@
     border-bottom: 1px solid #f0f0f0;
     box-sizing: content-box;
     min-height: 38px;
+    @include media(xlLaptop) {
+        padding: 0 20px;
+        min-height: 68px;
+    }
     &__item {
         box-sizing: content-box;
         display: inline-block;
@@ -18,6 +22,14 @@
         }
         &:hover {
             color: $black-color;
+        }
+        @include media(xlLaptop) {
+            font-size: 24px;
+            line-height: 27px;
+            padding: 19.5px 28px;
+        }
+        @include media(sLaptop) {
+            padding: 9.5px 12px;
         }
     }
 }

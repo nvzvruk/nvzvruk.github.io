@@ -5,6 +5,11 @@
     @include text-config($lato, 14px, 400, $profile-grey-color);
     line-height: 17px;
     box-shadow: inset 0px 10px 8px -8px #ccc, inset 0px -10px 8px -8px #ccc;
+    @include media(xlLaptop) {
+        padding: 30px 46px 35px 46px;
+        font-size: 24px;
+        line-height: 29px;
+    }
     &__row {
         &:not(:first-child) {
             margin-top: 7px;
@@ -12,6 +17,9 @@
         &>.data-desc {
             display: inline-block;
             min-width: 105px;
+            @include media(xlLaptop) {
+               min-width: 145px;
+            }
         }
         &>.data-def {
             margin-left: 35px;

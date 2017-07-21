@@ -18,12 +18,30 @@
         &:focus~.filter {
             color: $black-color;
         }
+        @include media(xlLaptop) {
+            padding: 20px 82px 20px 54px;
+            font-size: 24px;
+            line-height: 28px;
+            @include input-placeholder {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
     }
     &>.search-icon {
-        @include block-create(14px, 14px);
-        @include bg-img(center, cover, no-repeat, url('./../img/icons/search.svg'));
+        @include block-create(14px,
+        14px);
+        @include bg-img(center,
+        cover,
+        no-repeat,
+        url('./../img/icons/search.svg'));
         @include vertical-centered;
         left: 9.3px;
+        @include media(xlLaptop) {
+            left: 19px;
+            @include block-create(22px,
+            22px);
+        }
     }
     &>.filter {
         @include text-config($lato,
@@ -35,5 +53,9 @@
         @include vertical-centered;
         right: 17px;
         cursor: pointer;
+        @include media(xlLaptop) {
+            font-size: 24px;
+            line-height: 28px;
+        }
     }
 }

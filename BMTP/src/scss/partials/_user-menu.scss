@@ -7,9 +7,29 @@
     justify-content: space-between;
     padding: 41px 163px 0 163px;
     background-color: $background-color;
-    height: 1000px;
+    min-height: 1000px;
+    @include media(xlLaptop) {
+        padding: 56px 200px;
+    }
+    @include media(sLaptop) {
+        padding: 30px 80px;
+    }
+    @include media(wTablet) {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 10px;
+    }
     &-menu {
-        min-width: 157px;
+        min-width: 14%;
+        @include media(wTablet) {
+            min-width: 100%;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: space-between;
+        }
         &__item {
             padding: 10.5px 0 10.5px 43px;
             min-width: 157px;
@@ -24,6 +44,25 @@
             line-height: 17px;
             cursor: pointer;
             transition: .3s;
+            @include media(xlLaptop) {
+                font-size: 24px;
+                line-height: 29px;
+                background-size: 20px;
+                padding: 20px 0 20px 60px;
+            }
+            @include media(lLaptop) {
+                font-size: 20px;
+                line-height: 24px;
+                background-size: 18px;
+                padding: 18px 0 18px 54px;
+            }
+            @include media(wTablet) {
+                display: inline-block;
+                border-left: none;
+                min-width: 50px;
+                padding: 15px 0 15px 20px;
+                background-position: left;
+            }
             &:hover {
                 color: $black-color;
                 font-weight: 700;
@@ -32,6 +71,10 @@
                 border-left: 2px solid $dark-grey-color;
                 color: $black-color;
                 font-weight: 700;
+                @include media(wTablet) {
+                    border-left: none;
+                    border-bottom: 2px solid $dark-grey-color;
+                }
             }
             &_calendar {
                 background-image: url('./../img/icons/menu_calendar.svg');

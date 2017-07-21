@@ -42,8 +42,8 @@
 }
 
 @mixin media($type) {
-    @if $type=='wLaptop' {
-        @media (max-width: 1280px) {
+    @if $type=='xlLaptop' {
+        @media (min-width: 1681px) {
             @content;
         }
     }
@@ -53,22 +53,17 @@
         }
     }
     @elseif $type=='wTablet' {
-        @media (max-width: 960px) {
-            @content;
-        }
-    }
-    @elseif $type=='sTablet' {
         @media (max-width: 768px) {
             @content;
         }
     }
-    @elseif $type=='sTablet-min' {
-        @media (min-width: 768px) {
+    @elseif $type=='sTablet' {
+        @media (min-width: 700px) {
             @content;
         }
     }
-    @elseif $type=='wMobile' {
-        @media (max-width: 449px) {
+    @elseif $type=='sMobile' {
+        @media (max-width: 320px) {
             @content;
         }
     }

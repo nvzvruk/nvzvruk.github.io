@@ -1,8 +1,12 @@
 .user-profile {
-    width: 923px;
+    width: 83%;
     background-color: #fff;
     border-radius: 4px;
     box-sizing: border-box;
+    @include media(wTablet) {
+        width: 100%;
+        margin-top: 50px;
+    }
     &-main {
         position: relative;
         display: -webkit-flex;
@@ -12,6 +16,9 @@
         display: flex;
         margin-left: 36px;
         min-height: 152px;
+        @include media(xlLaptop) {
+            min-height: 220px;
+        }
         &>* {
             display: inline-block;
         }
@@ -29,6 +36,10 @@
             position: relative;
             margin-top: -17px;
             @include block-create(120px, 120px);
+            @include media(xlLaptop) {
+                @include block-create(180px, 180px);
+                margin-top: -27px;
+            }
             &-photo {
                 height: inherit;
                 border-radius: 4px;
@@ -46,6 +57,12 @@
                 border: 1px solid #a60001;
                 box-sizing: border-box;
                 border-radius: 14px;
+                @include media(xlLaptop) {
+                    font-size: 20px;
+                    line-height: 22px;
+                    left: -17px;
+                    bottom: 20px;
+                }
             }
         }
         &__text {
@@ -56,18 +73,30 @@
                 text-transform: capitalize;
                 @include text-config($lato, 18px, 700, $black-color);
                 line-height: 22px;
+                @include media(xlLaptop) {
+                    font-size: 28px;
+                    line-height: 34px;
+                }
             }
             &>.nickname {
                 @include text-config($lato, 14px, 700, $black-color);
                 line-height: 17px;
+                @include media(xlLaptop) {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
             }
             &>.status {
                 @include text-config($lato, 14px, 400, $dark-grey-color);
                 line-height: 24px;
+                @include media(xlLaptop) {
+                    font-size: 24px;
+                    line-height: 40px;
+                }
             }
         }
         &__btn {
-            max-width: 95px;
+            max-width: 98px;
             padding: 9.5px 25.5px;
             box-sizing: border-box;
             border: 1px solid #7f7f7f;
@@ -76,6 +105,13 @@
             @include text-config($lato, 14px, 400, #545454);
             transition: .3s;
             cursor: pointer;
+            @include media(xlLaptop) {
+                font-size: 24px;
+                max-width: 132px;
+            }
+            @include media(sLaptop) {
+                font-size: 14px;
+            }
             &:hover {
                 background-color: $background-color;
             }
@@ -89,6 +125,11 @@
                 border: 1px solid #bebebe;
                 border-radius: 4px;
                 border-color: #a5a5a5;
+                @include media(xlLaptop) {
+                    font-size: 22px;
+                    max-width: none;
+                    padding: 14px 27px;
+                }
             }
         }
     }
