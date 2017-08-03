@@ -1,0 +1,104 @@
+.header {
+    position: relative;
+    padding: 28px 360px;
+    @include bg-gradient;
+    @include text-config($montserrat, 14px, 400);
+    &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: url(./../../../img/baner-1-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: .1;
+    }
+    &-top {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-logo {
+        @include text-config($montserrat, 30px, bold);
+    }
+    &-nav {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        &__item {
+            padding: 12px 0; 
+            text-transform: uppercase;
+            &:not(:first-child) {
+                margin-left: 50px;
+            }
+        }
+    }
+    &-main {
+        text-align: center;
+    }
+    &__heading-label {
+        display: block;
+        margin-top: 170px;
+        @include text-config($kaushan, 72px, 400);
+        text-transform: capitalize;
+        line-height: 62px;
+    }
+    &__heading {
+        @include text-config($montserrat, 150px, bold);
+        text-transform: uppercase;
+        margin-top: 60px;
+        margin-bottom: 100px;
+        line-height: 140px;
+    }
+    &__learn-more {
+        display: inline-block;
+        position: relative;
+        padding: 12px 30px;
+        border: 3px solid #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 60px;
+            background-color: currentColor;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: -50px;
+            
+        }
+    }
+    &-slider {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 158px;
+        &__item {
+            @include text-config($roboto, 16px, 400);
+            text-transform: uppercase;
+            min-width: 280px;
+            text-align: left;
+            padding-top: 25px;
+            border-top: 3px solid rgba(255, 255, 255, .5);
+        }
+    }
+}
+
+
+

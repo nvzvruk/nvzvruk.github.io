@@ -1,0 +1,31 @@
+.map {
+    background-image: url('./../img/map-bg.jpg');
+    padding: 55px 0;
+    @include text-config($montserrat,
+    24px,
+    bold,
+    $main-color);
+    text-transform: uppercase;
+    &>* {
+        display: block;
+    }
+    &>.icon {
+        font-size: 36px;
+    }
+    &-text {
+        position: relative;
+        margin-top: 18px;
+        &:after {
+            display: block;
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 60px;
+            background-color: $main-color;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            bottom: -40px;
+        }
+    }
+}

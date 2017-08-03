@@ -1,0 +1,48 @@
+@mixin text-config($family, $size, $weight, $color: #fff) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin bg-gradient {
+    background: linear-gradient(to bottom, $main-color, $secondary-color);
+}
+
+@mixin media($type) {
+    @if $type=='lLaptop' {
+        @media (max-width: 1681px) {
+            @content;
+        }
+    }
+    @elseif $type=='mLaptop' {
+        @media (max-width: 1281px) {
+            @content;
+        }
+    }
+    @elseif $type=='lTablet' {
+        @media (max-width: 1080px) {
+            @content;
+        }
+    }
+    @elseif $type=='mTablet' {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+    @elseif $type=='sTablet' {
+        @media (max-width: 849px) {
+            @content;
+        }
+    }
+    @elseif $type=='xsTablet' {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+    @elseif $type=='Mobile' {
+        @media (max-width: 449px) {
+            @content;
+        }
+    }
+}

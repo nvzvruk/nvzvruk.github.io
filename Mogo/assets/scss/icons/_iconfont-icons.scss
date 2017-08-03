@@ -1,0 +1,116 @@
+$global-font-icon: 'icon-font';
+
+@font-face {
+	font-family: $global-font-icon;
+	src: url("../font/icon/icon-font.woff2") format("woff2"),
+	url("../font/icon/icon-font.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+.icon {
+	font-family: $global-font-icon;
+	&:before {
+   /* Some common icon stuff */
+ }
+ 
+ 	&.icon--chat {
+ 		&:before {
+ 			content: $icon-chat;
+ 		}
+ 	}
+ 	&.icon--chats {
+ 		&:before {
+ 			content: $icon-chats;
+ 		}
+ 	}
+ 	&.icon--clock {
+ 		&:before {
+ 			content: $icon-clock;
+ 		}
+ 	}
+ 	&.icon--dribble {
+ 		&:before {
+ 			content: $icon-dribble;
+ 		}
+ 	}
+ 	&.icon--eye {
+ 		&:before {
+ 			content: $icon-eye;
+ 		}
+ 	}
+ 	&.icon--facebook {
+ 		&:before {
+ 			content: $icon-facebook;
+ 		}
+ 	}
+ 	&.icon--focus {
+ 		&:before {
+ 			content: $icon-focus;
+ 		}
+ 	}
+ 	&.icon--google {
+ 		&:before {
+ 			content: $icon-google;
+ 		}
+ 	}
+ 	&.icon--house {
+ 		&:before {
+ 			content: $icon-house;
+ 		}
+ 	}
+ 	&.icon--instagram {
+ 		&:before {
+ 			content: $icon-instagram;
+ 		}
+ 	}
+ 	&.icon--monitor {
+ 		&:before {
+ 			content: $icon-monitor;
+ 		}
+ 	}
+ 	&.icon--opened-book {
+ 		&:before {
+ 			content: $icon-opened-book;
+ 		}
+ 	}
+ 	&.icon--picture {
+ 		&:before {
+ 			content: $icon-picture;
+ 		}
+ 	}
+ 	&.icon--pinterest {
+ 		&:before {
+ 			content: $icon-pinterest;
+ 		}
+ 	}
+ 	&.icon--placeholder {
+ 		&:before {
+ 			content: $icon-placeholder;
+ 		}
+ 	}
+ 	&.icon--search {
+ 		&:before {
+ 			content: $icon-search;
+ 		}
+ 	}
+ 	&.icon--shopping-cart {
+ 		&:before {
+ 			content: $icon-shopping-cart;
+ 		}
+ 	}
+ 	&.icon--tumblr {
+ 		&:before {
+ 			content: $icon-tumblr;
+ 		}
+ 	}
+ 	&.icon--twitter {
+ 		&:before {
+ 			content: $icon-twitter;
+ 		}
+ 	}
+ 	&.icon--youtube {
+ 		&:before {
+ 			content: $icon-youtube;
+ 		}
+ 	}
+}

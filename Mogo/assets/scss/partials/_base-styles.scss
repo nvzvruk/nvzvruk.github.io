@@ -1,0 +1,70 @@
+section {
+    text-align: center;
+}
+
+.heading-label {
+    @include text-config($kaushan, 24px, 400, $text-black-color);
+}
+
+.section-heading {
+    position: relative;
+    @include text-config($montserrat, 30px, bold, $text-black-color);
+    text-transform: uppercase;
+    &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -40px;
+    }
+}
+
+.section-paragraph {
+    display: inline-block;
+    max-width: 954px;
+    margin-top: 64px;
+    margin-bottom: 0;
+    @include text-config($roboto, 15px, 400, $text-grey-color);
+}
+
+.slider {
+    position: relative;
+    &-item {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 110px;
+        &>.avatar {
+            border-radius: 50%;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        content: '';
+        box-sizing: border-box;
+        width: 24px;
+        height: 24px;
+        transform: rotate(45deg) translate(-50%, -50%);
+        cursor: pointer;
+        &--left {
+            left: 2%;
+            border-left: 4px solid #ccc;
+            border-bottom: 4px solid #ccc;
+        }
+        &--right {
+            right: 2%;
+            border-right: 4px solid #ccc;
+            border-top: 4px solid #ccc;
+        }
+    }
+}

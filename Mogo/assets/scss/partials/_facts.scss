@@ -1,0 +1,31 @@
+.facts {
+    background-color: $fourth-color;
+    padding: 0 360px;
+    &-box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid rgba(255, 255, 255, .5);
+        &__item {
+            padding: 90px 0;
+            flex-grow: 1;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, .5);
+            @include text-config($montserrat, 14px, 400);
+            &>* {
+                display: block;
+            }
+            &>.count {
+                font-size: 72px;
+                line-height: 1.2;
+                font-weight: bold;
+            }
+            &>.fact {
+                line-height: 1.2;
+            }
+        }
+    }
+}

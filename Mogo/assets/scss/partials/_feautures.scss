@@ -1,0 +1,26 @@
+.feauture {
+    padding-top: 112px;
+    position: relative;
+    background-image: url('./../img/feauture-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-devices {
+        margin: 86px auto 0 auto;
+        overflow: hidden;
+        &__item {
+            display: inline-block;
+            width: 476px;
+            height: auto;
+            &_tablet {
+                margin-bottom: -135px;
+            }
+            &_phone {
+                position: absolute;
+                width: 208px;
+                margin-left: -84px;
+                bottom: -52px;
+            }
+        }
+    }
+}

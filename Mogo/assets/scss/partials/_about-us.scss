@@ -1,0 +1,18 @@
+.about-us {
+    padding: 94px 360px 110px 360px;
+    &-pics {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 104px;
+        &__item {
+            background-color: $fourth-color;
+            width: 380px;
+            height: 250px;
+        }
+    }
+}
