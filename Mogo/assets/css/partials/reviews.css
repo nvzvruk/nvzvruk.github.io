@@ -1,0 +1,29 @@
+.reviews {
+  padding: 112px 360px; }
+
+.comments {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .comments-author {
+    width: 50%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    .comments-author--photo {
+      border-radius: 50%; }
+    .comments-author--text {
+      text-align: left; }
+
+/*# sourceMappingURL=reviews.css.map */

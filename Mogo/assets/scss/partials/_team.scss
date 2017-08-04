@@ -1,6 +1,19 @@
 .team {
     margin-top: 102px;
     padding: 0 360px;
+    @include media(lLaptop) {
+        padding: 0 280px;
+    }
+    @include media(mLaptop) {
+        padding: 0 140px;
+    }
+    @include media(lTablet) {
+        padding: 0 40px;
+        margin-top: 60px;
+    }
+    @include media(lMobile) {
+        padding: 0 10px;
+    }
     &-members {
         display: -webkit-flex;
         display: -moz-flex;
@@ -10,10 +23,15 @@
         justify-content: space-between;
         margin-top: 95px;
         &__item {
+            width: 30%;
             text-align: center;
             &>figure {
-                max-height: 470px;
+                width: 100%;
                 background-color: $fourth-color;
+                &>img {
+                    height: inherit;
+                    width: inherit;
+                }
             }
             &>figcaption {
                 margin-top: 30px;

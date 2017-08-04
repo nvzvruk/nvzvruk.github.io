@@ -11,37 +11,45 @@
 
 @mixin media($type) {
     @if $type=='lLaptop' {
-        @media (max-width: 1681px) {
+        @media (max-width: 1680px) {
             @content;
         }
     }
     @elseif $type=='mLaptop' {
-        @media (max-width: 1281px) {
+        @media (max-width: 1440px) {
+            @content;
+        }
+    }
+    @elseif $type=='sLaptop' {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    }
+    @elseif $type=='xsLaptop' {
+        @media (max-width: 1024px) {
             @content;
         }
     }
     @elseif $type=='lTablet' {
-        @media (max-width: 1080px) {
-            @content;
-        }
-    }
-    @elseif $type=='mTablet' {
-        @media (max-width: 900px) {
+        @media (max-width: 800px) {
             @content;
         }
     }
     @elseif $type=='sTablet' {
-        @media (max-width: 849px) {
+        @media (max-width: 600px) {
             @content;
         }
     }
-    @elseif $type=='xsTablet' {
-        @media (max-width: 768px) {
+    @elseif $type=='lMobile' {
+        @media (max-width: 540px) {
             @content;
         }
-    }
-    @elseif $type=='Mobile' {
-        @media (max-width: 449px) {
+    }@elseif $type=='mMobile' {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }@elseif $type=='sMobile' {
+        @media (max-width: 320px) {
             @content;
         }
     }

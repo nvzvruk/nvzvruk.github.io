@@ -46,6 +46,12 @@ section {
         &>.avatar {
             border-radius: 50%;
         }
+        @include media(lTablet) {
+            padding: 0 60px;
+        }
+        @include media(sMobile) {
+            padding: 0 25px;
+        }
     }
     &__arrow {
         position: absolute;
@@ -56,15 +62,27 @@ section {
         height: 24px;
         transform: rotate(45deg) translate(-50%, -50%);
         cursor: pointer;
+        @include media(lMobile) {
+            width: 14px;
+            height: 14px;
+        }
         &--left {
             left: 2%;
             border-left: 4px solid #ccc;
             border-bottom: 4px solid #ccc;
+            @include media(lMobile) {
+                border-left: 2px solid #ccc;
+                border-bottom: 2px solid #ccc;
+            }
         }
         &--right {
             right: 2%;
             border-right: 4px solid #ccc;
             border-top: 4px solid #ccc;
+            @include media(lMobile) {
+                border-right: 2px solid #ccc;
+                border-top: 2px solid #ccc;
+            }
         }
     }
 }

@@ -1,7 +1,27 @@
 .service {
-    padding: 112px  360px;
+    padding: 112px 360px;
+    @include media(lLaptop) {
+        padding: 100px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 80px 140px;
+    }
+    @include media(sLaptop) {
+        padding: 80px 100px;
+    }
+    @include media(lTablet) {
+        padding: 40px 40px;
+    }
+    @include media(lMobile) {
+        padding: 30px 10px;
+    }
+    @include media(mMobile) {
+        padding: 20px 5px;
+    }
     &-box {
         margin-top: 28px;
+        box-sizing: border-box;
+        @include media(xsLaptop) {}
         &-row {
             display: -webkit-flex;
             display: -moz-flex;
@@ -28,17 +48,41 @@
                 font-weight: bold;
                 color: $fourth-color;
             }
+            @include media(lTablet) {
+                padding: 44px 10px;
+            }
+            @include media(sTablet) {
+                padding: 34px 10px;
+            }
+            @include media(lMobile) {
+                flex-direction: column;
+            }
+            @include media(sMobile) {
+                padding: 24px 5px;
+            }
         }
     }
     &-info {
         margin-left: 28px;
         text-align: left;
+        @include media(lMobile) {
+            margin-top: 10px;
+            margin-left: 0;
+            text-align: center;
+        }
         &__name {
             @include text-config($montserrat, 14px, 400, $text-black-color);
             text-transform: uppercase;
+            @include media(sMobile) {
+                font-size: 12px;
+            }
         }
         &__desc {
+            margin-top: 20px;
             @include text-config($roboto, 15px, 400, $text-grey-color);
+            @include media(lMobile) {
+                font-size: 12px;
+            }
         }
     }
 }

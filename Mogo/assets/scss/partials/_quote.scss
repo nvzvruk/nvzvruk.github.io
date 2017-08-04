@@ -2,21 +2,62 @@
     margin-top: 120px;
     padding: 70px 360px;
     background-color: #f8f8f8;
+    @include media(lLaptop) {
+        padding: 60px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 50px 140px;
+    }
+    @include media(sLaptop) {
+        padding: 50px 100px;
+    }
+    @include media(lTablet) {
+        padding: 20px 40px;
+    }
+    @include media(sTablet) {
+        padding: 20px 10px;
+    }
+    @include media(lMobile) {
+        padding: 20px 10px;
+    }
     &__icon {
         font-size: 60px;
         padding: 44px;
         box-sizing: border-box;
         color: $fourth-color;
         border: 3px solid $fourth-color;
+        @include media(lTablet) {
+            padding: 20px;
+            font-size: 36px;
+        }
+        @include media(sMobile) {
+            padding: 10px;
+            font-size: 24px;
+        }
     }
     &__text {
         margin-left: 60px;
         text-align: left;
+        @include media(lMobile) {
+            margin-left: 30px;
+        }
         &>blockquote {
             @include text-config($roboto, 24px, 300, $text-grey-color);
             margin: 0;
             line-height: 36px;
             font-style: italic;
+            @include media(sLaptop) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            @include media(lTablet) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+            @include media(lMobile) {
+                font-size: 12px;
+                line-height: 14px;
+            }
         }
         &>cite {
             display: block;
@@ -26,6 +67,10 @@
             line-height: 1.2;
             text-indent: 72px;
             margin-top: 28px;
+            @include media(lTablet) {
+                font-size: 18px;
+                margin-top: 10px;
+            }
             &:before {
                 position: absolute;
                 left: 0;

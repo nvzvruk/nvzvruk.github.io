@@ -1,5 +1,8 @@
 .work {
     margin-top: 112px;
+    @include media(lTablet) {
+        margin-top: 60px;
+    }
     &-container {
         margin-top: 106px;
         display: -webkit-flex;

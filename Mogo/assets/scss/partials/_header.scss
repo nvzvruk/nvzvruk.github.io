@@ -3,6 +3,21 @@
     padding: 28px 360px;
     @include bg-gradient;
     @include text-config($montserrat, 14px, 400);
+    @include media(lLaptop) {
+        padding: 28px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 20px 140px;
+    }
+    @include media(xsLaptop) {
+        padding: 20px 100px;
+    }
+    @include media(lTablet) {
+        padding: 10px 40px;
+    }
+    @include media(lMobile) {
+        padding: 10px 10px;
+    }
     &:after {
         display: block;
         position: absolute;
@@ -35,30 +50,50 @@
         display: -ms-flex;
         display: -o-flex;
         display: flex;
+        @include media(lTablet) {
+            display: none;
+        }
         &__item {
-            padding: 12px 0; 
+            padding: 12px 0;
             text-transform: uppercase;
             &:not(:first-child) {
                 margin-left: 50px;
+                @include media(xsLaptop) {
+                    margin-left: 30px;
+                }
+                @include media(lTablet) {
+                    margin-left: 20px;
+                }
             }
         }
     }
     &-main {
         text-align: center;
+        margin-top: 160px;
+        @include media(mLaptop) {
+            margin-top: 100px;
+        }
     }
     &__heading-label {
         display: block;
-        margin-top: 170px;
         @include text-config($kaushan, 72px, 400);
         text-transform: capitalize;
         line-height: 62px;
+        @include media(mLaptop) {
+            font-size: 36px;
+        }
     }
     &__heading {
         @include text-config($montserrat, 150px, bold);
         text-transform: uppercase;
-        margin-top: 60px;
-        margin-bottom: 100px;
-        line-height: 140px;
+        margin-top: 62px;
+        @include media(mLaptop) {
+            margin-top: 40px;
+            font-size: 72px;
+        }
+        @include media(lTablet) {
+            font-size: 48px;
+        }
     }
     &__learn-more {
         display: inline-block;
@@ -67,6 +102,10 @@
         border: 3px solid #fff;
         text-transform: uppercase;
         font-weight: bold;
+        @include media(lTablet) {
+            margin-top: 14px;
+            padding: 8px 18px;
+        }
         &:before {
             display: block;
             position: absolute;
@@ -78,10 +117,12 @@
             right: 0;
             margin: 0 auto;
             top: -50px;
-            
+            @include media(lTablet) {
+                top: -30px;
+            }
         }
     }
-    &-slider {
+    &-links {
         display: -webkit-flex;
         display: -moz-flex;
         display: -ms-flex;
@@ -89,16 +130,16 @@
         display: flex;
         justify-content: space-between;
         margin-top: 158px;
+        @include media(mLaptop) {
+            margin-top: 100px;
+        }
         &__item {
             @include text-config($roboto, 16px, 400);
             text-transform: uppercase;
-            min-width: 280px;
+            min-width: 22%;
             text-align: left;
             padding-top: 25px;
             border-top: 3px solid rgba(255, 255, 255, .5);
         }
     }
 }
-
-
-

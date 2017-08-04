@@ -1,0 +1,88 @@
+.blog {
+    padding: 110px 360px;
+    @include media(lLaptop) {
+        padding: 100px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 90px 140px;
+    }
+    @include media(lTablet) {
+        padding: 90px 40px;
+    }
+    @include media(lMobile) {
+        padding: 80px 10px;
+    }
+    &-box {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 92px;
+    }
+    &-item {
+        width: 30%;
+        text-align: left;
+        &--photo {
+            width: 100%;
+            position: relative;
+            &>img {
+                width: inherit;
+            }
+            &-label {
+                padding: 15px 14px;
+                position: absolute;
+                bottom: 10px;
+                left: -10px;
+                background-color: $fourth-color;
+                text-align: center;
+                @include media(lMobile) {
+                    padding: 5px 5px;
+                    font-size: 14px;
+                }
+                &>span {
+                    display: block;
+                    color: #fff;
+                    text-transform: capitalize;
+                    &:first-child {
+                        font-size: 28px;
+                        font-weight: bold;
+                        @include media(lMobile) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &--text {
+            padding: 20px 0 24px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        &--info {
+            padding: 20px 0;
+            color: $fourth-color;
+            & em {
+                display: inline-block;
+                @include text-config($roboto, 15px, 400, $color: $text-grey-color);
+                font-style: italic;
+                margin-left: 7px;
+            }
+            &>.icon:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.title {
+    @include text-config($montserrat, 14px, 400, $color: $text-black-color);
+    text-transform: uppercase;
+}
+
+.desc {
+    display: block;
+    @include text-config($roboto, 15px, 400, $color: $text-grey-color);
+    line-height: 24px;
+    margin-top: 20px;
+}

@@ -1,0 +1,110 @@
+.reviews {
+    padding: 112px 360px 120px 360px;
+    background: url('./../img/reviews-bg.jpg') no-repeat;
+    background-size: cover;
+    @include media(lLaptop) {
+        padding: 100px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 80px 140px;
+    }
+    @include media(lTablet) {
+        padding: 40px 40px;
+    }
+    @include media(lMobile) {
+        padding: 20px 10px;
+    }
+}
+
+.comments {
+    margin-top: 62px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    @include media(lTablet) {
+        margin-top: 30px;
+    }
+    &-author {
+        margin-top: 72px;
+        width: 50%;
+        padding: 0 48px 0 40px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: flex-start;
+        box-sizing: border-box;
+        @include media(mLaptop) {
+            padding: 0 28px 0 20px;
+        }
+        @include media(lTablet) {
+            padding: 0;
+        }
+        @include media(lMobile) {
+            flex-direction: column;
+        }
+        &--photo {
+            height: auto;
+            border-radius: 50%;
+            @include media(lMobile) {
+                width: 30%;
+            }
+        }
+        &--text {
+            text-align: left;
+            margin-left: 30px;
+            @include media(lMobile) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.name {
+    display: block;
+    @include text-config($montserrat,
+    14px,
+    400,
+    $text-black-color);
+    text-transform: uppercase;
+}
+
+.position {
+    display: block;
+    position: relative;
+    margin-top: 16px;
+    @include text-config($roboto,
+    15px,
+    300,
+    $text-black-color);
+    font-style: italic;
+    text-transform: capitalize;
+    &:after {
+        display: block;
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 60px;
+        background-color: $main-color;
+        left: 0;
+        bottom: -20px;
+    }
+}
+
+.comment {
+    max-width: 390px;
+    margin-top: 48px;
+    @include text-config($roboto,
+    15px,
+    400,
+    $text-grey-color);
+    line-height: 24px;
+    @include media(lMobile) {
+       font-size: 12px;
+        max-width: 90%;
+    }
+}

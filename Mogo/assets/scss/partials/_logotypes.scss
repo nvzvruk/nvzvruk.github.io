@@ -9,4 +9,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    &__item {
+        @include media(lLaptop) {
+            width: 120px;
+        }
+        @include media(sLaptop) {
+            width: 120px;
+        }
+        @include media(xsLaptop) {
+            width: 60px;
+        }
+    }
+    @include media(lLaptop) {
+        padding: 56px 280px;
+    }
+    @include media(mLaptop) {
+        padding: 44px 140px;
+    }
+    @include media(lTablet) {
+        padding: 20px 40px;
+    }
+    @include media(lMobile) {
+        padding: 20px 10px;
+    }
 }

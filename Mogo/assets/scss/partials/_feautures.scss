@@ -14,12 +14,30 @@
             height: auto;
             &_tablet {
                 margin-bottom: -135px;
+                @include media(xsLaptop) {
+                    width: 400px;
+                }
+                @include media(lTablet) {
+                    width: 300px;
+                }
+                @include media(sMobile) {
+                    width: 220px;
+                }
             }
             &_phone {
                 position: absolute;
                 width: 208px;
                 margin-left: -84px;
                 bottom: -52px;
+                @include media(xsLaptop) {
+                    width: 150px;
+                }
+                @include media(lTablet) {
+                    width: 100px;
+                }
+                @include media(sMobile) {
+                    width: 80px;
+                }
             }
         }
     }
