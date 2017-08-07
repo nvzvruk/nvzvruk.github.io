@@ -1,36 +1,28 @@
 .header {
-    position: relative;
-    padding: 28px 360px;
-    @include bg-gradient;
-    @include text-config($montserrat, 14px, 400);
-    @include media(lLaptop) {
-        padding: 28px 280px;
-    }
-    @include media(mLaptop) {
-        padding: 20px 140px;
-    }
-    @include media(xsLaptop) {
-        padding: 20px 100px;
-    }
-    @include media(lTablet) {
-        padding: 10px 40px;
-    }
-    @include media(lMobile) {
-        padding: 10px 10px;
-    }
-    &:after {
-        display: block;
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        background: url(./../../../img/baner-1-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: .1;
+    background: url(./../img/baner-1-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &-content {
+        position: relative;
+        padding: 28px 360px;
+        background: linear-gradient(to bottom, rgba(243, 129, 129, .9), rgba(252, 227, 138, .9));
+        @include text-config($montserrat, 14px, 400);
+        @include media(lLaptop) {
+            padding: 28px 280px;
+        }
+        @include media(mLaptop) {
+            padding: 20px 140px;
+        }
+        @include media(xsLaptop) {
+            padding: 20px 100px;
+        }
+        @include media(lTablet) {
+            padding: 10px 40px;
+        }
+        @include media(lMobile) {
+            padding: 10px 10px;
+        }
     }
     &-top {
         display: -webkit-flex;

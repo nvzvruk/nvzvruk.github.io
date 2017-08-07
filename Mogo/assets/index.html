@@ -12,28 +12,30 @@
 <body>
 
     <header class="header">
-        <div class="header-top">
-            <div class="header-logo">MoGo</div>
-            <nav class="header-nav">
-                <a class="header-nav__item">about</a>
-                <a class="header-nav__item">service</a>
-                <a class="header-nav__item">work</a>
-                <a class="header-nav__item">blog</a>
-                <a class="header-nav__item">contact</a>
-                <a class="header-nav__item icon icon--shopping-cart"></a>
-                <a class="header-nav__item icon icon--search"></a>
-            </nav>
-        </div>
-        <div class="header-main">
-            <span class="header__heading-label">creative template</span>
-            <h1 class="header__heading entry-header">welcome<br/> to mogo</h1>
-            <a href="#" class="header__learn-more">learn more</a>
-        </div>
-        <div class="header-links">
-            <div class="header-links__item">01 intro</div>
-            <div class="header-links__item">02 work</div>
-            <div class="header-links__item">03 about</div>
-            <div class="header-links__item">04 contacts</div>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-logo">MoGo</div>
+                <nav class="header-nav">
+                    <a class="header-nav__item">about</a>
+                    <a class="header-nav__item">service</a>
+                    <a class="header-nav__item">work</a>
+                    <a class="header-nav__item">blog</a>
+                    <a class="header-nav__item">contact</a>
+                    <a class="header-nav__item icon icon--shopping-cart"></a>
+                    <a class="header-nav__item icon icon--search"></a>
+                </nav>
+            </div>
+            <div class="header-main">
+                <span class="header__heading-label">creative template</span>
+                <h1 class="header__heading entry-header">welcome<br/> to mogo</h1>
+                <a href="#" class="header__learn-more">learn more</a>
+            </div>
+            <div class="header-links">
+                <div class="header-links__item">01 intro</div>
+                <div class="header-links__item">02 work</div>
+                <div class="header-links__item">03 about</div>
+                <div class="header-links__item">04 contacts</div>
+            </div>
         </div>
     </header>
 
@@ -43,14 +45,32 @@
             <h3 class="section-heading">story about us</h3>
             <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="about-us-pics">
-                <div class="about-us-pics__item">
-                    <img src="./img/img1.jpg" alt="img1">
+                <div class="about-us-pics__box">
+                    <div class="about-us-pics__item">
+                        <img src="./img/img1.jpg" alt="img1">
+                        <div class="text">
+                            <span class="icon icon--group"></span>
+                            <span>super team</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-us-pics__item">
-                    <img src="./img/img2.jpg" alt="img2">
+                <div class="about-us-pics__box">
+                    <div class="about-us-pics__item">
+                        <img src="./img/img2.jpg" alt="img2">
+                        <div class="text">
+                            <span class="icon icon--group"></span>
+                            <span>super team</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="about-us-pics__item">
-                    <img src="./img/img3.jpg" alt="img3">
+                <div class="about-us-pics__box">
+                    <div class="about-us-pics__item">
+                        <img src="./img/img3.jpg" alt="img3">
+                        <div class="text">
+                            <span class="icon icon--group"></span>
+                            <span>super team</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -162,32 +182,56 @@
             <h3 class="section-heading">meet our team</h3>
             <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="team-members">
-                <div class="team-members__item">
-                    <figure>
-                        <img src="./img/members/member1.jpg" alt="">
-                    </figure>
-                    <figcaption>
-                        <span class="member-name">matthew dix</span>
-                        <span class="member-position">graphic design</span>
-                    </figcaption>
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <div class="team-member__photo-gradient">
+                            <img src="./img/members/member1.jpg" alt="">
+                            <div class="team-member__photo-socials socials">
+                                <a href="#" class="icon icon--facebook"></a>
+                                <a href="#" class="icon icon--twitter"></a>
+                                <a href="#" class="icon icon--pinterest"></a>
+                                <a href="#" class="icon icon--instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member-text">
+                        <span class="team-member__name">matthew dix</span>
+                        <span class="team-member__position">graphic design</span>
+                    </div>
                 </div>
-                <div class="team-members__item">
-                    <figure>
-                        <img src="./img/members/member2.jpg" alt="">
-                    </figure>
-                    <figcaption>
-                        <span class="member-name">christopher campbell</span>
-                        <span class="member-position">branding/UX design</span>
-                    </figcaption>
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <div class="team-member__photo-gradient">
+                            <img src="./img/members/member2.jpg" alt="">
+                            <div class="team-member__photo-socials socials">
+                                <a href="#" class="icon icon--facebook"></a>
+                                <a href="#" class="icon icon--twitter"></a>
+                                <a href="#" class="icon icon--pinterest"></a>
+                                <a href="#" class="icon icon--instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member-text">
+                        <span class="team-member__name">christopher campbell</span>
+                        <span class="team-member__position">branding/UX design</span>
+                    </div>
                 </div>
-                <div class="team-members__item">
-                    <figure>
-                        <img src="./img/members/member3.jpg" alt="">
-                    </figure>
-                    <figcaption>
-                        <span class="member-name">mchael fertig</span>
-                        <span class="member-position">developer</span>
-                    </figcaption>
+                <div class="team-member">
+                    <div class="team-member__photo">
+                        <div class="team-member__photo-gradient">
+                            <img src="./img/members/member3.jpg" alt>
+                            <div class="team-member__photo-socials socials">
+                                <a href="#" class="icon icon--facebook"></a>
+                                <a href="#" class="icon icon--twitter"></a>
+                                <a href="#" class="icon icon--pinterest"></a>
+                                <a href="#" class="icon icon--instagram"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-member-text">
+                        <span class="team-member__name">michael fertig</span>
+                        <span class="team-member__position">developer</span>
+                    </div>
                 </div>
             </div>
         </section>
