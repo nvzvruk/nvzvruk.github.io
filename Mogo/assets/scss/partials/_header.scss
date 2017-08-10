@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
     &-content {
         position: relative;
         padding: 28px 360px;
@@ -46,8 +47,12 @@
             display: none;
         }
         &__item {
+            position: relative;
             padding: 12px 0;
             text-transform: uppercase;
+            box-sizing: border-box;
+            transition: .3s;
+            cursor: pointer;
             &:not(:first-child) {
                 margin-left: 50px;
                 @include media(xsLaptop) {
@@ -57,6 +62,58 @@
                     margin-left: 20px;
                 }
             }
+            &--link {
+                &:after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    background-color: $third-color;
+                    width: 0;
+                    height: 2px;
+                    transition: .3s;
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-dropDown {
+        position: relative;
+        display: none;
+        @include media(lTablet) {
+            display: block;
+        }
+        &__btn {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            background-image: url('./../../../img/menu.svg');
+            background-size: cover;
+            background-position: center;
+        }
+        &__links {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            width: 100vh;
+            right: -10px;
+            top: 110%;
+            &>a {
+                display: block;
+                padding: 8px 16px;
+                @include text-config($kaushan,
+                14px,
+                400, $text-black-color);
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            &.is-active {
+                display: block;
+            }
         }
     }
     &-main {
@@ -65,10 +122,15 @@
         @include media(mLaptop) {
             margin-top: 100px;
         }
+        @include media(lTablet) {
+            margin-top: 60px;
+        }
     }
     &__heading-label {
         display: block;
-        @include text-config($kaushan, 72px, 400);
+        @include text-config($kaushan,
+        72px,
+        400);
         text-transform: capitalize;
         line-height: 62px;
         @include media(mLaptop) {
@@ -76,7 +138,9 @@
         }
     }
     &__heading {
-        @include text-config($montserrat, 150px, bold);
+        @include text-config($montserrat,
+        150px,
+        bold);
         text-transform: uppercase;
         margin-top: 62px;
         @include media(mLaptop) {
@@ -94,6 +158,7 @@
         border: 3px solid #fff;
         text-transform: uppercase;
         font-weight: bold;
+        background-color: transparent;
         @include media(lTablet) {
             margin-top: 14px;
             padding: 8px 18px;
@@ -126,12 +191,41 @@
             margin-top: 100px;
         }
         &__item {
-            @include text-config($roboto, 16px, 400);
+            position: relative;
+            cursor: pointer;
+            @include text-config($roboto,
+            16px,
+            400);
             text-transform: uppercase;
             min-width: 22%;
             text-align: left;
             padding-top: 25px;
-            border-top: 3px solid rgba(255, 255, 255, .5);
+            @include media(sTablet) {
+                font-size: 12px;
+            }
+            &>.line {
+                position: absolute;
+                content: '';
+                top: 0;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                &__left {
+                    background-color: $main-color;
+                    height: 3px;
+                    width: 0;
+                }
+                &__right {
+                    height: 3px;
+                    width: 100%;
+                }
+            }
+            &.is-active .line__left {
+                width: 25%;
+            }
+            &.is-active .line__left {
+                width: 25%;
+            }
         }
     }
 }

@@ -1,0 +1,79 @@
+.service2 {
+    padding: 112px 360px;
+    &-box {
+        margin-top: 95px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row;
+        &__elem {
+            width: 50%;
+        }
+    }
+    &-image {
+        max-width: 95%;
+    }
+    &-menu {
+        &__item {
+            border: 1px solid #e5e5e5;
+            max-height: 240px;
+            min-height: 54px;
+            overflow: hidden;
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+            &-name {
+                top: 0;
+                padding: 14px 12px;
+                position: relative;
+                text-align: left;
+                background-color: #fff;
+                @include text-config($montserrat, 14px, 400, $text-black-color);
+                text-transform: uppercase;
+                vertical-align: top;
+                &>span {
+                    vertical-align: middle;
+                }
+                &>.icon {
+                    color: $fourth-color;
+                    font-size: 24px;
+                    margin-right: 16px;
+                }
+                &:after {
+                    position: absolute;
+                    content: ' ';
+                    width: 10px;
+                    height: 10px;
+                    top: 50%;
+                    right: 24px;
+                    transform: rotate(45deg) translateY(-100%);
+                    border-bottom: 2px solid #ccc;
+                    border-right: 2px solid #ccc;
+                    border: 2px solid #ccc;;
+                }
+                &.is-active {
+                    &+.service2-menu__item-desc {
+                        margin-top: 0;
+                    }
+                    &:after {
+                        transform: rotate(225deg)translateY(-100%);
+                        
+                    }
+                }
+            }
+            &-desc {
+                border-top: 1px solid #e5e5e5;
+                margin: 0;
+                padding: 20px;
+                text-align: left;
+                @include text-config($roboto, 15px, 300, $text-grey-color);
+                font-style: italic;
+                line-height: 24px;
+                margin-top: -100%;
+                transition: .5s;
+            }
+        }
+    }
+}

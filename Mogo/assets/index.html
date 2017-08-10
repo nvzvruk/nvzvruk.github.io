@@ -7,34 +7,68 @@
     <title>MoGo</title>
     <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
-
     <header class="header">
         <div class="header-content">
             <div class="header-top">
                 <div class="header-logo">MoGo</div>
                 <nav class="header-nav">
-                    <a class="header-nav__item">about</a>
-                    <a class="header-nav__item">service</a>
-                    <a class="header-nav__item">work</a>
-                    <a class="header-nav__item">blog</a>
-                    <a class="header-nav__item">contact</a>
+                    <a class="header-nav__item header-nav__item--link">about</a>
+                    <a class="header-nav__item header-nav__item--link">service</a>
+                    <a class="header-nav__item header-nav__item--link">work</a>
+                    <a class="header-nav__item header-nav__item--link">blog</a>
+                    <a class="header-nav__item header-nav__item--link">contact</a>
                     <a class="header-nav__item icon icon--shopping-cart"></a>
                     <a class="header-nav__item icon icon--search"></a>
                 </nav>
+                <div class="header-dropDown">
+                    <div class="header-dropDown__btn js-dropDown-btn"></div>
+                    <div class="header-dropDown__links js-dropDown-links">
+                        <a href="#">about</a>
+                        <a href="#">service</a>
+                        <a href="#">work</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
             </div>
             <div class="header-main">
                 <span class="header__heading-label">creative template</span>
                 <h1 class="header__heading entry-header">welcome<br/> to mogo</h1>
-                <a href="#" class="header__learn-more">learn more</a>
+                <button class="header__learn-more">learn more</button>
             </div>
             <div class="header-links">
-                <div class="header-links__item">01 intro</div>
-                <div class="header-links__item">02 work</div>
-                <div class="header-links__item">03 about</div>
-                <div class="header-links__item">04 contacts</div>
+                <div class="header-links__item is-active">
+                    <div class="line">
+                        <div class="line__left"></div>
+                        <div class="line__right"></div>
+                    </div>
+                    01 intro</div>
+                <div class="header-links__item">
+                    <div class="line">
+                        <div class="line__left"></div>
+                        <div class="line__right"></div>
+                    </div>
+                    02 work
+                </div>
+                <div class="header-links__item">
+                    <div class="line">
+                        <div class="line__left"></div>
+                        <div class="line__right"></div>
+                    </div>
+                    03 about
+                </div>
+                <div class="header-links__item">
+                    <div class="line">
+                        <div class="line__left"></div>
+                        <div class="line__right"></div>
+                    </div>
+                    04 contacts
+                </div>
             </div>
         </div>
     </header>
@@ -100,7 +134,7 @@
             </div>
         </section>
 
-        <section class="service">
+        <!-- <section class="service">
             <span class="heading-label">we work with</span>
             <h3 class="section-heading">amazing services</h3>
             <div class="service-box">
@@ -159,6 +193,40 @@
             <div class="feauture-devices">
                 <img src="./img/ipad.png" class="feauture-devices__item feauture-devices__item_tablet " alt="">
                 <img src="./img/iphone.png" class="feauture-devices__item feauture-devices__item_phone" alt="">
+            </div>
+        </section>
+
+        <section class="service2">
+            <span class="heading-label">what we do</span>
+            <h3 class="section-heading">story about us</h3>
+            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="service2-box">
+                <div class="service2-box__elem">
+                    <img src="./img/service2.jpg" alt="" class="service2-image">
+                </div>
+                <div class="service2-menu service2-box__elem">
+                    <div class="service2-menu__item">
+                        <div class="service2-menu__item-name js_service_name">
+                            <span class="icon icon--bg"></span>
+                            <span>photography</span>
+                        </div>
+                        <p class="service2-menu__item-desc js_service_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="service2-menu__item">
+                        <div class="service2-menu__item-name js_service_name">
+                            <span class="icon icon--equalizer"></span>
+                            <span>creativity</span>
+                        </div>
+                        <p class="service2-menu__item-desc js_service_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="service2-menu__item">
+                        <div class="service2-menu__item-name js_service_name">
+                            <span class="icon icon--circles"></span>
+                            <span>web design</span>
+                        </div>
+                        <p class="service2-menu__item-desc js_service_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -383,22 +451,12 @@
         <section class="map">
             <span class="icon icon--placeholder"></span>
             <span class="map-text">open map</span>
-        </section>
-
-
-
-
-
-
-
-
-        <pre>
-       
-       
-       
-       
-   </pre>
+        </section> -->
     </main>
+    <script src="./js/min/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
