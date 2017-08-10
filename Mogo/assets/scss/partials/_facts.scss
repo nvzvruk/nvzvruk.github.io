@@ -25,8 +25,9 @@
         display: -ms-flex;
         display: -o-flex;
         display: flex;
+        flex-wrap: wrap;
         border-left: 1px solid rgba(255, 255, 255, .5);
-        @include media(lMobile) {
+        @include media(sTablet) {
             flex-direction: column;
         }
         &__item {
@@ -62,7 +63,7 @@
                     font-size: 36px;
                 }
                 @include media(mMobile) {
-                    font-size: 18px;
+                    font-size: 24px;
                 }
             }
             &>.fact {
@@ -72,6 +73,9 @@
                 }
                 @include media(lMobile) {
                     font-size: 10px;
+                }
+                @include media(mMobile) {
+                    font-size: 18px;
                 }
             }
         }

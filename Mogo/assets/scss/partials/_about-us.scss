@@ -28,6 +28,9 @@
         @include media(lLaptop) {
             flex-wrap: wrap;
         }
+        @include media(sTablet) {
+            margin-top: 50px;
+        }
         &__box {
             background-color: $fourth-color;
             width: 30%;
