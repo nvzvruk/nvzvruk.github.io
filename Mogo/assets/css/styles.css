@@ -517,6 +517,9 @@ section {
           border-top: 2px solid #ccc; } }
 
 .header {
+  position: relative;
+  width: auto;
+  outline: 1px solid black;
   background: url(./../img/baner-1-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -618,13 +621,15 @@ section {
       background-position: center; }
     .header-dropDown__links {
       display: none;
+      -webkit-transition: .4s;
+      transition: .4s;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: white;
       border-radius: 4px;
       -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
               box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      width: 100vh;
-      right: -10px;
+      width: 100vw;
+      right: -30px;
       top: 110%; }
       .header-dropDown__links > a {
         display: block;
@@ -632,7 +637,7 @@ section {
         font-family: "Kaushan Script", cursive;
         font-size: 14px;
         font-weight: 400;
-        color: #333;
+        color: #f38181;
         text-transform: capitalize;
         text-decoration: none; }
       .header-dropDown__links.is-active {
