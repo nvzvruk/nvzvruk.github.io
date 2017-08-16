@@ -2,7 +2,6 @@ var navItem = document.querySelectorAll('.js-item');
 var slide = document.querySelector('.js-slide');
 var leftArr = document.querySelector('.js-left-arrow');
 var rightArr = document.querySelector('.js-right-arrow');
-var sliderWidth = document.querySelector('.slider');
 
 
 function clear(arr) {
@@ -29,7 +28,7 @@ var start = setInterval(function () {
         var w = slide.offsetWidth;
         slide.style.marginLeft = -w * index + "px";
     }
-}, 2000);
+}, 1500);
 
 navItem.forEach(function (e, i) {
     e.addEventListener('click', function () {
