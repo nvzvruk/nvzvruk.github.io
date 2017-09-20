@@ -844,6 +844,7 @@ th {
 
 .winners {
   background: url("./../assets/general/background.jpg") bottom no-repeat;
+  background-size: cover;
   text-align: center;
   padding: 40px 360px; }
   .winners-heading {
