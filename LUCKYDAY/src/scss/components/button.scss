@@ -1,0 +1,11 @@
+.btn {
+  background: linear-gradient(to bottom, #AEF54C, #408D0F);
+  border: none;
+  border-radius: 10px;
+  padding: 20px 10px;
+  @include text-config(Arial, 18px, bold, #fff, 1);
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 4px 0px 0px #c0bd67;
+  -moz-box-shadow: 0px 4px 0px 0px #c0bd67;
+  box-shadow: 0px 4px 0px 0px #c0bd67;
+}

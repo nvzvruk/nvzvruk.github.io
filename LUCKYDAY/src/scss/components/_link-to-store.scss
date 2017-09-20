@@ -1,0 +1,43 @@
+.links-to-store {
+  display: flex;
+}
+
+.store-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+  box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+
+  &__icon {
+    width: 20%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    @include text-config(Arial, 24px, light, #fff, 1);
+    display: block;
+  }
+  &__label {
+    @include text-config(Arial, 14px, light, #fff, 1);
+  }
+
+  &_small {
+
+    &__name {
+      @include text-config(Arial, 18px, light, #fff, 1);
+      display: block;
+    }
+    &__label {
+      @include text-config(Arial, 12px, light, #fff, 1);
+    }
+  }
+}

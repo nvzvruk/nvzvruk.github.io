@@ -1,0 +1,69 @@
+@mixin block-create($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin text-config($family, $size, $weight, $color, $line-height) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+@mixin vertical-centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin media($type) {
+  @if $type=='lLaptop' {
+    @media (max-width: 1681px) {
+      @content;
+    }
+  }
+  @elseif $type=='mLaptop' {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  }
+  @elseif $type=='sLaptop' {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @elseif $type=='wTablet' {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @elseif $type=='Mobile' {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @elseif $type=='sMobile' {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}

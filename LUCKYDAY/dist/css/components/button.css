@@ -1,0 +1,14 @@
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#AEF54C), to(#408D0F));
+  background: linear-gradient(to bottom, #AEF54C, #408D0F);
+  border: none;
+  border-radius: 10px;
+  padding: 20px 10px;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=button.css.map */
