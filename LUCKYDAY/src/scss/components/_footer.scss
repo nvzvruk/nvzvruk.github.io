@@ -1,0 +1,265 @@
+.footer {
+  background-image: url("./../assets/general/background.jpg");
+  background-position: bottom;
+  -webkit-background-size: cover;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  padding: 0 10px;
+  @include media(Mobile) {
+    background-position: 0 75%;
+  }
+  @include media(sMobile) {
+    background-position: 0 75%;
+  }
+
+  &_covered {
+    background-image: url("./../assets/general/cover.png") , url("./../assets/general/background.jpg");
+    background-position: top, bottom;
+    -webkit-background-size: 100% 45%, cover;
+    background-size: 100% 45%, cover;
+  }
+
+  &-top {
+    padding: 40px 360px;
+    text-align: center;
+    border-bottom: 1px solid #979797;
+    @include media(lLaptop) {
+      padding: 40px 300px;
+    }
+    @include media(mLaptop) {
+      padding: 40px 140px;
+    }
+    @include media(sLaptop) {
+      padding: 30px 80px;
+    }
+    @include media(Tablet) {
+      padding: 30px 60px;
+    }
+    @include media(Mobile) {
+      padding: 20px 40px;
+    }
+    @include media(sMobile) {
+      padding: 20px;
+    }
+
+    &__heading {
+      @include text-config(Arial, 24px, normal, #000, 1);
+      margin-top: 0;
+    }
+
+    &-logotypes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px;
+      @include media(lLaptop) {
+        height: 70px;
+      }
+      @include media(mLaptop) {
+        height: 65px;
+      }
+      @include media(sLaptop) {
+        height: 60px;
+      }
+      @include media(Tablet) {
+        height: 60px;
+      }
+      @include media(Mobile) {
+        height: 50px;
+        flex-wrap: wrap;
+      }
+      @include media(sMobile) {
+        height: 40px;
+        flex-wrap: wrap;
+      }
+
+      &__item {
+        height: 50%;
+        @include media(Mobile) {
+          margin-bottom: 20px;
+          width: 30%;
+        }
+        @include media(sMobile) {
+          margin-bottom: 20px;
+          width: 30%;
+        }
+        &>img {
+          height: 100%;
+        }
+        &_big {
+          height: 100%;
+        }
+      }
+    }
+
+    &-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+      @include media(Mobile) {
+        margin-top: 40px;
+      }
+      @include media(sMobile) {
+        margin-top: 40px;
+      }
+      &__links {
+        width: 40%;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+        @include media(Mobile) {
+          margin-top: 40px;
+          width: 100%;
+        }
+        @include media(sMobile) {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+      &__form {
+        width: 50%;
+        @include media(Mobile) {
+          display: none;
+        }
+        @include media(sMobile) {
+          display: none;
+        }
+      }
+
+      &-form {
+        display: flex;
+        align-items: center;
+
+        &>input {
+          width: 70%;
+          height: 32px;
+          padding: 0 20px;
+          border: 2px solid #979797;
+          @include text-config(Arial, 14px, bold, #000, 1);
+          @include input-placeholder {
+            @include text-config(Arial, 14px, bold, #9B9B9B, 1);
+            text-transform: uppercase;
+          }
+        }
+
+        &>.btn {
+          margin-left: 10px;
+        }
+      }
+    }
+
+  }
+
+  &-nav {
+    padding: 40px 300px;
+    text-align: center;
+    @include media(mLaptop) {
+      padding: 40px 140px;
+    }
+    @include media(sLaptop) {
+      padding: 40px 80px;
+    }
+    @include media(Tablet) {
+      padding: 30px 80px;
+    }
+    @include media(Mobile) {
+      padding: 30px 0;
+    }
+    @include media(sMobile) {
+      padding: 30px 0;
+    }
+
+    &-menu {
+      &__item {
+        @include text-config(Arial, 14px, normal, #000, 1);
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        padding: 5px 0;
+
+        &:before {
+          position: absolute;
+          content: '';
+          height: 1px;
+          width: 0;
+          bottom: 0;
+          left: 50%;
+          background-color: black;
+          transition: .3s;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          height: 1px;
+          width: 0;
+          bottom: 0;
+          right: 50%;
+          background-color: black;
+          transition: .3s;
+        }
+
+        &:hover {
+          &:before {
+            width: 50%;
+          }
+          &:after {
+            width: 50%;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 48px;
+          @include media(sMobile) {
+            margin-left: 14px;
+          }
+        }
+      }
+    }
+
+    &-socials {
+      display: flex;
+      justify-content: space-between;
+      max-width: 110px;
+      margin: 20px auto 0;
+      @include media(Mobile) {
+        max-width: 50%;
+        justify-content: space-evenly;
+      }
+      @include media(sMobile) {
+        max-width: 50%;
+        justify-content: space-evenly;
+      }
+
+      &__item {
+        @include block-create(24px, 24px);
+        @include media(Mobile) {
+          width: 34px;
+          height: auto;
+        }
+        @include media(sMobile) {
+          width: 34px;
+          height: auto;
+        }
+        &>img {
+          width: 100%;
+        }
+      }
+    }
+
+    &-copyright {
+      display: block;
+      margin-top: 20px;
+      text-decoration: underline;
+      @include text-config(Arial, 12px, normal, #4A90E2, 1);
+      @include media(Mobile) {
+        margin-top: 30px;
+      }
+      @include media(sMobile) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+

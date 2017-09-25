@@ -9,7 +9,7 @@ gulp.task('build:sass', function () {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+        .pipe(postcss([ autoprefixer({ browsers: ['last 4 versions'] }) ]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browser.stream({match: '**/*.css'}));
