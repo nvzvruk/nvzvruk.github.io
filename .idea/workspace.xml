@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/lotto.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/raffle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/raffle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/scratcher.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/1485889480888.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/1485889480888.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Forbes_logo.svg.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Forbes_logo.svg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Inclogo.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Inclogo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Logo2.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Logo2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/NBC_logo.svg.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/NBC_logo.svg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Pando-logo.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/Pando-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/giftcard.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/giftcard.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/hand@10x.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/hand@10x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/ingame03@10x.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/ingame03@10x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/time_logo.png" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/assets/homepage/time_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/.idea/workspace.xml" afterPath="$PROJECT_DIR$/LUCKYDAY/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/css/main.css" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/css/main.css.map" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/css/main.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/dist/index.html" afterPath="$PROJECT_DIR$/LUCKYDAY/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LUCKYDAY/src/scss/pages/_home-page.scss" afterPath="$PROJECT_DIR$/LUCKYDAY/src/scss/pages/_home-page.scss" />
-    </list>
+    <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,7 +22,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/LUCKYDAY/node_modules" />
+    <handled-path value="$PROJECT_DIR$/123/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="14" />
@@ -66,8 +45,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,43 +52,12 @@
               <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="LUCKYDAY" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="LUCKYDAY" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="LUCKYDAY" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="LUCKYDAY" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="homepage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="LUCKYDAY" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,22 +90,23 @@
       <updated>1505917858718</updated>
       <workItem from="1505917859987" duration="383000" />
       <workItem from="1505920578136" duration="15000" />
+      <workItem from="1506431226912" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="398000" />
+    <option name="totallyTimeSpent" value="455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="23" width="1865" height="984" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
