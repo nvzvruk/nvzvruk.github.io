@@ -1,0 +1,96 @@
+.links-to-store {
+  display: flex;
+}
+
+.store-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+  -moz-box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+  box-shadow: 0px 4px 0px 0px rgba(231,166,26,1);
+
+
+  &-bg {
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 45%;
+    transition: .3s;
+    cursor: pointer;
+
+    &_apple {
+      background-image: url('./../assets/homepage/app_store@10x-min.png');
+    }
+
+    &_google {
+      background-image: url('./../assets/homepage/google@10x-min.png');
+    }
+
+    &:before {
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+      transition: .3s;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      &:before {
+        transform: translateY(10px);
+        opacity: 1;
+      }
+    }
+  }
+
+
+  &__icon {
+    width: 20%;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__name {
+    @include text-config(Arial, 24px, light, #fff, 1);
+    display: block;
+
+    @include media(Mobile) {
+      @include text-config(Arial, 14px, light, #fff, 1);
+    }
+    @include media(sMobile) {
+      @include text-config(Arial, 18px, light, #fff, 1);
+    }
+  }
+  &__label {
+    @include text-config(Arial, 12px, light, #fff, 1);
+  }
+
+  &_small {
+
+    &__name {
+      @include text-config(Arial, 18px, light, #fff, 1);
+      display: block;
+      @include media(Tablet) {
+        @include text-config(Arial, 14px, light, #fff, 1);
+      }
+    }
+    &__label {
+      @include text-config(Arial, 12px, light, #fff, 1);
+    }
+  }
+}
+
