@@ -92,6 +92,6 @@ function getSliderSizes() {
 window.onload = function() {
     handleNavItem();
     handleMobileMenu();
-    jCarousel();
     getSliderSizes();
+    jCarousel();
 };
