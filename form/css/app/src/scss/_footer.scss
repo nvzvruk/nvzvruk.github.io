@@ -1,0 +1,146 @@
+.footer {
+  padding: 24px 0 18px;
+
+  &-container {
+    max-width: 578px;
+    margin: 0 auto;
+  }
+
+  &-nav {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+
+    &-box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      font-family: Klavika, "PT Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-color;
+      text-decoration: none;
+      text-transform: capitalize;
+
+      &:not(:last-child) {
+        position: relative;
+        padding-right: 16px;
+        margin-right: 12px;
+
+        &:after {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          content: '';
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $text-color;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &_primary {
+
+      .footer-nav__item {
+        text-decoration: underline;
+        text-decoration-color: #d0d4d7;
+      }
+    }
+
+    &_secondary {
+      margin-top: 16px;
+
+      .footer-nav__item {
+        font-family: KlavikaRegCaps, "PT Sans", sans-serif;
+
+        &:not(:last-child) {
+          padding-right: 18px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    &__img {
+      width: 35px;
+      height: 26px;
+    }
+
+    &__text {
+      margin-top: 6px;
+      font-family: Klavika, "PT Sans", sans-serif;
+      font-size: 10px;
+      font-weight: 300;
+      color: #c2c9d2;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+
+  .footer {
+    padding-bottom: 0;
+
+    &-nav {
+      display: flex;
+      flex-direction: column;
+      width: max-content;
+      margin: 0;
+
+      &-box {
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0 20px;
+      }
+
+      &__item {
+
+        &:not(:last-child) {
+          margin-right: 0;
+          padding-right: 0;
+          margin-bottom: 15px;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &_secondary {
+        margin-top: 0;
+
+        .footer-nav__item {
+
+          &:not(:last-child) {
+            margin-right: 0;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    &-logo {
+      margin-top: 26px;
+      padding: 10px 14px;
+      border-top: 1px solid #dadada;
+      align-items: center;
+      flex-direction: row;
+
+      &__text {
+        margin-top: 0;
+        margin-left: 5px;
+      }
+    }
+  }
+}
