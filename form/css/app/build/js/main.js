@@ -52,6 +52,7 @@ function jCarousel() {
             930 : '588px'
         };
 
+        index = 0;
         slides[0].style.marginLeft = 0;
 
         for(var key in responsiveSizes) {
