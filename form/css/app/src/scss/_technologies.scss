@@ -1,0 +1,106 @@
+.technologies {
+  background: #aeb7c3 url('./../images/triangles-for-top.png');
+  background-size: 120% auto;
+  background-position: 10% 3%;
+  text-align: center;
+
+  &-container {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 34px 0 40px;
+  }
+
+  &__heading {
+    font-family: KlavikaMedCaps, "PT Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: $text-color;
+    text-transform: capitalize;
+  }
+
+  &-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-top: 30px;
+
+    &__logo {
+      position: relative;
+      height: 102px;
+      width: 102px;
+      border-radius: 50%;
+      background-color: $white-color;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__name {
+      margin-top: 16px;
+      font-family: KlavikaMedCaps, "PT Sans", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: $text-color;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  .technologies {
+
+    &-container {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .technologies {
+    background-size: auto;
+
+    &-container {
+      padding: 24px 0 40px;
+    }
+
+    &__heading {
+      margin-bottom: 8px;
+    }
+
+    &-box {
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      width: 50%;
+      margin-top: 24px;
+
+      &_android {
+        order: 1;
+      }
+
+      &_apple {
+        order: 2;
+      }
+
+      &_windows {
+        order: 3;
+      }
+
+      &_cross {
+        order: 4;
+      }
+    }
+  }
+}
