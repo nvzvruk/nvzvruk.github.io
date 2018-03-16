@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="" />
+    <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -64,12 +66,6 @@
               <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -112,7 +108,7 @@
       <workItem from="1505917859987" duration="383000" />
       <workItem from="1505920578136" duration="15000" />
       <workItem from="1506431226912" duration="57000" />
-      <workItem from="1521205972969" duration="3596000" />
+      <workItem from="1521205972969" duration="4104000" />
     </task>
     <task id="LOCAL-00001" summary="dsf">
       <created>1521206574129</created>
@@ -146,7 +142,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4051000" />
+    <option name="totallyTimeSpent" value="4559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="43" width="1865" height="980" extended-state="0" />
