@@ -530,8 +530,7 @@ body {
         -webkit-transition: .3s;
         transition: .3s;
         z-index: 1;
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+        border: 1px solid #e3e6ea; }
         .header-nav-item .dropDown-wrapper {
           position: absolute;
           left: 0;
@@ -545,7 +544,7 @@ body {
           transition: .5s;
           padding: 0 0 9px; }
         .header-nav-item .dropDown__item {
-          padding: 8px 16px;
+          padding: 8px 26px;
           font-family: Klavika, "PT Sans", sans-serif;
           font-weight: 300;
           color: #1182cf;
@@ -554,7 +553,8 @@ body {
           -webkit-transition: .5s;
           transition: .5s; }
           .header-nav-item .dropDown__item:hover {
-            font-weight: 500; }
+            background-color: #1182cf;
+            color: #ffffff; }
       .header-nav-item__text {
         display: inline-block;
         position: relative;
@@ -642,8 +642,7 @@ body {
       -webkit-transition: .3s;
       transition: .3s;
       z-index: 1;
-      -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-              box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+      border: 1px solid #e3e6ea; }
       .header-menu .dropDown-wrapper {
         position: absolute;
         left: 0;
@@ -657,7 +656,7 @@ body {
         transition: .5s;
         padding: 0 0 9px; }
       .header-menu .dropDown__item {
-        padding: 8px 16px;
+        padding: 8px 26px;
         font-family: Klavika, "PT Sans", sans-serif;
         font-weight: 300;
         color: #1182cf;
@@ -666,10 +665,12 @@ body {
         -webkit-transition: .5s;
         transition: .5s; }
         .header-menu .dropDown__item:hover {
-          font-weight: 500; }
+          background-color: #1182cf;
+          color: #ffffff; }
     .header-menu .dropDown-wrapper {
       right: 14px;
-      left: auto; }
+      left: auto;
+      pointer-events: none; }
     .header-menu__icon {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -724,7 +725,8 @@ body {
       -webkit-transform: translateY(8px);
               transform: translateY(8px); }
       .header-menu.is-active .dropDown-wrapper {
-        height: auto; }
+        height: auto;
+        pointer-events: auto; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header {

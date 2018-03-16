@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/css/app/build/js/main.js" afterPath="$PROJECT_DIR$/form/css/app/build/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css" afterPath="$PROJECT_DIR$/form/css/app/build/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css.map" afterPath="$PROJECT_DIR$/form/css/app/build/css/main.css.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -153,7 +154,7 @@
       <workItem from="1505917859987" duration="383000" />
       <workItem from="1505920578136" duration="15000" />
       <workItem from="1506431226912" duration="57000" />
-      <workItem from="1521205972969" duration="1731000" />
+      <workItem from="1521205972969" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="dsf">
       <created>1521206574129</created>
@@ -169,11 +170,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521207490190</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dsf">
+      <created>1521213170148</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521213170148</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2186000" />
+    <option name="totallyTimeSpent" value="2337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="43" width="1865" height="980" extended-state="0" />
