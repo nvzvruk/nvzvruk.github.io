@@ -2,6 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="dsf">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/ItrexSite.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikabold-bold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikabold-bold-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikalight-osf-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikalight-osf-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikamedcaps-sc-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikamedcaps-sc-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregcaps-sc-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregcaps-sc-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregular-osf-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregular-osf-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/JibJab.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/MikeBracco.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/android.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/apple.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/banner-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/cross-platform.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/dogvacay.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/dollarshaveclub.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/footer-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/header-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/radpad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/triangle-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/triangles-for-top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/windows.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_case-studies.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_fonts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_generals.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_industries.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_lets-build.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_technologies.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_testimonials.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_top-section.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -109,7 +159,7 @@
       <workItem from="1505920578136" duration="15000" />
       <workItem from="1506431226912" duration="57000" />
       <workItem from="1521205972969" duration="4104000" />
-      <workItem from="1521216881801" duration="209000" />
+      <workItem from="1521216881801" duration="281000" />
     </task>
     <task id="LOCAL-00001" summary="dsf">
       <created>1521206574129</created>
@@ -143,7 +193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4768000" />
+    <option name="totallyTimeSpent" value="4840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="43" width="1865" height="980" extended-state="0" />
