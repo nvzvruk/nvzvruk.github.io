@@ -43,7 +43,41 @@ function jCarousel() {
     var arrowLeft = document.querySelector('.testimonials-carousel-arrow_left');
     var index = 0;
 
-    window.addEventListener('resize', getSliderSizes);
+    function getSliderSizes() {
+        var slider = document.querySelector('.slider');
+        var slides = document.querySelectorAll('.slide');
+        var desktopSize = '788px';
+        var responsiveSizes = {
+            479 : '300px',
+            660 : '450px',
+            930 : '588px'
+        };
+
+        for(var key in responsiveSizes) {
+
+            if(window.innerWidth <= key) {
+                slider.style.width = responsiveSizes[key];
+                console.log(slider.style.width);
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.width = responsiveSizes[key];
+                    slides[i].style.minWidth = responsiveSizes[key];
+                }
+                break;
+            }
+
+            else {
+                slider.style.width = desktopSize;
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.width = desktopSize;
+                    slides[i].style.minWidth = desktopSize;
+                }
+            }
+        }
+    }
+
+    getSliderSizes();
+
+    // window.addEventListener('resize', getSliderSizes);
 
     arrowRight.addEventListener('click', function(){
         index < slides.length -1 ? index++ : index = 0;
@@ -57,41 +91,9 @@ function jCarousel() {
 
 }
 
-function getSliderSizes() {
-    var slider = document.querySelector('.slider');
-    var slides = document.querySelectorAll('.slide');
-    var desktopSize = '788px';
-    var responsiveSizes = {
-        479 : '300px',
-        660 : '450px',
-        930 : '588px'
-    };
-
-    for(var key in responsiveSizes) {
-
-        if(window.innerWidth <= key) {
-            slider.style.width = responsiveSizes[key];
-            console.log(slider.style.width);
-            for (var i = 0; i < slides.length; i++) {
-                slides[i].style.width = responsiveSizes[key];
-                slides[i].style.minWidth = responsiveSizes[key];
-            }
-            break;
-        }
-        
-        else {
-            slider.style.width = desktopSize;
-            for (var i = 0; i < slides.length; i++) {
-                slides[i].style.width = desktopSize;
-                slides[i].style.minWidth = desktopSize;
-            }
-        }
-    }
-}
-
 window.onload = function() {
     handleNavItem();
     handleMobileMenu();
-    getSliderSizes();
+    // getSliderSizes();
     jCarousel();
 };
