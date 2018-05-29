@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React test</title>
+    <link rel="stylesheet" href="./css/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+
+<div class="page-wrapper">
+    <form class="form" id="form">
+    <div class="form__part">
+        <div class="form__row ">
+            <div class="form__field">
+                <label class="form__label" for="first-name">First name*</label>
+                <input id="first-name" placeholder="Alexey" type="text">
+            </div>
+            <span class="error-message error-first-name"></span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="last-name">Last name*</label>
+                <input id="last-name" placeholder="Andreev" type="text">
+            </div>
+            <span class="error-message error-last-name"></span>
+        </div>
+        <div class="form-radio form__row">
+            <label class="form__label form-radio__label">Sex*</label>
+            <div class="form-radio__box">
+                <div class="form-radio__item">
+                    <input id="male" name="sex" type="radio">
+                    <label for="male">Male</label>
+                </div>
+                <div class="form-radio__item">
+                    <input id="female" name="sex" type="radio">
+                     <label for="female">Female</label>
+                </div>
+            </div>
+            <span class="error-message error-sex">asdasd</span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="birthday">Birthday*</label>
+                <input id="birthday" placeholder="mm/dd/yyyy" type="text">
+            </div>
+            <span class="error-message error-birthday"></span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="country">Country*</label>
+                <select id="country">
+                    <option value="1"">Ukraine</option>
+                    <option value="1">Russia</option>
+                    <option value="1">Belarus</option>
+                    <option value="1">Poland</option>
+                    <option value="1">Moldova</option>
+                </select>
+            </div>
+            <span class="error-message error-country"></span>
+        </div>
+    </div>
+    <div class="form__part">
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="email">Email*</label>
+                <input id="email" placeholder="Enter your email" type="email">
+            </div>
+            <span class="error-message error-email"></span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="password">Password*</label>
+                <input id="password" placeholder="Enter your password" type="password">
+            </div>
+            <span class="error-message error-password"></span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="address">Address*</label>
+                <input id="address" type="text">
+            </div>
+            <span class="error-message error-address"></span>
+        </div>
+        <div class="form__row">
+            <div class="form__field">
+                <label class="form__label" for="notes">Notes</label>
+                <textarea id="notes" placeholder="Your notes..."></textarea> 
+            </div>
+        </div>
+    </div>
+
+    <button type="submit" class="form__submit" id="submit">submit</button>
+    </form>
+
+    <div class="modal">
+        <h3 class="modal__heading">Validation passed</h3>
+        <p class="modal__message">Click ok to close modal</p>
+        <button class="modal__button">Ok</button>  
+    </div> 
+
+    <div class="modal-overlay"></div> 
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="./css/jquery-ui/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
