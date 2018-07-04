@@ -439,6 +439,8 @@
   .mobile-applications .technologies .row:last-of-type {
     margin-left: 0;
     margin-right: 0; }
+  .mobile-applications .technologies .technologies-item {
+    width: 49%; }
   .mobile-applications .technologies .technologies-item.windows {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
