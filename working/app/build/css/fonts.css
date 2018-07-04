@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Klavika-bold';
+    src: url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.eot');
+    src: url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.woff') format('woff'),
+         url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/KlavikaBold/KlavikaBold-Bold-webfont.svg#klavika_boldbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika-light';
+    src: url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.eot');
+    src: url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.woff2') format('woff2'),
+         url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.woff') format('woff'),
+         url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.ttf') format('truetype'),
+         url('../fonts/KlavikaLight/KlavikaLight-OSF-webfont.svg#klavika_lightlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika-medium_caps';
+    src: url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.eot');
+    src: url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.woff2') format('woff2'),
+         url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.woff') format('woff'),
+         url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.ttf') format('truetype'),
+         url('../fonts/KlavikaMedCaps/KlavikaMedCaps-SC-webfont.svg#klavika_med_capsmedium') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika-regular';
+    src: url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.eot');
+    src: url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.woff2') format('woff2'),
+         url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.woff') format('woff'),
+         url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.ttf') format('truetype'),
+         url('../fonts/KlavikaRegular/KlavikaRegular-OSF-webfont.svg#klavika_regularregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika-regular_caps';
+    src: url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.eot');
+    src: url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.woff2') format('woff2'),
+    url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.woff') format('woff'),
+    url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.ttf') format('truetype'),
+    url('../fonts/KlavikaRegCaps/KlavikaRegCaps-SC-webfont.svg#klavika_reg_capsregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}

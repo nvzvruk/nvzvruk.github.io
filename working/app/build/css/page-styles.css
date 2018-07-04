@@ -1,0 +1,200 @@
+.icon-font, .page-content .content-text ul li:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.topper-bg {
+  background-image: url(../img/white-triangle.png);
+  background-position: center; }
+
+.nav-container ul li a {
+  border-bottom: 1px solid #c8ccd0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .nav-container ul li a:not(.page-nav-active):hover {
+    color: #0e75bb;
+    border-bottom: 1px solid #0e75bb; }
+
+.page-header {
+  border-bottom: 1px solid #d5dae1;
+  padding: 50px 0px; }
+  .page-header .header-icon {
+    text-align: center; }
+    .page-header .header-icon .blue, .page-header .header-icon .orange {
+      font-size: 100px; }
+  .page-header .header-title {
+    padding-top: 30px; }
+    .page-header .header-title span {
+      display: block;
+      line-height: 40px;
+      font-size: 40px;
+      font-family: 'Klavika-light';
+      color: #233542; }
+  .page-header .header-tabs {
+    padding-top: 43px; }
+    .page-header .header-tabs ul li {
+      display: inline-block;
+      margin-right: 15px;
+      cursor: pointer;
+      position: relative;
+      font-size: 16px;
+      color: #0e75bb; }
+      .page-header .header-tabs ul li:last-child {
+        margin-right: 0; }
+
+.page-content {
+  position: relative; }
+  .page-content .content-wrapper {
+    padding-top: 35px;
+    padding-bottom: 15px; }
+  .page-content .content-text {
+    max-width: 500px; }
+    .page-content .content-text h5 {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      line-height: 24px; }
+    .page-content .content-text p {
+      color: #233542;
+      line-height: 22px;
+      margin-bottom: 15px;
+      margin-top: 0px; }
+    .page-content .content-text h6 {
+      font-size: 14px;
+      font-family: "Klavika-medium_caps";
+      text-transform: capitalize; }
+    .page-content .content-text p a {
+      color: #337ab7;
+      text-decoration: underline; }
+    .page-content .content-text ul {
+      margin: 10px 0 20px; }
+      .page-content .content-text ul li {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 14px;
+        font-family: 'Klavika-regular';
+        color: #233542; }
+        .page-content .content-text ul li:before {
+          color: #0e75bb;
+          position: absolute;
+          left: -23px;
+          top: 3px;
+          font-size: 12px;
+          content: "\e60f"; }
+
+.development-page .page-header {
+  padding-bottom: 15px; }
+
+.development-page .dev-content-title {
+  font-size: 28px;
+  font-family: 'Klavika-medium_caps';
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  line-height: 28px; }
+
+.development-page .web-solutions-icon {
+  position: absolute;
+  left: -50px;
+  font-size: 36px; }
+
+.development-page .icon-business-intell {
+  font-size: 32px;
+  top: -8px; }
+
+.development-page .icon-desktop {
+  top: -7px; }
+
+.development-page .icon-mobile {
+  top: -12px; }
+
+.development-page .icon-net {
+  top: -5px; }
+
+.development-page .dev_tab-active:before {
+  content: "";
+  border-top: 1px solid #d5dae1;
+  border-left: 1px solid #d5dae1;
+  height: 15px;
+  width: 15px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 40%;
+  -webkit-transform: rotate(38deg) skew(-15deg);
+  transform: rotate(38deg) skew(-15deg);
+  background-color: #fff; }
+
+.case-study-page h2 {
+  font-weight: lighter;
+  font-family: 'Klavika-light';
+  margin: 15px 0 5px; }
+
+.case-study-container .case-study-item {
+  margin-bottom: 35px;
+  border-bottom: 1px solid #d5dae1;
+  position: relative;
+  padding: 5px 15px;
+  padding-bottom: 0; }
+  .case-study-container .case-study-item::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .case-study-container .case-study-item:last-child {
+    margin-bottom: 0;
+    border-bottom: none; }
+  .case-study-container .case-study-item h3 {
+    margin: 15px 0;
+    max-width: 500px;
+    line-height: 1.2;
+    font-family: 'Klavika-medium_caps'; }
+  .case-study-container .case-study-item .case-study-item-image {
+    max-width: 215px;
+    max-height: 140px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #d5dae1;
+    padding: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+    overflow: hidden; }
+    .case-study-container .case-study-item .case-study-item-image img {
+      border: 1px solid #d5dae1;
+      width: 100%;
+      height: auto; }
+  .case-study-container .case-study-item .case-study-item-info {
+    padding: 3px 15px; }
+    .case-study-container .case-study-item .case-study-item-info p {
+      margin: 5px 0; }
+  .case-study-container .case-study-item .case-study-btns {
+    padding-top: 4em;
+    text-align: left;
+    width: 125px;
+    margin: auto; }
+    .case-study-container .case-study-item .case-study-btns a {
+      display: block;
+      background: transparent;
+      border: none;
+      text-transform: capitalize;
+      color: #0e75bb;
+      white-space: nowrap;
+      font-family: 'Klavika-medium_caps';
+      cursor: pointer; }
+      .case-study-container .case-study-item .case-study-btns a span:before {
+        text-align: center;
+        margin-right: 5px;
+        width: 25px;
+        display: inline-block;
+        color: #0e75bb; }
+      .case-study-container .case-study-item .case-study-btns a .icon-view:before {
+        font-size: 10px; }
+      .case-study-container .case-study-item .case-study-btns a .icon-download:before {
+        font-size: 14px; }
+
+/*# sourceMappingURL=page-styles.css.map */

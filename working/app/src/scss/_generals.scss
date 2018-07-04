@@ -1,0 +1,146 @@
+$text-color: #233542;
+$blue-color: #1182cf;
+$white-color: #ffffff;
+
+@mixin dropDownStyles {
+
+  .dropDown {
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 8px 0;
+    background-color: #fff;
+    border-radius: 2px;
+    transform: translateY(-150%);
+    transition: .3s;
+    z-index: 1;
+    border: 1px solid #e3e6ea;
+
+    &-wrapper {
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      padding: 0 0 9px;
+      width: max-content;
+      border-radius: 2px;
+      transition: .5s;
+      overflow: hidden;
+      transform: translateX(-50%);
+    }
+
+    &__item {
+      padding: 8px 16px;
+      font-family: Klavika, "PT Sans", sans-serif;
+      font-weight: 300;
+      color: $blue-color;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: .5s;
+
+      &:hover {
+        background-color: $blue-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+body {
+  background-color: #a8a8a8;
+}
+
+.page-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: $white-color;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 42px;
+  max-width: 406px;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-color: $white-color;
+  text-align: center;
+  z-index: 3;
+  border: 1px solid rgba(174,183,195, .5);
+  box-sizing: border-box;
+
+  &-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+
+    &.is-active {
+      display: block;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  &__logo {
+    height: 126px;
+    width: 162px;
+    transform: translateX(-10px);
+  }
+
+  &__heading {
+    margin-top: 26px;
+    font-family: KlavikaMedCaps, "PT Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: $text-color;
+    text-transform: capitalize;
+  }
+
+  &__message {
+    margin-top: 12px;
+    font-family: Klavika, "PT Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #676666;
+  }
+
+  &__button {
+    margin-top: 26px;
+    padding: 8px 40px;
+    font-family: KlavikaMedCaps, "PT Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: $white-color;
+    background-color: #619224;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+
+  .popup {
+    padding: 20px;
+    min-width: 300px;
+  }
+}

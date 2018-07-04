@@ -1,0 +1,1564 @@
+@import "bourbon/bourbon"
+
+$text-color: #233542
+$text-color_hover: #0e75bb
+$border-bottom-color: #c8ccd0
+
+@mixin clearfix()
+  &:before,
+  &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both
+
+@mixin placeholder-style
+
+  &::-webkit-input-placeholder
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 14px
+    font-weight: 300
+    color: rgba(255,255,255,.5)
+
+  &:-moz-placeholder
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 14px
+    font-weight: 300
+    color: rgba(255,255,255,.5)
+
+  &::-moz-placeholder
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 14px
+    font-weight: 300
+    color: rgba(255,255,255,.5)
+
+  &:-ms-input-placeholder
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 14px
+    font-weight: 300
+    color: rgba(255,255,255,.5)
+
+.clearfix
+  @include clearfix()
+
+*, *:hover, *:focus, *:visited
+  outline: none
+
+
+
+body
+  font-family: 'Klavika-regular', 'PT Sans', sans-serif
+  font-weight: normal
+  min-width: 320px
+  position: relative
+  line-height: 1.42857
+  font-size: 14px
+  color: $text-color
+  -webkit-font-smoothing: antialised
+  overflow-x: hidden
+  background-color: #a8a8a8
+  min-height: 100%
+  height: auto
+
+a
+  color: $text-color
+
+ul, li
+  margin: 0
+  padding: 0
+  list-style-type: none
+
+h1,h2,h3,h4,h5,h6
+  color: $text-color
+  font-family: 'Klavika-regular_caps'
+  margin: 0
+  font-weight: normal
+h1
+  font-size: 48px
+  letter-spacing: 2px
+  font-family: 'Klavika-medium_caps'
+  margin-top: 35px
+  margin-bottom: 50px
+
+h2
+  font-size: 40px
+h3
+  font-size: 28px
+h4
+  font-size: 24px
+h5
+  font-size: 20px
+h6
+  font-size: 18px
+.hidden
+  display: none
+
+.overflow-hidden
+  overflow: hidden
+
+.text-right
+  text-align: right
+.text-center
+  text-align: center
+
+.title-block
+  text-align: center
+  margin: 5px 0px 15px
+  font-family: 'Klavika-medium_caps'
+
+.page_wrapper
+  max-width: 1024px
+  width: 100%
+  margin: 0 auto
+  background-color: #fff
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.3)
+  overflow: hidden
+
+.top_menu
+
+  .top-logo
+    position: absolute
+    height: 45px
+    width: 125px
+    top: 0px
+    bottom: 0px
+    left: 0px
+    margin: auto
+    background-image: url(../img/header-logo.svg)
+    background-repeat: no-repeat
+    -webkit-background-size: contain
+    background-size: contain
+    -webkit-transition: 0.2s
+    -moz-transition: 0.2s
+    transition: 0.2s
+    img
+      display: none
+      width: 100%
+      height: auto
+
+
+.landing-view
+  .top_menu
+    position: fixed
+    max-width: 1024px
+    width: 100%
+    z-index: 9999
+    background: #fff
+    box-shadow: 0px 15px 20px -15px rgba(127,127,127,0.5)
+  .nav-container
+    text-align: right
+    ul li a
+      color: $text-color_hover
+
+.top_menu
+  .fixed-nav, .logo-container
+    height: 100px
+    display: block
+    position: relative
+    margin-bottom: 3px
+    .nav-container
+      position: absolute
+      bottom: 15px
+      left: 0
+
+.page-view
+  overflow: hidden
+  .top_menu
+    position: relative
+    background: transparent
+  .page-nav-active
+    color: #f9b685
+    border-bottom: 1px solid transparent
+
+.nav-container
+  width: 100%
+  ul li
+    display: inline-block
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+    a
+      color: $text-color
+      font-size: 16px
+      line-height: 30px
+      text-transform: capitalize
+      +transition(0.4s)
+      &:hover, &:focus, &:visited, &:active
+        text-decoration: none
+
+a.nav-active, a.mPS2id-highlight-first
+  padding-bottom: 21px
+  border-bottom: 1px solid #0e75bb
+
+
+/* ------ Dropdown button for Navigation
+  --------------------------------------- */
+$w: 30px
+$h: 4px
+button.toggle_menu
+  display: none
+  width: 35px
+  height: 50px
+  position: relative
+  top: 0px
+  right: 0px
+  z-index: 100
+  border: none
+  background: transparent
+  #sandwich
+    width: $w
+    height: $w / 2
+    position: absolute
+    top: 15px
+    left: 5px
+    margin: auto
+    display: block
+    .sw-topper
+      position: absolute
+      top: 0
+      left: 0
+      width: $w
+      height: $h
+      background: #0e75bb
+      border: none
+      border-radius: 4px 4px 4px 4px
+      transition: transform 0.2s
+    .sw-bottom
+      position: absolute
+      width: $w
+      height: $h
+      top: $h * 2
+      left: 0
+      background: #0e75bb
+      border: none
+      border-radius: 4px 4px 4px 4px
+      transition: transform 0.2s
+    .sw-footer
+      position: absolute
+      width: $w
+      height: $h
+      top: $h * 4
+      left: 0
+      background: #0e75bb
+      border: none
+      border-radius: 4px 4px 4px 4px
+      transition: all 0.2s
+  #sandwich.active
+    .sw-topper
+      top: 5px
+      width: 20px
+      +transform(rotate(140deg))
+    .sw-bottom
+      top: 5px
+      left: 13px
+      width: 20px
+      +transform(rotate(-140deg))
+    .sw-footer
+      opacity: 0
+      top: 0
+      +transform(rotate(180deg))
+
+
+
+@media only screen and (min-width: 1000px)
+  .bg-triangle
+    background-image: url(../img/back-blue-gray.png)
+    .solutions, .technologies
+      background: transparent!important
+    .technologies
+      padding: 25px 0!important
+  
+/* ----------------------------------
+  ---------- SOFTWERE-SERVICES --------
+  --------------------------------- */
+.softwere-services
+  .title-block
+    margin-top: 35px
+    margin-bottom: 0px
+
+.softwere-services
+  .title-block
+    h1
+      padding-top: 22px
+      padding-bottom: 14px
+      margin: 0px
+      font-family: inherit
+      font-weight: 600
+      letter-spacing: 4px
+      font-size: 40px
+      line-height: 46px
+      color: #2363B8
+
+.softwere-services
+  .title-block
+    .h1
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 3%, rgba(255, 255, 255, 0.45) 20%, rgba(255, 255, 255, 0.45) 80%, rgba(255, 255, 255, 0) 96%)
+
+.softwere-services
+  .title-block
+    .h3
+      margin-top: 13px
+
+.softwere-services
+  .title-block
+    h3
+      font-family: "Klavika-regular", "PT Sans", sans-serif
+      font-weight: 400
+      letter-spacing: inherit
+      font-size: 34px
+      letter-spacing: -0.6px
+      color: #FFFFFF
+
+.softwere-services
+  margin-top: 147px
+  ul li
+    margin-bottom: 45px
+    position: relative
+    i
+      position: absolute
+      left: 0
+      bottom: -5px
+      +transition(0.2s)
+    a
+      margin-left: 50px
+      font-size: 20px
+      white-space: nowrap
+      border-bottom: 1px solid $border-bottom-color
+      &:hover
+        color: $text-color
+        color: #f9b685
+        border-bottom: 1px solid #f9b685
+      &:focus, &:hover
+        text-decoration: none
+
+  .up-work_logo
+    text-align: center
+    max-width: 300px
+    margin: auto
+    margin-top: -85px
+    img
+      width: 100%
+      height: auto
+  .under_o-desk
+    max-width: 255px
+    width: 100%
+    margin: 15px auto
+    > div
+      text-align: center
+      display: inline-block
+      vertical-align: top
+      max-width: 82px
+      width: 100%
+      font-family: 'PT Sans'
+    span
+      display: block
+      margin-top: 5px
+      font-weight: bold
+      font-size: 20px
+    p
+      margin: 0
+      line-height: 14px
+
+.right-column
+  margin-left: 25px
+
+
+
+/* ----------------------------------
+  ---------- TOP SECTION OF NEW PAGE --------
+  --------------------------------- */
+
+.top-section
+
+  &-bg
+    position: relative
+    background-size: cover
+
+    &__inner
+      position: relative
+      z-index: 1
+      background-repeat: no-repeat
+      height: calc(100% - 20px)
+
+    &:before, &:after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+
+    &:before
+      background-image: url('./../img/new-page/triangles-for-top.png')
+      background-size: 120% auto
+      background-position: 60% 5%
+      z-index: 1
+
+    &:after
+      background: rgba(0, 139, 255, 0.53)
+      background-size: cover
+      z-index: 0
+
+    .figure
+      position: relative
+      width: 100%
+      display: flex
+      z-index: 2
+      &:after
+        position: absolute
+        content: ''
+        top: 97%
+        width: 100%
+        height: 10px
+        background-color: white
+      &-part
+        width: calc(50%)
+        display: block
+        content: " "
+        height: 0
+
+        &_left
+          right: 50%
+          border-bottom: 20px solid white
+          border-right: 52px solid transparent
+
+        &_right
+          left: 50%
+          border-bottom: 20px solid white
+          border-left: 52px solid transparent
+
+  &-info
+    position: relative
+    //max-width: 630px
+    margin: 0 auto
+    padding: 12px 0 22px
+    text-align: center
+
+  &__heading
+    padding: 181px 0 120px
+    margin: 0
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 52px
+    font-weight: 500
+    color: white
+    text-transform: capitalize
+    text-align: center
+
+    img
+      width: 44px
+      height: 66px
+
+    span
+      vertical-align: sub
+
+  &__subheading
+    margin-top: 30px
+    font-family: 'Klavika-regular', "PT Sans", sans-serif
+    font-size: 26px
+    font-weight: 500
+    color: $text-color
+
+    &:first-letter
+      text-transform: uppercase
+
+  &__paragraph
+    position: relative
+    padding-bottom: 32px
+    margin: 12px auto 0
+    max-width: 505px
+    font-family: 'Klavika-light', "PT Sans", sans-serif
+    font-size: 16px
+    font-weight: 300
+    color: $text-color
+    line-height: 22px
+
+    &:first-letter
+      text-transform: uppercase
+
+    &:first-of-type
+
+      &:after
+        position: absolute
+        content: ''
+        display: block
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 0
+        width: 210px
+        height: 1px
+        background-color: $text-color_hover
+
+.mobile-applications
+
+  .top-section
+
+    &-bg
+      background-image:  url('./../img/new-page/banner-bg.png')
+/* ---------------------------
+  ---------- SOLUTIONS --------
+  ---------------------------- */
+.solutions
+  padding: 0px 0px 25px 0px
+  a.solutions_info
+    text-align: center
+    padding: 5px 5px 10px 5px
+    display: block
+    &:hover, &:focus, &:active, &:visited
+      text-decoration: none
+  .solutions-item
+    height: 100px
+    background-repeat: no-repeat
+    background-position: center 75%
+    padding: 30px 0
+  a:hover
+    i
+      color: #FCA261
+  a:hover
+    span
+      color: #FCA261
+      border-bottom: 1px solid #FCA261
+  a
+    span
+      color: #fff
+      font-size: 20px
+      font-family: "Klavika-regular"
+      margin: 0
+      border-bottom: 1px solid rgba(255, 255, 255, 1)
+      letter-spacing: 0.53px
+  .solutions_info:hover
+    +transition(3s)
+    cursor: pointer
+    .blue:before
+      -webkit-box-shadow: 0 0 50px 10px #fff
+      -moz-box-shadow:    0 0 50px 10px #fff
+      box-shadow:         0 0 50px 10px #fff
+
+/* ---------------------------
+  ------ Why ITRex Group ------
+  ---------------------------- */
+.why-itrex
+  padding: 35px 0px 31px 0px
+  font-size: 20px
+  .item
+    .title
+      font-family: "Klavika-medium_caps"
+    .descr
+      font-size: 16px
+      line-height: 28px
+    .row
+      padding: 0px
+    .logo
+      margin: 25px 0px 24px 0px
+  a, a:hover
+    color: #0E75BB
+    text-decoration: none
+  a
+    span
+      border-bottom: 1px solid #C8CCD0
+  a:hover
+    span
+      border-bottom: 1px solid #0E75BB
+  .description
+    padding-bottom: 48px
+    font-family: "Klavika-light"
+  .item.clutch, .item.soon-shiong
+    border-right: 1px solid #0E75BB
+  .row.clutch, .row.soon-shiong, .row.upwork
+    padding: 0 20px
+
+/* ---------------------------
+  ---- New bootstrap class ----
+  ---------------------------- */
+.row-eq-height
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+/* ---------------------------
+  -------- TECHNOLOGIES --------
+  ---------------------------- */
+.technologies
+  padding: 35px 0px 31px 0px
+  background: #fefefe url(../img/white-triangle.png) no-repeat
+  background-position: center
+  #owl-demo_technologies
+    .item
+      padding: 30px 0px
+      margin: 10px
+      line-height: 60px
+      text-align: center
+  .owl-controls .owl-buttons div
+    position: absolute
+    top: 55px
+  .owl-next
+    right: -15px
+  .owl-prev
+    left: -15px
+  .technologies-item
+    text-align: center
+    height: 100px
+    position: relative
+    top: -3px
+    img
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      margin: auto
+    .helper
+      display: none
+      height: 100%
+      vertical-align: middle
+
+.mobile-applications
+
+  .technologies
+    background: #aeb7c3 url("./../img/new-page/triangles-for-top.png")
+    background-position: 10% 6%
+
+    .row:last-of-type
+      display: flex
+      flex-wrap: wrap
+
+    .technologies-item
+      height: auto
+      margin-top: 30px
+      top: 0
+      img
+        position: static
+        width: 102px
+        height: 102px
+      &__name
+        display: block
+        margin-top: 16px
+        font-family: 'Klavika-medium_caps'
+        font-size: 16px
+        font-weight: 500
+
+
+/* ---------------------------
+  ---------- Industries --------
+  ---------------------------- */
+.industries
+  padding: 52px 0 36px
+
+  &_mobile
+    display: none
+    padding: 30px 0 36px
+
+    .industries-item
+      width: 100%
+
+    .row
+      width: 100%
+      margin: 0
+
+    .owl-item
+      width: 120px
+
+    .industries-link
+      display: inline-block
+      margin-top: 40px
+
+    .item
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    .owl-prev, .owl-next
+      position: absolute
+      width: 10px
+      top: 110%
+
+    .owl-prev
+      left: 0
+
+    .owl-next
+      right: 0
+
+  &-container
+    max-width: 720px
+    margin: 0 auto
+    text-align: center
+
+  &__heading
+    font-family: 'Klavika-medium_caps', "PT Sans", sans-serif
+    font-size: 28px
+    font-weight: 500
+    color: $text-color
+    text-transform: capitalize
+
+  &__paragraph
+    margin-top: 20px
+    font-family: 'Klavika-light', "PT Sans", sans-serif
+    font-size: 20px
+    font-weight: 300
+    line-height: 26px
+    color: $text-color
+
+  &-box
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    align-content: space-between
+    max-height: 250px
+    margin-top: 20px
+
+  &-item
+    display: flex
+    align-items: center
+    width: 25%
+    padding: 15px 0
+    font-family: 'Klavika-light', "PT Sans", sans-serif
+    font-size: 20px
+    font-weight: 300
+    color: $text-color
+    text-align: left
+
+    .icon
+      font-size: 28px
+
+    &__name
+      margin-left: 16px
+
+  &-link
+    padding: 15px 0
+    font-family: 'Klavika-light', "PT Sans", sans-serif
+    font-size: 18px
+    font-weight: 300
+    color: #1182CF
+    line-height: 20px
+    text-align: left
+    text-decoration: none
+
+    &:hover
+      text-decoration: none
+
+    .text
+      text-decoration: underline
+      text-decoration-color: #c3dcee
+      transition: .3s
+
+      &:hover
+        color: $text-color
+        text-decoration-color: transparent
+
+        & + .icon
+          color: $text-color
+
+    .icon
+      font-size: 14px
+      vertical-align: middle
+      transition: .3s
+
+
+
+/* ---------------------------
+  ---------- Case Study --------
+  ---------------------------- */
+.case-study
+  background: url("../img/solutions-bg.png"), #aeb7c3
+  text-align: center
+  padding-top: 20px
+  .owl-row
+    margin-left: 40px
+    margin-right: 40px
+  .title-block
+    margin-bottom: 0px
+  .item
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    transform: scale(1, 1)
+    -webkit-transition: 0.2s
+    -moz-transition: 0.2s
+    transition: 0.2s
+    a
+      overflow: hidden
+      text-decoration: none
+      display: block
+      height: 260px
+      position: relative
+      z-index: 9999
+    p
+      font-family: "Klavika-regular_caps"
+      position: absolute
+      bottom: 150px
+      width: 250px
+      margin-top: 0px
+      -webkit-margin-before: 0px
+    .image-wrapper
+      width: 241px
+      height: 169px
+      margin: auto
+      border: 1px solid rgba(255, 255, 255, 0.5)
+      padding: 11px
+      padding-bottom: 0
+      border-bottom: none
+      position: absolute
+      bottom: -10px
+      -webkit-transition: 0.2s
+      -moz-transition: 0.2s
+      transition: 0.2s
+    p, .image-wrapper
+      left: 50%
+      +transform(translateX(-50%))
+      transition: 0.2s
+    img
+      width: 100%
+      height: auto
+    &:hover
+      transform: scale(1.07, 1.07)
+      .image-wrapper
+        bottom: 0px
+        max-width: 250px
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.35)
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.35)
+        box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.35)
+        background: rgba(255, 255, 255, 0.20)
+      p
+        color: #fff
+        bottom: 160px
+  .owl-controls .owl-buttons div
+    position: absolute
+    top: 122px
+    background-image: url(../img/rhombus.png)
+    background-repeat: no-repeat
+    //padding: 12px 10px
+    +size(42px 44px)
+    i
+      position: absolute
+      top: 50%
+      left: 50%
+      +transform(translateX(-50%) translateY(-50%))
+  .owl-next
+    left: 100%
+    margin-left: 11px
+  .owl-prev
+    left: 0
+    margin-left: -53px
+  .owl-controls .owl-buttons div:hover
+    background-image: url(../img/rhombus-fill.png)
+    +transition(0.2s)
+    .nav_how-we-work
+      color: #aeb7c3
+      +transition(0.2s)
+a.view-all-cases
+  display: block
+  cursor: pointer
+  border-top: 1px solid #fff
+  text-align: center
+  font-size: 18px
+  +transition(0.5s)
+  padding: 7px
+  text-decoration: underline
+  &:hover
+    text-decoration: none
+    color: #fff
+
+/* ---------------------------
+  ---------- Featured case studies (new page) --------
+  ---------------------------- */
+
+.case-studies
+  text-align: center
+  background: url("./../img/case-study/triangle-bg.png")
+  box-shadow: inset 0px -67px 69px -50px #fcfcfc
+
+  &-container
+    max-width: 840px
+    margin: 0 auto
+    padding: 40px 20px 26px
+
+
+  &__heading
+    font-family: 'Klavika-medium_caps', "PT Sans", sans-serif
+    font-size: 28px
+    font-weight: 500
+    color: $text-color
+    text-transform: capitalize
+
+  .case
+    display: flex
+    justify-content: space-between
+    margin-top: 30px
+
+    &:first-of-type
+      margin-top: 50px
+
+    &-image
+      width: 100%
+      height: 100%
+
+      &-box
+        min-width: 240px
+        width: 240px
+        height: 170px
+        padding: 12px
+        border: 1px solid #e4e9ef
+        box-sizing: border-box
+
+    &-text-box
+      display: flex
+      flex-direction: column
+      margin-left: 28px
+      text-align: left
+
+      &__bottom
+        display: flex
+        justify-content: space-between
+
+    &__name
+      font-family: 'Klavika-medium_caps', "PT Sans", sans-serif
+      font-size: 22px
+      font-weight: 500
+      color: $text-color
+
+    &__description
+      margin-top: 10px
+      font-family: 'Klavika-light', "PT Sans", sans-serif
+      font-size: 14px
+      font-weight: 300
+      color: $text-color
+      line-height: 22px
+
+    &-keywords
+      display: flex
+      margin: 14px 0
+
+      &__item
+        font-family: 'Klavika-regular', "PT Sans", sans-serif
+        font-size: 14px
+        font-weight: 500
+        color: $text-color
+
+        &:not(:last-child)
+          position: relative
+          padding-right: 16px
+          margin-right: 8px
+
+          &:after
+            position: absolute
+            content: ''
+            width: 8px
+            height: 8px
+            right: 0
+            top: 50%
+            border: 2px solid #c6c6c6
+            box-sizing: border-box
+            transform: translateY(-50%) rotate(45deg)
+
+    &-link
+      display: flex
+      align-items: center
+      font-family: 'Klavika-medium_caps', "PT Sans", sans-serif
+      font-size: 14px
+      font-weight: 500
+      color: #1182CF
+      text-transform: capitalize
+      text-decoration: none
+      transition: .3s
+
+      &__text
+        margin-left: 6px
+        color: #1182CF
+        text-decoration: underline
+        transition: .3s
+
+      &:hover
+        color: $text-color
+
+        .case-link__text
+          color: $text-color
+          text-decoration-color: transparent
+
+
+/* ---------------------------
+  ---------- How We Work --------
+  ---------------------------- */
+.how-we-work
+  padding: 20px 0
+  .info-text-container
+    padding: 0 15px
+    border-left: 1px solid #ccc
+    p
+      line-height: 22px
+      font-family: 'Klavika-light'
+    .start-text
+      font-family: 'Klavika-medium_caps'
+      font-size: 18px
+
+.algorithm-system-image
+  @include background-image(linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(206,207,211,0.3) 99%,rgba(205,207,211,0.3) 100%))
+  position: relative
+  img
+    max-width: 100%
+    height: auto
+  .algorithm-system-steps
+    p
+      position: absolute
+      font-family: 'Klavika-light'
+    .step-1
+      top: 8%
+      right: 20%
+    .step-2
+      top: 22%
+      right: 11%
+    .step-3
+      top: 51%
+      right: 6%
+    .step-4
+      top: 70%
+      right: 13%
+    .step-5
+      top: 78%
+      right: 42%
+    .step-6
+      top: 73%
+      left: 28%
+    .step-7
+      top: 60%
+      left: 7%
+    .step-8
+      top: 28%
+      left: 7%
+    .step-9
+      top: 7%
+      left: 23%
+
+/* ---------------------------
+  ---------- Our Clients --------
+  ---------------------------- */
+.our-clients
+  padding-top: 32px
+  .item
+    padding: 8px
+    text-align: center
+    cursor: pointer
+    .our-clients_picture
+      height: 60px
+      margin: auto
+      position: relative
+      img
+        position: relative
+        top: 0
+        +transition(0.2s)
+        +transform(scale(0.8, 0.8))
+      .hover
+        z-index: 1
+        opacity: 1
+    &:hover
+      img.hover
+        z-index: 1
+        opacity: 1
+        +transform(scale(1, 1))
+    span
+      display: block
+      margin-top: 18px
+      font-size: 17px
+      font-family: 'Klavika-medium_caps'
+    p
+      margin-top: 3px
+      font-family: 'Klavika-light'
+  .owl-controls .owl-buttons div
+    position: absolute
+    top: 30px
+  .owl-next
+    right: -10px
+  .owl-prev
+    left: -10px
+
+/* ---------------------------
+  ---------- CONTACT US --------
+  ---------------------------- */
+.contact-us
+  padding-top: 39px
+  background: url(../img/footer-bg.png)
+  background-position: 50% 8%
+  background-repeat: no-repeat
+  -webkit-background-size: 100%
+  background-size: 100%
+  h2
+    text-align: center
+  form.form
+    background-color: #eceef1
+    border: 1px solid #bec5cf
+    max-width: 410px
+    padding: 20px 30px 30px
+    margin: auto
+    margin-bottom: 125px
+    h6
+      margin: 0
+      font-family: 'Klavika-medium_caps'
+      a
+        color: $text-color_hover
+        border-bottom: 1px solid $border-bottom-color
+        &:hover
+          text-decoration: none
+          border-bottom: 1px solid $text-color_hover
+    .hr
+      width: 100%
+      height: 1px
+      background-color: #bec5cf
+      margin: 10px 0
+    .form-group
+      margin-bottom: 20px
+      label
+        display: block
+        margin-bottom: 5px
+        margin-left: 10px
+        font-family: 'Klavika-bold'
+        color: #44515b
+      label.invalid
+        font-family: "Klavika-Light"
+      input,
+      textarea
+        display: block
+        width: 100%
+        padding: 5px 10px
+        border: 1px solid #bec5cf
+        background-color: #fff
+        resize: vertical
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 4px
+        &:focus
+          border: 2px solid transition
+      input[type=text], input[type=email]
+        width: 75%
+      input[type=tel]
+        width: 40%
+  textarea.invalid, input.invalid
+    border: 1px solid #f45212!important
+  .error
+    color: #f45212
+    margin-top: 5px
+  .title-block
+    margin-bottom: 22px
+
+.contact-us form.form button, .nav-container.toggled .contacts-block button
+  border: none
+  color: #fff
+  padding: 5px 20px
+  text-transform: capitalize
+  font-size: 18px
+  background-color: #75ab33
+  border-radius: 25px
+  font-family: 'Klavika-medium_caps'
+
+.nav-container .contacts-block button.call-me-btn
+  display: none
+
+.nav-container.toggled .contacts-block button.call-me-btn
+  margin-top: 10px
+  padding: 5px 40px
+  display: inline-block
+
+/* ---------------------------
+  ---------- FOOTER --------
+  ---------------------------- */
+.footer
+  max-width: 1024px
+  width: 100%
+  text-align: center
+  z-index: 1
+  border-top: 1px solid #d5dae1
+  padding: 15px 0
+  ul li
+    display: inline-block
+    position: relative
+    a
+      font-size: 14px
+      padding: 0 10px
+  li + li:before
+    content: ''
+    height: 3px
+    width: 3px
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background-color: #233542
+    display: block
+    position: absolute
+    top: 10px
+    left: -3px
+  .footer_logo
+    text-align: center
+    padding-top: 5px
+    img
+      height: 50px
+    p
+      margin: 0
+      font-size: 11px
+      opacity: 0.3
+
+
+.contact-us
+  .location-offices
+    display: block
+    text-align: center
+    font-family: 'Klavika-medium_caps'
+    font-size: 18px
+    color: $text-color
+    opacity: 0.4
+    padding-top: 20px
+
+  .delivery-offices
+    padding-left: 15px
+    text-align: left
+  .bisiness-development
+    padding-right: 15px
+    text-align: right
+
+/* ---------------------------
+  -------- TESTIMONIALS ------
+  ---------------------------- */
+.testimonials
+  padding-top: 40px
+  padding-bottom: 50px
+  .owl-row
+    margin-left: 40px
+    margin-right: 40px
+  .title-block
+    margin-bottom: 25px
+  div.photo
+    width: 115px
+    height: 115px
+    background-size: cover
+    background-position: top center
+    border-radius: 50%
+    margin: 0 auto
+    background: url("../img/no_photo.gif")
+  .item
+    width: 95%
+    margin: 0 auto
+    .content-wrapper, .photo-wrapper
+      margin-top: auto
+      margin-bottom: auto
+  div.ttmnl_anonimous
+    background-image: url("../img/anonimous.png")
+  .person_name
+    font-family: "Klavika-medium_caps"
+    font-size: 17px
+  .testimonial_content
+    font-family: "Klavika-light"
+  .owl-controls
+    .owl-buttons
+      div
+        position: absolute
+        top: 56px
+        height: 44px
+        width: 42px
+        i
+          position: absolute
+          top: 50%
+          left: 50%
+          +transform(translateX(-50%) translateY(-50%))
+          -webkit-transition: 0.2s
+          -moz-transition: 0.2s
+          transition: 0.2s
+
+        &:hover
+          +transition(0.2s)
+          .nav_testimonials
+            transform: translateX(-50%) translateY(-50%) scale(1.5)
+
+  .owl-next
+    left: 100%
+    margin-left: 11px
+  .owl-prev
+    left: 0px
+    margin-left: -53px
+
+/* ---------------------------
+   "Let's buid somthing great" block
+  ---------------------------- */
+
+.lets-build
+  padding-top: 26px
+  padding-bottom: 30px
+  background: #3a78bd url(../img/solutions-bg.png)
+  background-position: center
+  background-repeat: no-repeat
+  color: #fff
+
+  &-container
+    max-width: 578px
+    text-align: center
+    margin: 0 auto
+
+  &__heading
+    font-size: 28px
+    font-weight: 500
+    color: #fff
+    text-transform: capitalize
+
+  &-contacts
+    padding: 0 140px
+    display: flex
+    justify-content: space-between
+
+    &__item
+      display: flex
+      align-items: center
+      font-family: 'Klavika-regular', "PT Sans", sans-serif
+      font-size: 15px
+      font-weight: 300
+      color: #fff
+      text-decoration: none
+      transition: .3s
+
+      .text
+        display: inline-block
+        position: relative
+
+        &:after
+          position: absolute
+          content: ''
+          left: 0
+          bottom: 0
+          width: 0
+          height: 1px
+          background-color: #6c9ccf
+          transition: .3s
+
+      .icon
+        margin-right: 6px
+
+      &:hover
+        text-decoration: none
+        color: #ffffff
+
+        .text
+
+          &:after
+            width: 100%
+
+  .form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 26px
+
+    &-part
+      width: 48%
+
+    &-control
+      position: relative
+      text-align: left
+
+      &:not(:first-of-type)
+        margin-top: 6px
+
+      &__label
+        display: block
+        margin-bottom: 8px
+        font-family: 'Klavika-regular', "PT Sans", sans-serif
+        font-size: 14px
+        font-weight: 700
+        color: #fff
+        text-transform: capitalize
+
+      &__input
+        width: 100%
+        padding: 8px
+        font-family: 'Klavika-regular', "PT Sans", sans-serif
+        font-size: 14px
+        font-weight: 500
+        color: #fff
+        background-color: rgba(255,255,255, .1)
+        border: 1px solid transparent
+        border-radius: 3px
+        box-sizing: border-box
+        @include placeholder-style
+
+        &:focus
+          outline: none
+          border: 1px solid #fff
+
+      &__textarea
+        width: 100%
+        height: 100%
+        max-height: 178px
+        padding: 8px
+        font-family: 'Klavika-regular', "PT Sans", sans-serif
+        font-size: 14px
+        font-weight: 500
+        color: #fff
+        background-color: rgba(255,255,255, .1)
+        border: 1px solid transparent
+        border-radius: 3px
+        box-sizing: border-box
+        resize: none
+        @include placeholder-style
+
+        &:focus
+          outline: none
+          border: 1px solid #fff
+
+      .error-message
+        display: none
+        position: absolute
+        top: 0
+        right: 0
+        color: #940303
+        transition: .2s
+        font-family: 'Klavika-regular', "PT Sans", sans-serif
+        font-weight: 500
+        font-size: 14px
+
+      &.error
+
+        .form__field
+          border-color: #E15554
+          background-color: rgba(225,85,84, .3)
+
+        .error-message
+          display: block
+
+      &.success
+
+        .form__field
+          border-color: #03CEA4
+          background-color: rgba(3,206,164, .3)
+
+      &_phone
+
+        .form-control__input
+          width: 50%
+
+    &__submit
+      margin: 30px auto 22px
+      padding: 5px 24px
+      background-color: #fff
+      border-radius: 20px
+      font-family: 'Klavika-medium_caps', "PT Sans", sans-serif
+      font-size: 18px
+      color: #1182CF
+      text-transform: capitalize
+      cursor: pointer
+      border: 1px solid transparent
+      transition: .3s
+
+      &:hover
+        background-color: transparent
+        color: #fff
+        border-color: #fff
+
+      &:focus
+        outline: none
+
+  .title-block
+    color: #fff
+    line-height: 30px
+  .steps
+    font-size: 20px
+    padding-left: 30px
+    padding-right: 30px
+    .shield
+      margin: 0 auto
+      width: 122px
+      height: 124px
+      background-position: center center
+
+.shield.first
+  background: url("../img/step1.svg")
+
+.shield.second
+  background: url("../img/step2.svg")
+
+.shield.third
+  background: url("../img/step3.svg")
+
+.nav-container
+  .contacts-block
+    div
+      padding: 0px
+      margin: 0px
+      line-height: 14px
+      height: 22px
+      font-size: 15px
+    a
+      span
+        border-bottom: 1px solid #D7D8DA
+      &:hover
+        span
+          border-bottom: none
+  li.contacts-block
+    div
+      a, a:hover
+        color: #233542
+        text-decoration: none
+        text-transform: none
+        padding-left: 20px
+        padding-top: 5px
+        padding-bottom: 5px
+        &.email
+          background: url('../img/envelope.png') left 8px no-repeat
+        &.phone
+          background: url('../img/phone.png') left 8px no-repeat
+  &.toggled
+    .contacts-block
+      background: #ECEEF1
+      border-top: 1px solid #bec5cf
+      div
+        padding: 0px
+        margin: 20px 0
+        a, a:hover
+          padding-left: 40px
+          color: #0E75BB
+      a
+        span
+          border-bottom: none
+        &:hover
+          span
+            border-bottom: 1px solid #0E75BB
+    li.contacts-block
+      div
+        a
+          text-transform: none
+          font-size: 18px
+          &.email
+            background: url('../img/envelope_big.png') left 2px no-repeat
+          &.phone
+            background: url('../img/phone_big.png') left 2px no-repeat
+    ul
+      li
+        a
+          text-transform: uppercase
+
+.head-blue-bg
+  background: #3a78bd url("../img/top_bg.jpg") 80% 75px no-repeat
+  background-size: cover
+  border: 1px solid rgba(0, 0, 0, 0.2)
+
+/* ---------------------------
+  ---------- Offices ----------
+  ---------------------------- */
+/*
+
+.offices
+  margin: 0px 0 40px
+  background: url("../img/footer-bg-small.png")
+  background-repeat: no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  h4
+    font-family: Klavika-medium_caps
+    font-size: 18px
+    margin-top: 25px
+  li
+    font-size: 14px
+    list-style-image: url("../img/li-blue-point.png")
+    list-style-position: inside
+    padding: 5px
+
+.top_menu
+  .top-email, .top-phone
+    position: relative
+    z-index: 100
+    margin: 12px 20px 0px 0px
+    display: none

@@ -1,0 +1,610 @@
+@import "bourbon/bourbon"
+
+
+@media only screen and (max-width: 1000px)
+
+  .landing-view
+    .nav-container
+      text-align: right
+    .solutions span
+      font-size: 20px
+      
+  .case-study .owl-prev, .testimonials .owl-prev
+    left: 0%
+    margin-left: -15px
+
+  .case-study .owl-next, .testimonials .owl-next
+    right: 100%
+    margin-left: -25px
+
+  h1
+    margin-top: 0
+    margin-bottom: 40px
+
+  button.toggle_menu
+    display: block
+
+  .top_menu .top-email, .top_menu .top-phone
+      display: block
+
+  .nav-container
+    -webkit-transition: 0.5s
+    -moz-transition: 0.5s
+    transition: 0.5s
+    overflow: hidden
+    position: relative
+    height: 0
+    top: -1000px
+
+  .toggled
+    border-top: 1px solid #c8ccd0
+    height: auto
+    top: 10px
+
+  .top_menu
+    padding: 10px 0
+    .top-logo
+      bottom: auto
+      top: 2px
+    ul
+      li
+        display: block
+        text-align: center
+        width: 100%
+        padding: 20px 0
+        &:last-child
+          margin-bottom: 20px
+        a
+          font-size: 22px
+    .fixed-nav, .logo-container
+      height: auto
+      width: 100%
+    .fixed-nav .nav-container, .logo-container .nav-container
+      position: relative
+      bottom: auto
+      left: auto
+    .top-logo
+      +transform(scale(0.65, 0.65))
+
+  .why-itrex
+    .item
+      &.soon-shiong
+        .logo
+          width: 85%
+
+@media only screen and (min-width: 768px) and (max-width: 1366px)
+
+  .top-section
+
+    &__heading
+      padding-bottom: 134px
+
+@media only screen and (min-width: 1367px)
+
+  .top-section
+
+    &__heading
+      padding-bottom: 134px
+
+@media only screen and (max-width: 850px)
+  .algorithm-system-image .algorithm-system-steps
+    .step-1
+      top: 5%
+      right: 17%
+    .step-2
+      top: 20%
+      right: 10%
+    .step-3
+      right: 4%
+    .step-8
+      left: 4%
+    .step-9
+      top: 5%
+      left: 17%
+
+
+
+@media only screen and (min-width: 750px)
+
+  .right-column
+    margin-left: 50px
+  .lets-build
+    .arrows
+      background: url("../img/steps.png") top center no-repeat
+
+
+@media only screen and (max-width: 575px)
+
+  .lets-build
+    .arrows
+      background: none
+
+@media only screen and (min-width: 575px) and (max-width: 749px)
+
+  .testimonials
+
+    .row-eq-height
+      flex-direction: column
+
+    .item
+
+      .photo-wrapper
+        width: 100%
+
+      .content-wrapper
+        width: 100%
+        margin-left: 0
+        text-align: justify
+
+@media only screen and (max-width: 750px)
+
+  .top_menu
+    .top-logo
+      left: -50px
+
+  .top-section
+
+    &-bg
+      background-position: 0 0
+
+    &-info
+      padding: 28px 40px
+
+  .case-study
+    .owl-row
+      margin-left: 0px
+      margin-right: 0px
+
+  .page-header .header-icon
+    text-align: left
+
+  .page-view.development-page
+    .page-header
+      .header-tabs
+        .dev_tab-active
+          color: #f9b685
+          &:before
+            display: none
+  .case-study-container
+    .case-study-item
+      margin-bottom: 0
+      padding-bottom: 15px
+      padding-left: 0
+      padding-right: 0
+      .case-study-item-info
+        padding-left: 0
+        padding-right: 0
+      .case-study-item-image
+        margin-bottom: 15px
+        border: 1px solid #d5dae1
+        padding: 10px
+        background: #fff
+      .case-study-btns
+        padding-top: 1em
+        margin: 0
+        width: auto
+        a
+          display: inline-block
+          margin-right: 15px
+          &:last-child
+            margin-right: 0
+
+  .industries
+
+    &-container
+      padding: 0 10px
+
+    &-box
+      padding: 0 10px
+
+    &-item
+      width: 30%
+
+  .softwere-services
+    margin-bottom: 20px
+    .up-work_logo
+      margin-top: 0
+    ul li p
+      margin-left: 50px
+
+  .algorithm-system-image
+    display: none
+
+  .case-study
+    .owl-next
+      left: 100%
+      margin-left: -25px
+    .owl-prev
+      left: 0
+      margin-left: -15px
+
+  .lets-build
+    background-size: cover
+
+  .why-itrex
+    .item.clutch, .item.soon-shiong, .item.upwork
+      float: none
+      width: 100%
+    .item.clutch, .item.soon-shiong
+      border-right: none
+      border-bottom: 1px solid #0E75BB
+      margin-bottom: 25px
+      padding-bottom: 25px
+    .row-eq-height
+      display: block
+    .item.soon-shiong
+      .logo
+        width: auto
+
+    .lets-build
+      .steps
+        padding-left: 40px
+        padding-right: 40px
+        margin-bottom: 20px
+
+@media only screen and (max-width: 768px)
+
+  .case-studies
+
+    &-container
+      padding: 36px 20px
+
+  .case
+
+    &-keywords
+
+      &__item
+        margin: 4px 0
+
+    &-text-box__bottom
+      flex-wrap: wrap
+      margin: 0
+
+@media only screen and (max-width: 610px)
+  .industries
+    padding-bottom: 20px
+
+    &-box
+      flex-direction: row
+      max-height: none
+
+    &-item
+      width: 50%
+      flex-direction: column
+
+      &__name
+        margin-left: 0
+        margin-top: 10px
+
+    &-link
+      width: 100%
+      padding: 15px 0
+      justify-self: center
+      text-align: center
+
+@media only screen and (min-width: 660px)
+  .case-studies
+
+    .case
+
+      &:nth-child(odd)
+        flex-direction: row-reverse
+
+        .case-text-box
+          margin-left: 0
+          margin-right: 30px
+
+@media only screen and (max-width: 661px)
+  .case-studies
+
+    .case
+      flex-direction: column
+      align-items: center
+
+      &-text-box
+        margin-left: 0
+        margin-top: 16px
+
+      &__name
+        text-align: center
+
+      &-keywords
+        flex-wrap: wrap
+
+  .lets-build
+
+    &-container
+      padding: 0 20px
+
+    &-contacts
+      padding: 0 80px
+
+
+@media only screen and (max-width: 480px)
+
+  .top-section
+
+    &-bg
+
+      &:before
+        background-size: auto
+        background-position: 65% 10%
+
+    &__heading
+      padding: 120px 30px 54px
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-size: 34px
+      font-weight: 300
+
+      .text
+        margin-top: 26px
+
+    &-info
+      padding: 0 18px 14px
+
+  .case-studies
+
+    &-container
+      padding: 18px 0
+
+    .case
+
+      &:first-of-type
+        margin-top: 30px
+
+      &-image-box
+        height: auto
+        width: 100%
+        padding: 0
+        border: none
+        box-sizing: content-box
+
+      &-text-box
+        padding: 0 20px
+
+        &__bottom
+          flex-direction: column
+
+      &__name
+        text-align: left
+
+      &-link
+        align-self: center
+
+
+  .lets-build
+
+    &-container
+
+      .form
+        flex-direction: column
+
+        &-part
+          width: 100%
+
+          &:first-of-type
+            margin-bottom: 10px
+
+    &-contacts
+      padding: 0
+      flex-direction: column
+      align-items: center
+
+      &__item
+
+        &:not(:first-child)
+          margin-top: 10px
+
+  .industries
+    display: none
+
+    &_mobile
+      display: block
+
+@media only screen and (max-width: 575px)
+
+  .top_menu
+    .top-logo
+      left: -25px
+
+  .page-view
+    .header-title, .header-tabs
+      text-align: left
+
+  .page-view.development-page
+    .header-tabs
+      padding-top: 10px
+      ul li
+        display: block
+    .dev-content-title
+      padding-left: 45px
+    .web-solutions-icon
+      left: -7px
+  a.mPS2id-highlight-first
+    padding-bottom: 10px
+
+  .softwere-services
+    h1
+      text-align: center
+      line-height: 50px
+      font-size: 28px
+    ul
+      li
+        margin-bottom: 40px
+        font-size: 21px
+        margin-left: 25px
+        i
+          float: left
+
+    .up-work_logo
+      margin-top: 0
+
+  .right-column
+    margin-left: 0
+
+  .our-clients, .testimonials
+    .owl-next
+      //right: 0
+    .owl-prev
+      //left: 0
+
+  .contact-us
+    padding-top: 15px
+    background: #ECEEF1
+    .container
+
+      &.form-container
+        border-bottom: 1px solid #BEC5CF
+        .row
+          margin-left: 20px
+          margin-right: 20px
+
+    form.form
+      background: none
+      border: none
+      padding: 5px 0px 5px
+      margin: auto
+      margin-bottom: 20px
+      max-width: 100%
+      h6
+        margin-bottom: 20px
+      .form-group
+        input[type=text] input[type=email]
+          width: 100%
+    .title-block
+      margin-bottom: 0px
+
+  .contact-us form.form button, .nav-container.toggled .contacts-block button
+      display: block
+      margin: 0 auto
+
+  .footer
+    ul
+      margin-left: 0
+
+  .case-study
+    .owl-prev
+      left: 10px
+      margin-left: 0
+    .owl-next
+      left: auto
+      margin-left: 0
+      right: 10px
+    .owl-controls
+      .owl-buttons
+        div
+          top: 219px
+          background: none
+          &:hover
+            background: none
+            .nav_how-we-work
+              color: #233542
+
+  .testimonials
+    padding-top: 16px
+    padding-bottom: 28px
+    div.photo
+      margin-bottom: 16px
+    .row-eq-height
+      display: block
+    .owl-prev
+      left: -30px
+      margin-left: 0
+    .owl-next
+      left: auto
+      margin-left: 0
+      right: -30px
+    .title-block
+      margin-bottom: 35px
+    .owl-controls
+      .owl-buttons
+        div
+          top: 24%
+          background: none
+          &:hover
+            background: none
+            .nav_testimonials
+              color: #233542
+    .testimonials-counter
+      top: 100%
+
+  .nav_how-we-work
+    color: #233542
+    font-size: 10px
+
+  .nav_testimonials
+    color: #233542
+    font-size: 10px
+
+  .lets-build
+    .steps
+      padding-left: 0px
+      padding-right: 0px
+      margin-left: auto
+      margin-right: auto
+      width: 65%
+      margin-bottom: 20px
+
+  .solutions
+    div
+      &.solutions-item
+        display: inline-block
+    a
+      &.solutions_info
+        text-align: left
+        max-width: 250px
+        margin: 0 auto
+
+  .solutions-item
+    .white.icon-net
+      top: 3px
+    .white.icon-mobile
+      top: 4px
+      left: 3px
+      margin-right: 3px
+    .white.icon-devel
+      top: 5px
+      left: 4px
+      margin-right: 8px
+
+  .mobile-applications
+    .technologies
+      .row:last-of-type
+        margin-left: 15px
+        margin-right: 15px
+
+      .technologies-item
+        &.windows
+          order: 3
+        &.android
+          order: 1
+        &.apple
+          order: 2
+        &.cross
+          order: 4
+
+  .lets-build
+
+    &__heading
+      max-width: 300px
+      margin: 0 auto
+
+@media only screen and (max-width: 360px)
+
+  .case-studies
+
+  .case
+
+    &-image-box
+      width: 100%
+      border: none
+      padding: 0
+
+  .testimonials
+    .owl-controls
+      .owl-buttons
+        div
+          top: 22%
+          background: none

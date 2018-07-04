@@ -2,56 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="063fad6e-0097-46d9-bdb0-0474c3cb0bb5" name="Default" comment="dsf">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/ItrexSite.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/css/main.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/IconFont/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikabold-bold-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikabold-bold-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikalight-osf-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikalight-osf-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikamedcaps-sc-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikamedcaps-sc-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregcaps-sc-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregcaps-sc-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregular-osf-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/fonts/Klavika/klavikaregular-osf-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/JibJab.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/MikeBracco.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/android.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/apple.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/banner-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/cross-platform.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/dogvacay.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/dollarshaveclub.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/footer-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/header-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/radpad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/triangle-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/triangles-for-top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/images/windows.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/build/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_case-studies.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_fonts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_footer.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_generals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_header.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_industries.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_lets-build.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_technologies.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_testimonials.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/_top-section.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/app/src/scss/main.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/package-lock.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/form/css/package.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -84,8 +34,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="43" />
+    <option name="x" value="55" />
+    <option name="y" value="23" />
     <option name="width" value="1865" />
     <option name="height" value="980" />
   </component>
@@ -104,6 +54,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,17 +62,11 @@
               <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nvzvruk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nvzvruk.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,6 +105,7 @@
       <workItem from="1506431226912" duration="57000" />
       <workItem from="1521205972969" duration="4104000" />
       <workItem from="1521216881801" duration="281000" />
+      <workItem from="1530712195378" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="dsf">
       <created>1521206574129</created>
@@ -193,20 +139,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4840000" />
+    <option name="totallyTimeSpent" value="4862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="43" width="1865" height="980" extended-state="0" />
+    <frame x="55" y="23" width="1865" height="980" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
