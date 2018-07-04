@@ -437,8 +437,8 @@
     left: 4px;
     margin-right: 8px; }
   .mobile-applications .technologies .row:last-of-type {
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: 0;
+    margin-right: 0; }
   .mobile-applications .technologies .technologies-item.windows {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
